@@ -7,3 +7,10 @@
 [submodule "references/car-tools"]
 	path = references/car-tools
 	url = https://github.com/dnoermann/car-tools
+[submodule "references/openpilot"]
+	path = references/openpilot
+	url = https://github.com/BogGyver/openpilot/
+[submodule "references/openpilot_0.6.6"]
+	path = references/openpilot_0.6.6
+	url = https://github.com/BogGyver/openpilot
+	branch = tesla_0.6.6
