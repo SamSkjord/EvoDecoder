@@ -1,0 +1,80 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "EPBM",
+    "routines": {
+        "SERVICE_MODE": {
+            "hex_id": "0x401",
+            "node_name": "EPBM",
+            "results": {
+                "input": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        }
+    }
+}

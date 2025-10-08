@@ -1,0 +1,350 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "IBST",
+    "routines": {
+        "STIFFNESS_TEST": {
+            "hex_id": "0xF200",
+            "node_name": "IBST",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DELTA_S": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 16,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0078125,
+                            "maximum": 42,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "ELAPSED_TIME": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 18,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": 65.535,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "PRESSURE_OR_TORQUE": {
+                        "bit_length": 80,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null
+                    },
+                    "PRESSURE_P100": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 12,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0625,
+                            "maximum": 255,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "PRESSURE_P200": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 14,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0625,
+                            "maximum": 255,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "ROUTINE_FAILURE_REASON": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 60,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "BLOCKED_PEDAL_DETECTED": 1938,
+                                "MAX_GEAR_FORCE_PRESSURE": 1936,
+                                "NONE": 0,
+                                "PEDAL_PRESSED": 2394,
+                                "PRESSURE_INCREASE_LEAKAGE": 2513,
+                                "TARGET_POSITION_MAX_RANGE": 512,
+                                "TARGET_POSITION_MIN_RANGE": 768,
+                                "TARGET_SPEED_MAX_RANGE": 1024,
+                                "TARGET_SPEED_MIN_RANGE": 1280,
+                                "TARGET_TORQUE_MAX_RANGE": 528,
+                                "TARGET_TORQUE_MIN_RANGE": 784,
+                                "THERMAL_MODEL_LIMIT_REACHED": 1824,
+                                "TORQUE_LIMIT_REACHED": 1536,
+                                "VOLTAGE_LIMITATION_REACHED": 1840
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ROUTINE_CANCELLED_BY_ECU": 4,
+                                "ROUTINE_CANCELLED_BY_TESTER": 3,
+                                "ROUTINE_FINISHED": 2,
+                                "ROUTINE_STILL_RUNNING": 1,
+                                "ROUTINE_WAS_NOT_STARTED": 0
+                            }
+                        }
+                    },
+                    "TORQUE_M10": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.01,
+                            "maximum": 255,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "output_size": 72,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "INPUT_ROD_STROKE_S100": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0078125,
+                            "maximum": 42,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "INPUT_ROD_STROKE_S200": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0078125,
+                            "maximum": 42,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASUREMENT_FUNCTION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ESC_PRESSURE": 1,
+                                "MOTOR_TORQUE": 2,
+                                "NO_MEASUREMENT": 0
+                            }
+                        }
+                    },
+                    "MEASURE_STROKE_LEAKAGE_PHASE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": 25.5,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURE_STROKE_STABILIZATION_PHASE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 12,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": 25.5,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "NUMBER_OF_LOOPS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 14,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": 255,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "NUMBER_OF_MEASURE_SAMPLES": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 15,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": 50,
+                            "minimum": 1,
+                            "offset": 0.0
+                        }
+                    },
+                    "SETTING_STROKE_TIME_HOLD_PHASE_OR_TIMEOUT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 10,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": 25.5,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "SETTING_STROKE_TIME_RELEASE_PHASE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": 25.5,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "TEST_FUNCTION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "BACKUP_TEST": 2,
+                                "BLEEDING_SUPPORT_FUNCTION": 3,
+                                "PEDAL_TRAVEL_LEAKAGE_TEST": 1
+                            }
+                        }
+                    },
+                    "TRAVEL_SPEED_V1": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0078125,
+                            "maximum": 14,
+                            "minimum": 2,
+                            "offset": 0.0
+                        }
+                    },
+                    "TRAVEL_SPEED_V2": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0078125,
+                            "maximum": 14,
+                            "minimum": 2,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "input_size": 16,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_ERROR": 5,
+                                "ROUTINE_FINISHED": 4,
+                                "ROUTINE_START_NOT_POSSIBLE": 3,
+                                "SUCCESSFUL": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

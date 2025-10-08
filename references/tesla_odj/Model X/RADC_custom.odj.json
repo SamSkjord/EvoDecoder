@@ -1,0 +1,95 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "RADC",
+    "routines": {
+        "SERVICE_ALIGNMENT": {
+            "hex_id": "0xa08",
+            "node_name": "RADC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ALIGNMENT_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ALIGNMENT_FAILED": 0,
+                                "ALIGNMENT_IN_PROGRESS": 2,
+                                "ALIGNMENT_PASSED": 1
+                            }
+                        }
+                    },
+                    "HORIZONTAL_MISALIGNMENT_ANGLE_FLOAT": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "float",
+                        "default": null
+                    },
+                    "PROGRESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 64,
+                            "factor": 100,
+                            "maximum": 100,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "RADAR_ALIGNMENT_ERROR_LIST": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NO_ERROR": 5,
+                                "PHYSICAL_SETUP_ERROR": 4,
+                                "SENSOR_OUT_OF_BOUNDS_DOWN": 3,
+                                "SENSOR_OUT_OF_BOUNDS_TO_RIGHT": 1,
+                                "SENSOR_OUT_OF_BOUNDS_TO_THE_LEFT": 0,
+                                "SENSOR_OUT_OF_BOUNDS_UP": 2
+                            }
+                        }
+                    },
+                    "VERTICAL_MISALIGNMENT_ANGLE_FLOAT": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "float",
+                        "default": null
+                    }
+                },
+                "output_size": 11,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        }
+    }
+}

@@ -1,0 +1,273 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "OCS1P",
+    "routines": {
+        "CHECK_PART_NUMBERS": {
+            "hex_id": "0x89c",
+            "node_name": "OCS1P",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CUSHION": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "RESULT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "SEATBACK": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 16,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "UNUSED": {
+                        "bit_length": 7,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 30,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_CALIBRATION": {
+            "hex_id": "0x502",
+            "node_name": "OCS1P",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SELF_CALIBRATION_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_CUSHION_SELF": 7,
+                                "ERROR_HUMIDITY": 6,
+                                "ERROR_INTERNAL_FAULT": 9,
+                                "ERROR_NOT_PERMITTED": 10,
+                                "ERROR_SANDWICH_PRESENT": 3,
+                                "ERROR_SEATBACK_SELF": 8,
+                                "ERROR_SENSORS_FLUCTUATING": 4,
+                                "ERROR_TEMPERATURE": 5,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            },
+                            "enum_name": "SELF_CALIBRATION_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SELF_CALIBRATION_START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_CUSHION_SELF": 7,
+                                "ERROR_HUMIDITY": 6,
+                                "ERROR_INTERNAL_FAULT": 9,
+                                "ERROR_NOT_PERMITTED": 10,
+                                "ERROR_SANDWICH_PRESENT": 3,
+                                "ERROR_SEATBACK_SELF": 8,
+                                "ERROR_SENSORS_FLUCTUATING": 4,
+                                "ERROR_TEMPERATURE": 5,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            },
+                            "enum_name": "SELF_CALIBRATION_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SELF_CALIBRATION_STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_CUSHION_SELF": 7,
+                                "ERROR_HUMIDITY": 6,
+                                "ERROR_INTERNAL_FAULT": 9,
+                                "ERROR_NOT_PERMITTED": 10,
+                                "ERROR_SANDWICH_PRESENT": 3,
+                                "ERROR_SEATBACK_SELF": 8,
+                                "ERROR_SENSORS_FLUCTUATING": 4,
+                                "ERROR_TEMPERATURE": 5,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            },
+                            "enum_name": "SELF_CALIBRATION_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST": {
+            "hex_id": "0x501",
+            "node_name": "OCS1P",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CUSHION_MUT_TEST_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "CUSHION_SELF_TEST_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "SEATBACK_SELF_TEST_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 12,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "EFUSE",
+    "routines": {
+        "RESET_EFUSES": {
+            "hex_id": "0x420",
+            "node_name": "EFUSE",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DRIVE_ACTIVE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "REV_BATT_NOT_RESET": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        }
+    }
+}

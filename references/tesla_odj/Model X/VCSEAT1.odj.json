@@ -1,0 +1,993 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "VCSEAT1",
+    "routines": {
+        "OCS_CALIBRATE_EMPTY": {
+            "hex_id": "0x522",
+            "node_name": "VCSEAT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_BOARD_MANUFACTURE_INCORRECT": 9,
+                                "ERROR_FLASH": 6,
+                                "ERROR_HUMIDITY_OUT_OF_RANGE": 11,
+                                "ERROR_NOT_PERMITTED": 3,
+                                "ERROR_OCCUPIED": 8,
+                                "ERROR_SEAT_TEMPERATURE_OUT_OF_RANGE": 12,
+                                "ERROR_SENSOR_FAULTED": 7,
+                                "ERROR_SENSOR_FLUCTUATING": 5,
+                                "ERROR_TEMPERATURE_OUT_OF_RANGE": 10,
+                                "ERROR_UNKNOWN": 4,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_BOARD_MANUFACTURE_INCORRECT": 9,
+                                "ERROR_FLASH": 6,
+                                "ERROR_HUMIDITY_OUT_OF_RANGE": 11,
+                                "ERROR_NOT_PERMITTED": 3,
+                                "ERROR_OCCUPIED": 8,
+                                "ERROR_SEAT_TEMPERATURE_OUT_OF_RANGE": 12,
+                                "ERROR_SENSOR_FAULTED": 7,
+                                "ERROR_SENSOR_FLUCTUATING": 5,
+                                "ERROR_TEMPERATURE_OUT_OF_RANGE": 10,
+                                "ERROR_UNKNOWN": 4,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR_BOARD_MANUFACTURE_INCORRECT": 9,
+                                "ERROR_FLASH": 6,
+                                "ERROR_HUMIDITY_OUT_OF_RANGE": 11,
+                                "ERROR_NOT_PERMITTED": 3,
+                                "ERROR_OCCUPIED": 8,
+                                "ERROR_SEAT_TEMPERATURE_OUT_OF_RANGE": 12,
+                                "ERROR_SENSOR_FAULTED": 7,
+                                "ERROR_SENSOR_FLUCTUATING": 5,
+                                "ERROR_TEMPERATURE_OUT_OF_RANGE": 10,
+                                "ERROR_UNKNOWN": 4,
+                                "IN_PROGRESS": 1,
+                                "NOT_RUN": 2,
+                                "OK": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "RUN_SEAT_CALIBRATION": {
+            "hex_id": "0x427",
+            "node_name": "VCSEAT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "BACKREST_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LIFT_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    },
+                    "TILT_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "BACKREST_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LIFT_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    },
+                    "TILT_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_IS_NOT_CALIBRATED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST_FRONT_SEAT": {
+            "hex_id": "0x505",
+            "node_name": "VCSEAT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "BACKREST_MOTOR_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "BACKREST_MOTOR_ENCODER": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "BACKREST_SWITCH": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "BUCKLE_SWITCH": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FAN_BACKREST_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FAN_CUSHION_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FOOTWELL_LED_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "HEATPAD_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "HEATPAD_THERMISTOR": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LIFT_MOTOR_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LIFT_MOTOR_ENCODER": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LUMBAR_ECU_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LUMBAR_LIN": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "LUMBAR_SWITCH": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "OCCUPANCY_SWITCH": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    },
+                    "TILT_MOTOR_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TILT_MOTOR_ENCODER": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_LIFT_SWITCH": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_MOTOR_CURRENT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_MOTOR_ENCODER": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TRACK_POSITION_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 4,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST_OCS": {
+            "hex_id": "0x530",
+            "node_name": "VCSEAT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CUSHION_DISCONNECTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "CUSHION_SENSOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "CUSHION_SENSOR_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "CUSHION_SENSOR_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "CUSHION_SENSOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "MANUFACTURING_CALIBRATION_INVALID": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SEATBACK_DISCONNECTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SEAT_CALIBRATION_INVALID": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SEAT_HEATER_DISCONNECTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SEAT_THERMISTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SENSOR_DISCONNECTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SPARE_SENSOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SPARE_SENSOR_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SPARE_SENSOR_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "SPARE_SENSOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    },
+                    "TEMP_HUMIDITY_INVALID": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TEMP_HUMIDITY_MIA": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "TOS_MIA": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 4,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        }
+    }
+}

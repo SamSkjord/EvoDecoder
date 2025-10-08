@@ -1,0 +1,835 @@
+{
+    "data": {},
+    "io_controls": {
+        "COMPRESSOR_PERCENT_ADJUST": {
+            "hex_id": "0x381",
+            "input": {
+                "PCT": {
+                    "bit_length": 16,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "map": {
+                        "calculator": "linear",
+                        "denominator": 1.0,
+                        "factor": 1.0,
+                        "maximum": null,
+                        "minimum": null,
+                        "offset": 0.0,
+                        "unit": "pct"
+                    },
+                    "physical_type": "float"
+                }
+            },
+            "input_size": 2,
+            "node_name": "THERMAL",
+            "output": {
+                "PCT": {
+                    "bit_length": 16,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "map": {
+                        "calculator": "linear",
+                        "denominator": 1.0,
+                        "factor": 1.0,
+                        "maximum": null,
+                        "minimum": null,
+                        "offset": 0.0,
+                        "unit": "pct"
+                    },
+                    "physical_type": "float"
+                }
+            },
+            "output_size": 2,
+            "security_level": 0
+        },
+        "FAN_RADIATOR_DEMAND_ADJUST": {
+            "hex_id": "0x387",
+            "input": {
+                "PCT": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "map": {
+                        "calculator": "linear",
+                        "denominator": 1.0,
+                        "factor": 1.0,
+                        "maximum": null,
+                        "minimum": null,
+                        "offset": 0.0,
+                        "unit": "pct"
+                    },
+                    "physical_type": "float"
+                }
+            },
+            "input_size": 1,
+            "node_name": "THERMAL",
+            "output": {
+                "PCT": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "map": {
+                        "calculator": "linear",
+                        "denominator": 1.0,
+                        "factor": 1.0,
+                        "maximum": null,
+                        "minimum": null,
+                        "offset": 0.0,
+                        "unit": "pct"
+                    },
+                    "physical_type": "float"
+                }
+            },
+            "output_size": 1,
+            "security_level": 0
+        }
+    },
+    "node_name": "THERMAL",
+    "routines": {
+        "CLOSE_REFRIGERANT_VALVES": {
+            "hex_id": "0xf103",
+            "node_name": "THERMAL",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "READY": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "HV_BATTERY_DISCHARGE": {
+            "hex_id": "0xf105",
+            "node_name": "THERMAL",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "BATTERY_SOC": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "pct"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BELOW_MINIMUM_SOC": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CHARGE_CABLE_CONNECTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CONTACTORS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "COOLANT_NOT_FILLED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "COOLANT_PUMP_FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "COOLANT_TEMP_SNS_FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "COOLANT_VALVE_FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "EXITED_SERVICE_MODE": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INVALID_SOC_TARGET": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LOUVER_FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ROUTINE_NOT_READY": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "THERMAL_FAN_FAULTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "UI_REQUESTING_HV_LOADS_OFF": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_HIGH_SPEED_DRIVING": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_NOT_IN_PARK": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 5,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "TARGET_SOC": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "THERMAL_BATTERY_PRECONDITION": {
+            "hex_id": "0x536",
+            "node_name": "THERMAL",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "TRACE_BATTERY_TEMP": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "THERMAL_COOLANT_AIR_PURGE": {
+            "hex_id": "0x527",
+            "node_name": "THERMAL",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ELAPSED_TIME": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "THERMAL_COOLANT_FLOW_CYCLE": {
+            "hex_id": "0x538",
+            "node_name": "THERMAL",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "COOLANT_MODES": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

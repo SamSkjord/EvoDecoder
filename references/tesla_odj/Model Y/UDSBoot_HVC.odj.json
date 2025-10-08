@@ -1,0 +1,1124 @@
+{
+    "data": {
+        "ASSEMBLY_ID": {
+            "hex_id": "0xf01c",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "ASSEMBLY_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "ASSEMBLY_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "ASSEMBLY_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "security_level": 5
+            }
+        },
+        "BOARD_PART_NUMBER": {
+            "hex_id": "0xf012",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "security_level": 5
+            }
+        },
+        "BOARD_SERIAL_NUMBER": {
+            "hex_id": "0xf013",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "security_level": 5
+            }
+        },
+        "COMPONENT_AND_FIRMWARE_TYPE": {
+            "hex_id": "0x101",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "BOOTLOADER_PROTOCOL_VERSION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "COMPONENT_KEY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "FIRMWARE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Bootloader": 1,
+                                "Bootloader_Updater": 2
+                            },
+                            "enum_name": "FIRMWARE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "BOOTLOADER_PROTOCOL_VERSION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "COMPONENT_KEY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "FIRMWARE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Bootloader": 1,
+                                "Bootloader_Updater": 2
+                            },
+                            "enum_name": "FIRMWARE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            }
+        },
+        "HVC_CALIBRATION_RECORD_0": {
+            "hex_id": "0x500",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_0": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_0": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_0": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_1": {
+            "hex_id": "0x501",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_1": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_1": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_1": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_10": {
+            "hex_id": "0x50a",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_10": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_10": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_10": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_11": {
+            "hex_id": "0x50b",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_11": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_11": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_11": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_12": {
+            "hex_id": "0x50c",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_12": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_12": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_0": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_13": {
+            "hex_id": "0x50d",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_13": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_13": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_13": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_14": {
+            "hex_id": "0x50e",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_14": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_14": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_14": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_15": {
+            "hex_id": "0x50f",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_15": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_15": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_15": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_2": {
+            "hex_id": "0x502",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_2": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_2": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_2": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_3": {
+            "hex_id": "0x503",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_3": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_3": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_3": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_4": {
+            "hex_id": "0x504",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_4": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_4": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_4": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_5": {
+            "hex_id": "0x505",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_5": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_5": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_5": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_6": {
+            "hex_id": "0x506",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_6": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_6": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_6": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_7": {
+            "hex_id": "0x507",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_7": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_7": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_7": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_8": {
+            "hex_id": "0x508",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_8": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_8": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_8": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CALIBRATION_RECORD_9": {
+            "hex_id": "0x509",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "CALIBRATION_RECORD_9": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CALIBRATION_RECORD_9": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_RECORD_9": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "security_level": 5
+            }
+        },
+        "HVC_CONFIGURATION_RECORD": {
+            "hex_id": "0x6f9",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "HVC_CONFIGURATION_RECORD": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 64,
+                "output": {
+                    "HVC_CONFIGURATION_RECORD": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 64,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "HVC_CONFIGURATION_RECORD": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 64,
+                "security_level": 0
+            }
+        },
+        "PACKAGE_PART_NUMBER": {
+            "hex_id": "0xf014",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "security_level": 5
+            }
+        },
+        "PACKAGE_SERIAL_NUMBER": {
+            "hex_id": "0xf015",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "security_level": 5
+            }
+        },
+        "USAGE_ID": {
+            "hex_id": "0xf01d",
+            "node_name": "UDSBoot",
+            "read": {
+                "input": {
+                    "USAGE_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "USAGE_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "USAGE_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 5
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "UDSBoot",
+    "routines": {
+        "INIT_CALIBRATION_BLOCK": {
+            "hex_id": "0x510",
+            "node_name": "UDSBoot",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "INIT_CONFIGURATION_BLOCK": {
+            "hex_id": "0x6fa",
+            "node_name": "UDSBoot",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        }
+    }
+}

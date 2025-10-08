@@ -1,0 +1,112 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "SEC",
+    "routines": {
+        "ANTENNA_TEST": {
+            "hex_id": "0x408",
+            "node_name": "SEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 2,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ROUTINE_IN_PROGRESS": 55,
+                                "SUCCESS": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {
+                    "ANTENNA_LOCATION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "CenterConsole": 2,
+                                "DeadKeyFob": 4,
+                                "Frunk": 1,
+                                "RearBumper": 0,
+                                "RearSeat": 3
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 1
+            }
+        },
+        "PEKTRON_VIN_LEARN": {
+            "hex_id": "0x405",
+            "node_name": "SEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "LFT",
+    "routines": {
+        "PEKTRON_VIN_LEARN": {
+            "hex_id": "0x405",
+            "node_name": "LFT",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            }
+        }
+    }
+}

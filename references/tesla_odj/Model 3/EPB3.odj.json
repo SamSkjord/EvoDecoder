@@ -1,0 +1,1974 @@
+{
+    "data": {
+        "BOARD_PART_NUMBER": {
+            "hex_id": "0xf012",
+            "node_name": "EPB3",
+            "read": {
+                "input": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            }
+        },
+        "BOARD_SERIAL_NUMBER": {
+            "hex_id": "0xf013",
+            "node_name": "EPB3",
+            "read": {
+                "input": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            }
+        },
+        "GET_ECULOG_DESCRIPTOR": {
+            "hex_id": "0xe00",
+            "node_name": "EPB3",
+            "read": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PRIORITY"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 10,
+                "output": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PRIORITY"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 10,
+                "security_level": 0
+            }
+        },
+        "PACKAGE_PART_NUMBER": {
+            "hex_id": "0xf014",
+            "node_name": "EPB3",
+            "read": {
+                "input": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            }
+        },
+        "PACKAGE_SERIAL_NUMBER": {
+            "hex_id": "0xf015",
+            "node_name": "EPB3",
+            "read": {
+                "input": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            }
+        },
+        "SET_ECULOG_TRANSFER_STATUS": {
+            "hex_id": "0xe0f",
+            "node_name": "EPB3",
+            "write": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TRANSFER_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TRANSFER_ABORTED": 2,
+                                "TRANSFER_COMPLETED": 0,
+                                "TRANSFER_SUSPENDED": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_TRANSFER_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 5,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "EPB3",
+    "routines": {
+        "CLEAR_BRAKE_HW_TYPE": {
+            "hex_id": "0x402",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "EPB3_SERVICE_MODE": {
+            "hex_id": "0x401",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "APPLY_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APPLY_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_PARTY_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_VEH_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ECU_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PISTONPOS_DELTA_VC": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "RELEASE_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 7,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "FACTORY_PARK": {
+            "hex_id": "0x511",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "APPLY_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APPLY_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_PARTY_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_VEH_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ECU_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "FACTORY_RELEASE": {
+            "hex_id": "0x510",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "APPLY_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APPLY_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_PARTY_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_VEH_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ECU_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST_EPB3_APPLYRELEASE": {
+            "hex_id": "0x501",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "APPLY_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APPLY_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_PARTY_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_VEH_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ECU_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST_EPB3_CONNECTION": {
+            "hex_id": "0x502",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "APPLY_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APPLY_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_PARTY_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CAN_VEH_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ECU_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_OPEN": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HARNESS_SHORTED_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_HIGH": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INPUTVOLTAGE_LOW": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "MOTOR_SHORT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_BLOCKED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RELEASE_TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "WIPE_ALL_NVM": {
+            "hex_id": "0x544",
+            "node_name": "EPB3",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        }
+    }
+}

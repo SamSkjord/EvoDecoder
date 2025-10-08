@@ -1,0 +1,269 @@
+{
+    "data": {
+        "DRIVE_ORIENTATION_BYTE": {
+            "hex_id": "0xfd41",
+            "node_name": "RCM",
+            "read": {
+                "input": {
+                    "DRIVE_ORIENTATION_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INIT_NOT_COMPLETE": 176,
+                                "LHD_INITIALIZED": 170,
+                                "MISMATCH": 186,
+                                "NOT_INITIALIZED": 0,
+                                "RHD_INITIALIZED": 187
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "DRIVE_ORIENTATION_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INIT_NOT_COMPLETE": 176,
+                                "LHD_INITIALIZED": 170,
+                                "MISMATCH": 186,
+                                "NOT_INITIALIZED": 0,
+                                "RHD_INITIALIZED": 187
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "DRIVE_ORIENTATION_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INIT_NOT_COMPLETE": 176,
+                                "LHD_INITIALIZED": 170,
+                                "MISMATCH": 186,
+                                "NOT_INITIALIZED": 0,
+                                "RHD_INITIALIZED": 187
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "security_level": 3
+            }
+        },
+        "PRODUCTION_DIAGNOSTICS_ACTIVE_STATUS": {
+            "hex_id": "0xfd42",
+            "node_name": "RCM",
+            "read": {
+                "input": {
+                    "PRO_DIAG_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "PRODIAG_ACTIVATED": 0,
+                                "PRODIAG_DEACTIVATED": 129
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "PRO_DIAG_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "PRODIAG_ACTIVATED": 0,
+                                "PRODIAG_DEACTIVATED": 129
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "PRODUCTION_DIAGNOSTICS_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "PRODIAG_ACTIVATED": 0,
+                                "PRODIAG_DEACTIVATED": 129
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "security_level": 3
+            }
+        },
+        "RCM_ARM_STATUS": {
+            "hex_id": "0xfd40",
+            "node_name": "RCM",
+            "read": {
+                "input": {
+                    "ARMSTATUS_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ARMED": 0,
+                                "UNARMED": 129
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "ARMSTATUS_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ARMED": 0,
+                                "UNARMED": 129
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "ARMSTATUS_BYTE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ARMED": 0,
+                                "UNARMED": 129
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "security_level": 3
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "RCM",
+    "routines": {
+        "CALIBRATE_IMU_SENSORS": {
+            "hex_id": "0x300f",
+            "node_name": "RCM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DATA": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {}
+                    },
+                    "INFO": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "BUSY_REPEAT_REQUEST": 33,
+                                "CONDITIONS_NOT_CORRECT": 34,
+                                "FAILURE": 38,
+                                "SPEED_HIGH": 136,
+                                "SUCCESSFUL": 32
+                            }
+                        }
+                    }
+                },
+                "output_size": 7,
+                "security_level": 3
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "INFO": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 32,
+                                "BUSY_REPEAT_REQUEST": 33,
+                                "CONDITIONS_NOT_CORRECT": 34,
+                                "FAILURE": 38,
+                                "SPEED_HIGH": 136
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 3
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 3
+            }
+        }
+    }
+}

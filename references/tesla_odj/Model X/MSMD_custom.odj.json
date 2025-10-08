@@ -1,0 +1,185 @@
+{
+    "data": {
+        "CALIBRATION_RESULTS": {
+            "hex_id": "0xFD41",
+            "node_name": "MSMD",
+            "read": {
+                "output": {
+                    "HEADREST": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    },
+                    "LIFT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    },
+                    "LUMBAR_H": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    },
+                    "LUMBAR_V": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    },
+                    "SLIDE": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    },
+                    "TILT": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INITIALIZED": 1,
+                                "NOT_INITIALIZED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            }
+        },
+        "NOMINAL_ENCODER_COUNTS": {
+            "hex_id": "0xFD40",
+            "node_name": "MSMD",
+            "write": {
+                "input": {
+                    "ENCODER_COUNTS": {
+                        "bit_length": 152,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NEW_LUMBAR": 126313585573167293273195488783069403218444288,
+                                "NO_DATA": 0,
+                                "OLD_LUMBAR": 126313585573167293273195472064221043195117568
+                            }
+                        }
+                    }
+                },
+                "input_size": 19,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "MSMD",
+    "routines": {
+        "SEAT_INIT": {
+            "hex_id": "0xF00B",
+            "node_name": "MSMD",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULTS_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_FAILED": 3,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "ROUTINE_NEVER_STARTED": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_ROUTINE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_IN_PROGRESS": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        }
+    }
+}

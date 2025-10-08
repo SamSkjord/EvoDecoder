@@ -1,0 +1,92 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "CHG",
+    "routines": {
+        "DISABLE_FAST_CHARGE": {
+            "hex_id": "0x404",
+            "node_name": "CHG",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "DISABLE_FAST_CHARGE_ACTION_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "DISABLE_FAST_CHARGE_REASON_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "DISABLE_FAST_CHARGE_CURRENT_VALUE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "DISABLE_FAST_CHARGE_REASON_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {
+                    "DISABLE_FAST_CHARGE_ACTION_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "DISABLE_FAST_CHARGE_REASON_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "DISABLE_FAST_CHARGE_CURRENT_VALUE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "DISABLE_FAST_CHARGE_REASON_CODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            }
+        }
+    }
+}

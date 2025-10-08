@@ -1,0 +1,929 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "BMS",
+    "routines": {
+        "CLEAR_BRICK6_SENSE": {
+            "hex_id": "0x40b",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "CLEAR_CONTACTOR_STRESS": {
+            "hex_id": "0x406",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "CLEAR_CONTACTOR_WOT_COUNTER": {
+            "hex_id": "0x407",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "CLEAR_ISOLATION_ALERT_COUNTERS": {
+            "hex_id": "0x40a",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "CLEAR_LATCH_BITS": {
+            "hex_id": "0x40d",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "CLEAR_SOC1_SNAPSHOT": {
+            "hex_id": "0x40c",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "CLEAR_WELDED_NEGATIVE_CONTACTOR_ALERT_LATCH": {
+            "hex_id": "0x405",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "CLEAR_WELDED_POSITIVE_CONTACTOR_ALERT_LATCH": {
+            "hex_id": "0x404",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "ENABLE_CONTACTORS": {
+            "hex_id": "0x401",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "LEGACY_BMS_ROUTINES": {
+            "hex_id": "0x400",
+            "node_name": "BMS",
+            "results": {
+                "input": {
+                    "ADDITIONAL_SERVICE_DATA": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "SERVICE_COMMAND": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "ERROR_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "ADDITIONAL_SERVICE_DATA": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "SERVICE_COMMAND": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "ERROR_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {
+                    "ADDITIONAL_SERVICE_DATA": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "SERVICE_COMMAND": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "ERROR_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "PROGRAM_PYRO_FUSE_BORN_DATE": {
+            "hex_id": "0x403",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PYRO_FUSE_BORN_MONTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "PYRO_FUSE_BORN_YEAR": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 2000.0
+                        }
+                    },
+                    "PYRO_FUSE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "BATTERYPOWERED_HYBRIDPYRO": 1,
+                                "BATTERYPOWERED_HYBRIDPYRO_2": 3,
+                                "SAND_FUSE": 4,
+                                "SELFPOWERED_HYBRIDPYRO": 2,
+                                "UNKNOWN": 0
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 4,
+                "security_level": 5
+            },
+            "start": {
+                "input": {
+                    "PYRO_FUSE_BORN_MONTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "PYRO_FUSE_BORN_YEAR": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 2000.0
+                        }
+                    },
+                    "PYRO_FUSE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "BATTERYPOWERED_HYBRIDPYRO": 1,
+                                "BATTERYPOWERED_HYBRIDPYRO_2": 3,
+                                "SAND_FUSE": 4,
+                                "SELFPOWERED_HYBRIDPYRO": 2,
+                                "UNKNOWN": 0
+                            }
+                        }
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "RESET_CAC": {
+            "hex_id": "0x412",
+            "node_name": "BMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        }
+    }
+}

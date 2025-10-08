@@ -1,0 +1,1561 @@
+{
+    "data": {
+        "ASSEMBLY_ID": {
+            "hex_id": "0xf01c",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "ASSEMBLY_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "ASSEMBLY_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "COMPONENT_AND_FIRMWARE_TYPE": {
+            "hex_id": "0x101",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "BOOTLOADER_PROTOCOL_VERSION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "COMPONENT_KEY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "FIRMWARE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "BOOTLOADER_PROTOCOL_VERSION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "COMPONENT_KEY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "FIRMWARE_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            }
+        },
+        "CONFIGURATION_RECORD": {
+            "hex_id": "0x439",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "CONFIGURATION_RECORD": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 64,
+                "output": {
+                    "CONFIGURATION_RECORD": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 64,
+                "security_level": 0
+            }
+        },
+        "ENS_STATUS": {
+            "hex_id": "0x50e",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "ENS_CRASH": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ENS_IDLE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ENS_SNA": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "ENS_CRASH": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ENS_IDLE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ENS_SNA": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "GET_ECULOG_DESCRIPTOR": {
+            "hex_id": "0xe00",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 9,
+                "output": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 9,
+                "security_level": 5
+            }
+        },
+        "SET_ECULOG_TRANSFER_STATUS": {
+            "hex_id": "0xe0f",
+            "node_name": "HVP",
+            "write": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TRANSFER_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TRANSFER_ABORTED": 2,
+                                "TRANSFER_COMPLETED": 0,
+                                "TRANSFER_SUSPENDED": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_TRANSFER_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 5,
+                "security_level": 0
+            }
+        },
+        "USAGE_ID": {
+            "hex_id": "0xf01d",
+            "node_name": "HVP",
+            "read": {
+                "input": {
+                    "USAGE_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "USAGE_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "HVP",
+    "routines": {
+        "CALIBRATION_RECORD": {
+            "hex_id": "0x438",
+            "node_name": "HVP",
+            "results": {
+                "input": {
+                    "CALIBRATION_RECORD_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "CALIBRATION_RECORD": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "ENABLE_HVIL_CURRENT_SOURCE": {
+            "hex_id": "0x501",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ENABLED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVIL_IN_VOLTAGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_OUT_VOLTAGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 9,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            },
+                            "enum_name": "STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 4,
+                                "INVALID_ARGUMENTS": 3,
+                                "NOT_AVAILABLE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            },
+                            "enum_name": "STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_CP_INTERFACE": {
+            "hex_id": "0x402",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CP_FAULT_LINE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CP_LATCH_EN_LINE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_CP_INTERLOCK": {
+            "hex_id": "0x405",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "HV_CABLE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_ENS": {
+            "hex_id": "0x403",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ENS_MIA": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_HV_INTERLOCK": {
+            "hex_id": "0x400",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "HVIL_CURRENT_SOURCE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVIL_TEST_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INTERNAL_OPEN_HVIL_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NO_12V_SUPPLY_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PENTHOUSE_LID_OPEN_HVIL_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_NODE_HVIL_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_OPEN_HVIL_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_HV_INTERLOCK_EXTENDED": {
+            "hex_id": "0x407",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DIF_CM_MEASUREMENT_VALID": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "DIR_CM_MEASUREMENT_VALID": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVIL_DIF_CM_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_DIR_CM_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_INTERNAL_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_IN_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_OUT_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_PENTHOUSE_LID_VOLTAGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVIL_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "CURRENT_SOURCE_FAULT": 2,
+                                "DI_OPEN_FAULT": 12,
+                                "DI_STATUS_MISSING_FAULT": 10,
+                                "INTERNAL_OPEN_FAULT": 3,
+                                "NO_12V_SUPPLY": 8,
+                                "OK": 1,
+                                "PENTHOUSE_LID_OPEN_FAULT": 5,
+                                "PM_OPEN_FAULT": 13,
+                                "PM_STATUS_MISSING_FAULT": 11,
+                                "SNA": 14,
+                                "UNKNOWN": 0,
+                                "UNKNOWN_LOCATION_OPEN_FAULT": 6,
+                                "VEHICLE_NODE_FAULT": 7,
+                                "VEHICLE_OPEN_FAULT": 4,
+                                "VEHICLE_OR_PENTHOUSE_LID_OPEN_FAULT": 9
+                            },
+                            "enum_name": "HVIL_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INTERNAL_MEASUREMENT_VALID": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PENTHOUSE_LID_MEASUREMENT_VALID": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 9,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_LV_POWER": {
+            "hex_id": "0x401",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "12V_POWER_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "CONTACTOR_POWER_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_PCS_INTERFACE": {
+            "hex_id": "0x404",
+            "node_name": "HVP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PCS_CHG_EN_LINE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PCS_DCDC_EN_LINE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PCS_EN_LINE_FAILLURE": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_START_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "SELF_TEST_STOP_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

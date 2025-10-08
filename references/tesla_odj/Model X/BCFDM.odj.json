@@ -1,0 +1,647 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "BCFDM",
+    "routines": {
+        "SELF_TEST_V2_PFD_ACTUATOR_CAL_AND_WRITE_NVRAM": {
+            "hex_id": "0x701",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DOOR_ANGLE_NOT_IN_RANGE": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
+                    "DOOR_NOT_CLOSED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
+                    "MAX_CYCLES_REACHED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
+                    "PITCH_NOT_IN_RANGE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
+                    "ROLL_NOT_IN_RANGE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    },
+                    "TIMEOUT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SET_BRAKE_CALIBRATION": {
+            "hex_id": "0x420",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {
+                    "BRAKE_DATA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "GAIN_CCW": 2,
+                                "GAIN_CW": 0,
+                                "OFFSET_CCW": 3,
+                                "OFFSET_CW": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "BRAKE_DATA": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 100.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR": 3,
+                                "INTERRUPTED": 5,
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "STOPPED": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 5,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "BRAKE_DATA": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 100.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "BRAKE_DATA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "GAIN_CCW": 2,
+                                "GAIN_CW": 0,
+                                "OFFSET_CCW": 3,
+                                "OFFSET_CW": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 5,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR": 3,
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_IN_PROGRESS": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {
+                    "BRAKE_DATA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "GAIN_CCW": 2,
+                                "GAIN_CW": 0,
+                                "OFFSET_CCW": 3,
+                                "OFFSET_CW": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR": 4,
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "ROUTINE_NOT_STOPPABLE": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TEST_DOOR": {
+            "hex_id": "0x400",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "TEST_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "COULD_NOT_CINCH_CLOSED": 7,
+                                "COULD_NOT_CLOSE_WITHOUT_CINCHING": 4,
+                                "COULD_NOT_FIND_CINCH_HOME": 8,
+                                "COULD_NOT_OPEN_DOOR": 5,
+                                "FIRMWARE_BUG": 9,
+                                "ICE_BREAKER_EXTEND_FAILED": 11,
+                                "ICE_BREAKER_RETRACT_FAILED": 12,
+                                "NEVER_DETECTED_AJAR": 6,
+                                "NOT_RUN": 0,
+                                "NO_MANUAL_RELEASE_DURING_TEST": 10,
+                                "RUNNING": 1,
+                                "SUCCESSFUL": 3,
+                                "WAITING_ON_ASSOCIATE": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ALREADY_RUNNING": 1,
+                                "ERROR": 2,
+                                "STARTED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR": 2,
+                                "STOPPED": 0,
+                                "WAS_NOT_RUNNING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TEST_DOOR_MANUAL_RELEASE": {
+            "hex_id": "0x500",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "TEST_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "COULD_NOT_CINCH_CLOSED": 7,
+                                "COULD_NOT_CLOSE_WITHOUT_CINCHING": 4,
+                                "COULD_NOT_FIND_CINCH_HOME": 8,
+                                "COULD_NOT_OPEN_DOOR": 5,
+                                "FIRMWARE_BUG": 9,
+                                "ICE_BREAKER_EXTEND_FAILED": 11,
+                                "ICE_BREAKER_RETRACT_FAILED": 12,
+                                "NEVER_DETECTED_AJAR": 6,
+                                "NOT_RUN": 0,
+                                "NO_MANUAL_RELEASE_DURING_TEST": 10,
+                                "RUNNING": 1,
+                                "SUCCESSFUL": 3,
+                                "WAITING_ON_ASSOCIATE": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ALREADY_RUNNING": 1,
+                                "ERROR": 2,
+                                "STARTED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ERROR": 2,
+                                "STOPPED": 0,
+                                "WAS_NOT_RUNNING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TEST_MIRROR_POWERFOLD": {
+            "hex_id": "0x423",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INTERRUPTED": 5,
+                                "OK_AND_DONE": 0,
+                                "PREMATURE_STALL": 3,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "STALL_TIMEOUT": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_IN_PROGRESS": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK": 0,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "ROUTINE_NOT_STOPPABLE": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TEST_MIRROR_TILT": {
+            "hex_id": "0x422",
+            "node_name": "BCFDM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ENCODER_ERROR": 3,
+                                "INTERRUPTED": 7,
+                                "MISC_ERROR": 6,
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "TILT_OVERCURRENT": 5,
+                                "TILT_UNDERCURRENT": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "TILT_TEST_NOT_SUPPORTED": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "ROUTINE_NOT_STOPPABLE": 3,
+                                "ROUTINE_STOPPED_PREMATURELY": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

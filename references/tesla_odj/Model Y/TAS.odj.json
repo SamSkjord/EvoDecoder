@@ -1,0 +1,640 @@
+{
+    "data": {
+        "CONTI_CALIBRATION_HEIGHT_FL": {
+            "hex_id": "0xa030",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_FR": {
+            "hex_id": "0xa031",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_RL": {
+            "hex_id": "0xa032",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_RR": {
+            "hex_id": "0xa033",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_STORE_CALIBRATION_VALUES": {
+            "hex_id": "0xa034",
+            "node_name": "TAS",
+            "write": {
+                "input": {
+                    "STORE_CALIBRATION_VALUES": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        },
+        "JACK_MODE": {
+            "hex_id": "0xa061",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_RUN_MODE": {
+            "hex_id": "0xa062",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            },
+                            "enum_name": "TAS_RUN_MODE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            },
+                            "enum_name": "TAS_RUN_MODE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            },
+                            "enum_name": "TAS_RUN_MODE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "TAS",
+    "routines": {
+        "TAS_COMPRESSOR_VALVE_CONNECTION": {
+            "hex_id": "0x491",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_REQUEST_ROUTINE_RESULTS_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_BOOST": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_EXHAUST": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_START_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_STOP_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_VALVE_BLOCK_CONNECTION": {
+            "hex_id": "0x490",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PRESSURE_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_REQUEST_ROUTINE_RESULTS_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_FL": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_FR": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_RESERVOIR": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_RL": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VALVE_RR": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_START_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "TAS_SELF_TEST_STOP_RETURN_VALUES"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

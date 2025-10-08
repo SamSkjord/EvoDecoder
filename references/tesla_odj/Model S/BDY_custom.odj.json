@@ -1,0 +1,184 @@
+{
+    "data": {
+        "LEVEL_DATA": {
+            "hex_id": "0x313",
+            "node_name": "BDY",
+            "read": {
+                "output": {
+                    "FRONT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "FRONT_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "REAR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "REAR_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 8,
+                "security_level": 1
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "BDY",
+    "routines": {
+        "PEKTRON_VIN_LEARN": {
+            "hex_id": "0x405",
+            "node_name": "BDY",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Fail": 0,
+                                "Not Started": 4,
+                                "Pass": 1,
+                                "Pending": 3,
+                                "Started": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            }
+        },
+        "SET_LEVEL_BASELINE": {
+            "hex_id": "0x41D",
+            "node_name": "BDY",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FRONT_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "REAR_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Failed": 5,
+                                "Idle": 0,
+                                "Pending": 1,
+                                "Reading": 2,
+                                "Storing": 3,
+                                "Success": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 5,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FRONT_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "REAR_BASELINE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Failed": 5,
+                                "Idle": 0,
+                                "Pending": 1,
+                                "Reading": 2,
+                                "Storing": 3,
+                                "Success": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 5,
+                "security_level": 1
+            }
+        }
+    }
+}

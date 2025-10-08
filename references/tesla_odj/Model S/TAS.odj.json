@@ -1,0 +1,2045 @@
+{
+    "data": {
+        "CONTI_CALIBRATION_HEIGHT_FL": {
+            "hex_id": "0xa030",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_FR": {
+            "hex_id": "0xa031",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_RL": {
+            "hex_id": "0xa032",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_CALIBRATION_HEIGHT_RR": {
+            "hex_id": "0xa033",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CALIBRATION_VALUE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "CONTI_STORE_CALIBRATION_VALUES": {
+            "hex_id": "0xa034",
+            "node_name": "TAS",
+            "write": {
+                "input": {
+                    "STORE_CALIBRATION_VALUES": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        },
+        "JACK_MODE": {
+            "hex_id": "0xa061",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "JACK_MODE_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_OFFSET_FL": {
+            "hex_id": "0xa080",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_OFFSET_FR": {
+            "hex_id": "0xa081",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_OFFSET_RL": {
+            "hex_id": "0xa082",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_OFFSET_RR": {
+            "hex_id": "0xa083",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "HEIGHT_SENSOR_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_RUN_MODE": {
+            "hex_id": "0xa062",
+            "node_name": "TAS",
+            "read": {
+                "input": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "RUN_MODE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RUN_MODE_ASSEMBLY": 3,
+                                "RUN_MODE_DAN": 4,
+                                "RUN_MODE_DYNO": 7,
+                                "RUN_MODE_INIT": 0,
+                                "RUN_MODE_LOW_POWER": 6,
+                                "RUN_MODE_NORMAL": 5,
+                                "RUN_MODE_SERVICE": 2,
+                                "RUN_MODE_SYSTEM_CHECK": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "TAS",
+    "routines": {
+        "CONTI_FINISH_SERVICE": {
+            "hex_id": "0x309",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "CONTI_LEVELING_TO_SET_LEVEL": {
+            "hex_id": "0x305",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "SET_LEVEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "HIGH": 5,
+                                "LOW": 3,
+                                "STANDARD": 4,
+                                "VERY_HIGH": 6,
+                                "VERY_LOW": 2
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "CONTI_MEASURE_PRESSURE_ALL": {
+            "hex_id": "0x315",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "MEASURED_PRESSURE_FL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_FR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RES": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 11,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "RESET_CALIBRATIONS": {
+            "hex_id": "0x425",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "RESET": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_AIRLINE_TEST": {
+            "hex_id": "0x486",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "AIRLINE_TEST_AIRLINE_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "AIRLINE_TEST_EXT_FAILURE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_ASSISTED_INFLATE": {
+            "hex_id": "0x482",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "ASSISTED_INFLATE_TARGET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TAS_ASSISTED_INFLATE_TARGET_COUNT": 8,
+                                "TAS_ASSISTED_INFLATE_TARGET_FL": 0,
+                                "TAS_ASSISTED_INFLATE_TARGET_FR": 1,
+                                "TAS_ASSISTED_INFLATE_TARGET_FRONT_AXLE": 5,
+                                "TAS_ASSISTED_INFLATE_TARGET_REAR_AXLE": 6,
+                                "TAS_ASSISTED_INFLATE_TARGET_RESERVOIR": 4,
+                                "TAS_ASSISTED_INFLATE_TARGET_RL": 2,
+                                "TAS_ASSISTED_INFLATE_TARGET_RR": 3,
+                                "TAS_ASSISTED_INFLATE_TARGET_SPRINGS": 7
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_COMPRESSOR_CONNECTION": {
+            "hex_id": "0x492",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "COMPRESSOR": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_COMPRESSOR_VALVE_CONNECTION": {
+            "hex_id": "0x491",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    },
+                    "VALVE_BOOST": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "VALVE_EXHAUST": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_DEFLATE": {
+            "hex_id": "0x484",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "DEFLATE_TARGET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TAS_DEFLATE_TARGET_ALL": 8,
+                                "TAS_DEFLATE_TARGET_COUNT": 9,
+                                "TAS_DEFLATE_TARGET_FL": 0,
+                                "TAS_DEFLATE_TARGET_FR": 1,
+                                "TAS_DEFLATE_TARGET_FRONT_AXLE": 5,
+                                "TAS_DEFLATE_TARGET_REAR_AXLE": 6,
+                                "TAS_DEFLATE_TARGET_RESERVOIR": 4,
+                                "TAS_DEFLATE_TARGET_RL": 2,
+                                "TAS_DEFLATE_TARGET_RR": 3,
+                                "TAS_DEFLATE_TARGET_SPRINGS": 7
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_CAL": {
+            "hex_id": "0x401",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "CAL_LEVEL_FRONT_LEFT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "CAL_LEVEL_FRONT_RIGHT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "CAL_LEVEL_REAR_LEFT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "CAL_LEVEL_REAR_RIGHT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "input_size": 8,
+                "output": {
+                    "FAULTFL": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FAULTFR": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FAULTRL": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "FAULTRR": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "OUTOFRANGEFL": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "OUTOFRANGEFR": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "OUTOFRANGERL": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "OUTOFRANGERR": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "UNCALIBRATEABLEFL": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "UNCALIBRATEABLEFR": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "UNCALIBRATEABLERL": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "UNCALIBRATEABLERR": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_CONNECTION_FL": {
+            "hex_id": "0x49a",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CONNECTION": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_CONNECTION_FR": {
+            "hex_id": "0x49b",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CONNECTION": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_CONNECTION_RL": {
+            "hex_id": "0x49c",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CONNECTION": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_HEIGHT_SENSOR_CONNECTION_RR": {
+            "hex_id": "0x49d",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CONNECTION": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TAS_LEVEL_TO_HEIGHT": {
+            "hex_id": "0x480",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "HEIGHT_TARGET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "HIGH": 1,
+                                "LOW": 3,
+                                "STANDARD": 2,
+                                "VERY_HIGH": 0,
+                                "VERY_LOW": 4
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_MEASURE_PRESSURE": {
+            "hex_id": "0x485",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "MEASURED_PRESSURE_FL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_FR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RESERVOIR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "MEASURED_PRESSURE_RR": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    },
+                    "ROUTINE_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 1,
+                                "ERROR": 3,
+                                "NOT_USED": 0,
+                                "SUCCESS": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 11,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TAS_VALVE_BLOCK_CONNECTION": {
+            "hex_id": "0x490",
+            "node_name": "TAS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PRESSURE_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "ROUTINE_RESULT_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NEVER_STARTED": 3,
+                                "FAILED_ROUTINE_INTERRUPTED": 2,
+                                "FAILED_ROUTINE_STOPPED": 1,
+                                "PENDING": 4,
+                                "SUCCESS": 0
+                            }
+                        }
+                    },
+                    "VALVE_FL": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "VALVE_FR": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "VALVE_RESERVOIR": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "VALVE_RL": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
+                    "VALVE_RR": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ANOTHER_ROUTINE_RUNNING": 2,
+                                "FAILED_CONDITIONS_NOT_MET": 3,
+                                "FAILED_ROUTINE_ALREADY_RUNNING": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_NOT_STARTED": 1,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

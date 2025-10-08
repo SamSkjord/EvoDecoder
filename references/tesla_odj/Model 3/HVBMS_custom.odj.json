@@ -1,0 +1,545 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "HVBMS",
+    "routines": {
+        "CLEAR_BATTERY_COOLANT_FLOOD_ALERT": {
+            "hex_id": "0x445",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUEST_RECEIVED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            }
+        },
+        "CLEAR_INTERNAL_ISOLATION_ALERT": {
+            "hex_id": "0x444",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUEST_RECEIVED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            }
+        },
+        "CLEAR_SOC1_SNAPSHOT": {
+            "hex_id": "0x40f",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE": 2,
+                                "SUCCESS": 0,
+                                "UPDATE_PENDING": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            }
+        },
+        "RESET_CAC": {
+            "hex_id": "0x40c",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RESET_CAC_ACCEPTED": 1,
+                                "RESET_CAC_REJECTED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            }
+        },
+        "RESET_HISTOGRAM_RECORDS": {
+            "hex_id": "0x430",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RECORDS_RESET": 0,
+                                "RECORD_RESET_ABORTED": 6,
+                                "RECORD_RESET_FAILED": 5,
+                                "RECORD_RESET_IN_PROGRESS": 4,
+                                "RECORD_RESET_NOT_STARTED": 7,
+                                "START_RESET_REQUEST_ACCEPTED": 1,
+                                "START_RESET_REQUEST_REJECTED": 2,
+                                "STOP_RESET_REQUEST_ACCEPTED": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RECORDS_RESET": 0,
+                                "RECORD_RESET_ABORTED": 6,
+                                "RECORD_RESET_FAILED": 5,
+                                "RECORD_RESET_IN_PROGRESS": 4,
+                                "RECORD_RESET_NOT_STARTED": 7,
+                                "START_RESET_REQUEST_ACCEPTED": 1,
+                                "START_RESET_REQUEST_REJECTED": 2,
+                                "STOP_RESET_REQUEST_ACCEPTED": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RECORDS_RESET": 0,
+                                "RECORD_RESET_ABORTED": 6,
+                                "RECORD_RESET_FAILED": 5,
+                                "RECORD_RESET_IN_PROGRESS": 4,
+                                "RECORD_RESET_NOT_STARTED": 7,
+                                "START_RESET_REQUEST_ACCEPTED": 1,
+                                "START_RESET_REQUEST_REJECTED": 2,
+                                "STOP_RESET_REQUEST_ACCEPTED": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            }
+        },
+        "RESET_ISOLATION_COUNTERS": {
+            "hex_id": "0x436",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            }
+        },
+        "RESET_SOC": {
+            "hex_id": "0x407",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "RESET_SOC_ACCEPTED": 1,
+                                "RESET_SOC_REJECTED": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            }
+        },
+        "RESET_VSH_FAULT": {
+            "hex_id": "0x41c",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUEST_RECEIVED": 1,
+                                "RUNNING": 4
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "FAILED_STOP_NOT_ALLOWED": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 19
+            }
+        },
+        "TRIGGER_THERMAL_EVENT_SUSPECTED": {
+            "hex_id": "0x447",
+            "node_name": "HVBMS",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            },
+            "start": {
+                "input": {
+                    "TRIGGER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "CLEAR": 3,
+                                "NONE": 0,
+                                "SET_IN_SLEEP": 2,
+                                "SET_NOW": 1
+                            },
+                            "enum_name": "THERMAL_EVENT_SUSPECTED_TRIGGER"
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 19
+            }
+        }
+    }
+}

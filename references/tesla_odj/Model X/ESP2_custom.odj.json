@@ -1,0 +1,150 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "ESP2",
+    "routines": {
+        "AX_CAL": {
+            "hex_id": "0xF100",
+            "node_name": "ESP2",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FINISHED": 1,
+                                "ROUTINE_CANCELLED_BY_ECU": 3,
+                                "ROUTINE_IDENTIFIER_NOT_CORRECT": 4,
+                                "ROUTINE_IN_PROGRESS": 2,
+                                "ROUTINE_NOT_STARTED": 6
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "DELPHI": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INPUT": 2
+                            }
+                        }
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ALREADY_STARTED": 2,
+                                "FINISHED": 4,
+                                "ROUTINE_ERROR": 5,
+                                "START_NOT_POSSIBLE": 3,
+                                "SUCCESSFUL": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ALREADY_STOPPED_OR_NOT_STARTED": 2,
+                                "INCORRECT_ROUTINE_IDENTIFIER": 4,
+                                "ROUTINE_STOPPED_ABNORMALLY": 3,
+                                "STOP_SUCCESSFUL": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SAS_RESET_OFFSET": {
+            "hex_id": "0xF103",
+            "node_name": "ESP2",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ROUTINE_CANCELLED_BY_ECU": 3,
+                                "ROUTINE_FINISHED": 1,
+                                "ROUTINE_IDENTIFIER_NOT_CORRECT": 4,
+                                "ROUTINE_NOT_STARTED": 6,
+                                "STILL_RUNNING": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ROUTINE_NOT_STARTED": 0,
+                                "ROUTINE_STARTED": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        }
+    }
+}

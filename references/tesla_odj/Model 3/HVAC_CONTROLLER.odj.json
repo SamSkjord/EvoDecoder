@@ -1,0 +1,93 @@
+{
+    "data": {},
+    "io_controls": {
+        "OVERRIDE_CABIN_AIR_MODE_ADJUST": {
+            "hex_id": "0x580",
+            "input": {
+                "CABIN_AIR_MODE_1ST_ROW": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                },
+                "CABIN_AIR_MODE_2ND_ROW": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 1,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                }
+            },
+            "input_size": 2,
+            "node_name": "HVAC",
+            "output": {
+                "CABIN_AIR_MODE_1ST_ROW": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                },
+                "CABIN_AIR_MODE_2ND_ROW": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 1,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                }
+            },
+            "output_size": 2,
+            "security_level": 0
+        },
+        "OVERRIDE_HVAC_ACTUATORS_ADJUST": {
+            "hex_id": "0x582",
+            "input": {
+                "CHANNEL_TARGET_PCT": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 1,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                },
+                "OVERRIDE_CHANNEL": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                }
+            },
+            "input_size": 2,
+            "node_name": "HVAC",
+            "output": {
+                "CHANNEL_TARGET_PCT": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 1,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                },
+                "OVERRIDE_CHANNEL": {
+                    "bit_length": 8,
+                    "bit_position": 0,
+                    "byte_position": 0,
+                    "data_type": "uint",
+                    "default": null,
+                    "physical_type": "uint"
+                }
+            },
+            "output_size": 2,
+            "security_level": 0
+        }
+    },
+    "node_name": "HVAC",
+    "routines": {}
+}

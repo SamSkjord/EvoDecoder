@@ -1,0 +1,56 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "RCM",
+    "routines": {
+        "CALIBRATE_IMU_SENSORS": {
+            "hex_id": "0x300F",
+            "node_name": "RCM",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "INFO": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 33,
+                                "SUCCESSFUL": 32
+                            }
+                        }
+                    }
+                },
+                "output_size": 4,
+                "security_level": 3
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "INFO": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ACTIVE": 32,
+                                "BUSY_REPEAT_REQUEST": 33,
+                                "CONDITIONS_NOT_CORRECT": 34
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 3
+            }
+        }
+    }
+}

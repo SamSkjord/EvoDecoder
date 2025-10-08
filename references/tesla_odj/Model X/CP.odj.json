@@ -1,0 +1,89 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "CP",
+    "routines": {
+        "DOOR_SENSOR_OFFSET_CALIBRATION": {
+            "hex_id": "0x402",
+            "node_name": "CP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DOOR_SENSOR_OFFSET_CALIBRATION": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DOOR_SENSOR_OFFSET_CALIBRATION": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "LATCH_SENSOR_OFFSET_CALIBRATION": {
+            "hex_id": "0x401",
+            "node_name": "CP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "LATCH_SENSOR_OFFSET_CALIBRATION": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "LATCH_SENSOR_OFFSET_CALIBRATION": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        }
+    }
+}

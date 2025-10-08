@@ -1,0 +1,310 @@
+{
+    "data": {
+        "ALIGNMENT_HOR_ANGLE": {
+            "hex_id": "0xFC01",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "ANGLE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "float",
+                        "default": null
+                    }
+                },
+                "output_size": 2,
+                "security_level": 17
+            }
+        },
+        "PLANT_MODE_STATUS": {
+            "hex_id": "0xA022",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Entered": 1,
+                                "Inactive": 0,
+                                "Learning": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 17
+            }
+        },
+        "READ_VIN": {
+            "hex_id": "0xF199",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "VIN": {
+                        "bit_length": 136,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "ascii",
+                        "default": null
+                    }
+                },
+                "output_size": 17,
+                "security_level": 17
+            }
+        },
+        "SDA_STATE": {
+            "hex_id": "0x050A",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Finished": 2,
+                                "Not Running": 0,
+                                "Running": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 17
+            }
+        },
+        "SDA_STATUS": {
+            "hex_id": "0x0509",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "ADVICE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Acceleration too high": 8,
+                                "No Advice": 1,
+                                "No Advice, Please drive Straight": 33,
+                                "None": 0,
+                                "Please drive straight": 64,
+                                "Speed Too Fast": 4,
+                                "Speed Too Slow": 2,
+                                "Stability control active. Please drive on roads with good condition": 128
+                            }
+                        }
+                    },
+                    "PROGRESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 64,
+                            "factor": 100,
+                            "maximum": 100,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 17
+            }
+        },
+        "SOFTWARE_VERSION_INFORMATION": {
+            "hex_id": "0xF195",
+            "node_name": "RADCB",
+            "read": {
+                "output": {
+                    "FW_VERSION": {
+                        "bit_length": 24,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 3,
+                "security_level": 17
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "RADCB",
+    "routines": {
+        "BOSCH_PLANT_MODE": {
+            "hex_id": "0x0A03",
+            "node_name": "RADCB",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FAILURE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": "null",
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Country Code Not Learned": 4,
+                                "Country Code Not Learned, XWD Not Learned": 20,
+                                "Model Year Not Learned": 1,
+                                "Model Year Not Learned, Country Code Not Learned": 5,
+                                "Model Year Not Learned, Country Code Not Learned, XWD Not Learned": 21,
+                                "Model Year Not Learned, VIN Not Learned": 9,
+                                "Model Year Not Learned, VIN Not Learned, XWD Not Learned": 25,
+                                "Model Year Not Learned, Vehicle Line Not Learned": 3,
+                                "Model Year Not Learned, Vehicle Line Not Learned, Country Code Not Learned": 7,
+                                "Model Year Not Learned, Vehicle Line Not Learned, Country Code Not Learned, XWD Not Learned": 23,
+                                "Model Year Not Learned, Vehicle Line Not Learned, VIN Not Learned": 11,
+                                "Model Year Not Learned, Vehicle Line Not Learned, VIN Not Learned, XWD Not Learned": 27,
+                                "Model Year Not Learned, Vehicle Line Not Learned, XWD Not Learned": 19,
+                                "Model Year Not Learned, XWD Not Learned": 17,
+                                "No Failure": 0,
+                                "VIN Not Learned": 8,
+                                "VIN Not Learned, Country Code Not Learned": 12,
+                                "VIN Not Learned, Country Code Not Learned, XWD Not Learned": 28,
+                                "VIN Not Learned, Model Year Not Learned, Country Code Not Learned": 13,
+                                "VIN Not Learned, Model Year Not Learned, Country Code Not Learned, XWD Not Learned": 29,
+                                "VIN Not Learned, Model Year Not Learned, Vehicle Line Not Learned, Country Code Not Learned": 15,
+                                "VIN Not Learned, Model Year Not Learned, Vehicle Line Not Learned, Country Code Not Learned, XWD Not Learned": 31,
+                                "VIN Not Learned, Vehicle Line Not Learned, Country Code Not Learned": 14,
+                                "VIN Not Learned, Vehicle Line Not Learned, Country Code Not Learned, XWD Not Learned": 30,
+                                "VIN Not Learned, XWD Not Learned": 24,
+                                "Vehicle Line Not Learned": 2,
+                                "Vehicle Line Not Learned, Country Code Not Learned": 6,
+                                "Vehicle Line Not Learned, Country Code Not Learned, XWD Not Learned": 22,
+                                "Vehicle Line Not Learned, VIN Not Learned": 10,
+                                "Vehicle Line Not Learned, VIN Not Learned, XWD Not Learned": 26,
+                                "Vehicle Line Not Learned, XWD Not Learned": 18,
+                                "XWD Not Learned": 16
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": "null",
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Routine Failed": 0,
+                                "Routine Passed": 1,
+                                "Routine in progress": 2
+                            }
+                        }
+                    }
+                },
+                "output_size": 2,
+                "security_level": 17
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 17
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 17
+            }
+        },
+        "SERVICE_DRIVE_ALIGNMENT": {
+            "hex_id": "0x0A09",
+            "node_name": "RADCB",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "HOR_NMBR_SCREW_TURNS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": "null",
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1,
+                            "factor": 0.125,
+                            "maximum": 31.875,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "HOR_SCREW_ROTATION_DIRECTION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": "null",
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Clockwise": 2,
+                                "Counter-clockwise": 1,
+                                "No Turns": 0
+                            }
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": "null",
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "Finished": 2,
+                                "Not Running": 0,
+                                "Running": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 0,
+                "security_level": 17
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 17
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 17
+            }
+        }
+    }
+}

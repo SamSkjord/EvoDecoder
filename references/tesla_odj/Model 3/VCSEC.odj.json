@@ -1,0 +1,2600 @@
+{
+    "data": {
+        "BOARD_PART_NUMBER": {
+            "hex_id": "0xf012",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "BOARD_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            }
+        },
+        "BOARD_SERIAL_NUMBER": {
+            "hex_id": "0xf013",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "BOARD_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            }
+        },
+        "ECU_CONFIG_PROTOBUF": {
+            "hex_id": "0x1337",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "CRC": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PROTOBUF": {
+                        "bit_length": 2400,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 306,
+                "output": {
+                    "CRC": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PROTOBUF": {
+                        "bit_length": 2400,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 306,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CRC": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PROTOBUF": {
+                        "bit_length": 2400,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 306,
+                "security_level": 0
+            }
+        },
+        "GET_ECULOG_DESCRIPTOR": {
+            "hex_id": "0xe00",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "ID": {
+                        "bit_length": 64,
+                        "bit_position": 0,
+                        "byte_position": 10,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PRIORITY"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 18,
+                "output": {
+                    "ID": {
+                        "bit_length": 64,
+                        "bit_position": 0,
+                        "byte_position": 10,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PRIORITY"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 8,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 18,
+                "security_level": 0
+            }
+        },
+        "NFC_AMPLITUDE_MEASUREMENT": {
+            "hex_id": "0x852",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "CENTER_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "LEFT_B_PILLAR_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "RIGHT_B_PILLAR_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "CENTER_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "LEFT_B_PILLAR_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "RIGHT_B_PILLAR_NFC_READER_AMPLITUDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "CENTER_NFC_READER_CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "LEFT_B_PILLAR_NFC_READER_CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "RIGHT_B_PILLAR_NFC_READER_CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 3,
+                "security_level": 0
+            }
+        },
+        "NFC_ANTENNA_DRIVE_TYPE": {
+            "hex_id": "0x853",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "CENTER_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "CENTER_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            },
+                            "enum_name": "NFC_ANTENNA_DRIVE_TYPE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            }
+        },
+        "NFC_ANTENNA_SELECTION": {
+            "hex_id": "0x905",
+            "node_name": "VCSEC",
+            "write": {
+                "input": {
+                    "NFC_ANTENNA_SIDE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_ANTENNA_DEFAULT": 0,
+                                "NFC_ANTENNA_LEFT": 1,
+                                "NFC_ANTENNA_RIGHT": 2
+                            },
+                            "enum_name": "NFC_ANTENNA_SIDE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFC_READER_CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "NFC_RADIO_STATE": {
+            "hex_id": "0x901",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "CENTER_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFT_B_PILLAR_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHT_B_PILLAR_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "CENTER_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFT_B_PILLAR_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHT_B_PILLAR_NFC_READER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_RADIOSTATE_DISABLED": 0,
+                                "NFC_RADIOSTATE_ENABLED": 1,
+                                "NFC_RADIOSTATE_SLEEPING": 2,
+                                "NFC_RADIO_STATE_CHANGING_STATE": 3
+                            },
+                            "enum_name": "NFC_READER_STATE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            }
+        },
+        "PACKAGE_PART_NUMBER": {
+            "hex_id": "0xf014",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "output": {
+                    "PACKAGE_PART_NUMBER": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 20,
+                "security_level": 0
+            }
+        },
+        "PACKAGE_SERIAL_NUMBER": {
+            "hex_id": "0xf015",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 14,
+                "output": {
+                    "PACKAGE_SERIAL_NUMBER": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 14,
+                "security_level": 0
+            }
+        },
+        "SET_ECULOG_TRANSFER_STATUS": {
+            "hex_id": "0xe0f",
+            "node_name": "VCSEC",
+            "write": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TRANSFER_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TRANSFER_ABORTED": 2,
+                                "TRANSFER_COMPLETED": 0,
+                                "TRANSFER_SUSPENDED": 1
+                            },
+                            "enum_name": "ECULOG_UPLOAD_TRANSFER_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 5,
+                "security_level": 0
+            }
+        },
+        "TPMS_MAC_ADDRESS_SENSOR_0": {
+            "hex_id": "0xf14",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 6,
+                "output": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 6,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PAIR_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 7,
+                "security_level": 0
+            }
+        },
+        "TPMS_MAC_ADDRESS_SENSOR_1": {
+            "hex_id": "0xf15",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 6,
+                "output": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 6,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PAIR_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 7,
+                "security_level": 0
+            }
+        },
+        "TPMS_MAC_ADDRESS_SENSOR_2": {
+            "hex_id": "0xf16",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 6,
+                "output": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 6,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PAIR_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 7,
+                "security_level": 0
+            }
+        },
+        "TPMS_MAC_ADDRESS_SENSOR_3": {
+            "hex_id": "0xf17",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 6,
+                "output": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 6,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "MAC_ADDRESS": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PAIR_SENSOR": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 7,
+                "security_level": 0
+            }
+        },
+        "TRIGGER_ECULOG_UPLOAD_REQUEST": {
+            "hex_id": "0xe0d",
+            "node_name": "VCSEC",
+            "write": {
+                "input": {
+                    "ID": {
+                        "bit_length": 64,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PAYLOAD": {
+                        "bit_length": 64,
+                        "bit_position": 0,
+                        "byte_position": 12,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 20,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "VCSEC",
+    "routines": {
+        "ADD_ENTROPY": {
+            "hex_id": "0x740",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "RANDOMDATA": {
+                        "bit_length": 400,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 50,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "ENABLE_NFC_READER": {
+            "hex_id": "0x809",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "READER_CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "READER_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_DISABLE": 0,
+                                "NFC_READER_ENABLE": 1,
+                                "NFC_READER_SLEEP": 2
+                            },
+                            "enum_name": "NFC_READER_DESIRED_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "TIME_IN_SECONDS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 3,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GENERATE_IMMOBILIZER_KEY": {
+            "hex_id": "0x720",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "KEY": {
+                        "bit_length": 128,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "TIMERSTARTED": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 18,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "GET_CARD_ON_READER": {
+            "hex_id": "0x810",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PUB_KEY_1": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PUB_KEY_1_AGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 260,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PUB_KEY_2": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 65,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PUB_KEY_2_AGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 264,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PUB_KEY_3": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 130,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PUB_KEY_3_AGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 268,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PUB_KEY_4": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 195,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PUB_KEY_4_AGE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 272,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 276,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_EPHEMERAL_PUBKEY": {
+            "hex_id": "0x715",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "KEY": {
+                        "bit_length": 800,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "KEYLENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "KEYVALID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 103,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_KEYCHAIN_TOKEN": {
+            "hex_id": "0x730",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "CHANNEL": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TOKEN": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 21,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_LEARNED_VIN": {
+            "hex_id": "0x888",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VIN": {
+                        "bit_length": 136,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 18,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VIN": {
+                        "bit_length": 136,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 18,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_PERMISSION_FOR_KEY": {
+            "hex_id": "0x705",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "KEYID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PERMISSION": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "ISSET": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_SESSION_INFO": {
+            "hex_id": "0x735",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "KEY_SLOT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "COUNTER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "EPOCH": {
+                        "bit_length": 128,
+                        "bit_position": 0,
+                        "byte_position": 70,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "PUBLICKEY": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TIME": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 86,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 90,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_WHITELIST_ENTRY": {
+            "hex_id": "0x701",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "PUBKEYLENGTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "PUBLICKEY": {
+                        "bit_length": 800,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "SLOTFILLED": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 102,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "GET_WHITELIST_ENTRY_COUNT": {
+            "hex_id": "0x708",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ENTRY_COUNT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "KEYFOB_SELF_TEST": {
+            "hex_id": "0x531",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "DEVICE_PUBKEY_STATE": {
+                        "bit_length": 2,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "INSECURE_COMMAND_STATE": {
+                        "bit_length": 6,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "KEYFOB_APPCRC": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 107,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "KEYFOB_BATT_TEMP_C": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 115,
+                        "data_type": "int",
+                        "default": null,
+                        "physical_type": "int"
+                    },
+                    "KEYFOB_BATT_VOLT_MV": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 111,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "KEYFOB_FORM_FACTOR": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 119,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_3_BUTTON_BLE_CAR_KEYFOB": 2,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_3_BUTTON_BLE_CAR_KEYFOB_P60": 8,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_3_BUTTON_UWB_CAR_KEYFOB_P60": 9,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_3_BUTTON_UWB_CAR_KEYFOB_P60_V2": 12,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_3_BUTTON_UWB_CAR_KEYFOB_P60_V3": 13,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_5_BUTTON_UWB_CAR_KEYFOB_P60": 10,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_ANDROID_DEVICE": 7,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_BLE_AND_NFC_DEVICE": 5,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_BLE_DEVICE": 3,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_CLOUD_KEY": 11,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_IOS_DEVICE_": 6,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_NFC_CARD": 1,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_NFC_CARD_P71": 14,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_NFC_DEVICE": 4,
+                                "APP_KEYMETADATA_KEY_FORM_FACTOR_UNKNOWN": 0
+                            },
+                            "enum_name": "KEYCHAIN_WHITELIST_METADATA"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "KEYFOB_PART_NUM": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 87,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "KEYFOB_SERIAL_NUM": {
+                        "bit_length": 112,
+                        "bit_position": 0,
+                        "byte_position": 73,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "NFC_MAC_ADDR": {
+                        "bit_length": 48,
+                        "bit_position": 0,
+                        "byte_position": 67,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "NFC_PUB_KEY": {
+                        "bit_length": 520,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "SHARED_SECRET_STATE": {
+                        "bit_length": 2,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "TEST_RESULT": {
+                        "bit_length": 4,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "CHECK_FAILED_MISMATCH": 7,
+                                "CHECK_FAILED_NO_KEYFOB_DEFECTED": 6,
+                                "CHECK_FAILED_SS_STATE_NOT_GENEREATED": 8,
+                                "CHECK_FOR_NFC_SE_STATE": 5,
+                                "CHECK_SUCCESSFUL": 10,
+                                "CONNECT_TO_MAC": 2,
+                                "DISPATCH_PROTOBUF_REQUEST": 4,
+                                "GET_MAC_FROM_NFC_TAP": 1,
+                                "IDLE": 0,
+                                "TIMEDOUT": 9,
+                                "WAIT_FOR_BLE_CONNECT": 3
+                            },
+                            "enum_name": "KEYFOB_SELF_TEST_STATE"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_PUBKEY_STATE": {
+                        "bit_length": 2,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 120,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "ROTATE_EPHEMERAL_KEY": {
+            "hex_id": "0x770",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_ENDPOINT_COMM": {
+            "hex_id": "0x401",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FRONT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFT": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "LEFTREAR": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCCRADLE": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "REAR": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHT": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RIGHTREAR": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SEND_APDU": {
+            "hex_id": "0x802",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {
+                    "NFCCARD_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFCCARD_CHANNEL0": 0,
+                                "NFCCARD_CHANNEL1": 1,
+                                "NFCCARD_CHANNEL2": 2
+                            },
+                            "enum_name": "NFCCARD_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCREADER_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "APDU_COMMAND_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "APDU_COMMAND_STATUS_COMMAND_ACCEPTED_AT_HOST": 1,
+                                "APDU_COMMAND_STATUS_COMMAND_ACCEPTED_AT_SLAVE": 2,
+                                "APDU_COMMAND_STATUS_COMMAND_BUSY_AT_HOST": 5,
+                                "APDU_COMMAND_STATUS_COMMAND_BUSY_AT_SLAVE": 6,
+                                "APDU_COMMAND_STATUS_COMMAND_REJECTED_AT_HOST": 3,
+                                "APDU_COMMAND_STATUS_COMMAND_REJECTED_AT_SLAVE": 4,
+                                "APDU_COMMAND_STATUS_NO_CARD": 0,
+                                "APDU_COMMAND_STATUS_RESPONSE_READY": 7
+                            },
+                            "enum_name": "APDU_COMMAND_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "APDU_RESPONSE": {
+                        "bit_length": 752,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "APDU_RESPONSE_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "APDU_RESPONSE_PENDING": 2,
+                                "APDU_RESPONSE_STATUS_CARD_DISCONNECTED": 0,
+                                "APDU_RESPONSE_STATUS_CARD_TIMEOUT": 3,
+                                "APDU_RESPONSE_STATUS_RECEIVED_SUCCESSFULLY": 1,
+                                "APDU_RESPONSE_STATUS_RESPONSE_NOT_EXPECTED": 4
+                            },
+                            "enum_name": "APDU_RESPONSE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCCARD_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFCCARD_CHANNEL0": 0,
+                                "NFCCARD_CHANNEL1": 1,
+                                "NFCCARD_CHANNEL2": 2
+                            },
+                            "enum_name": "NFCCARD_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCREADER_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RESPONSE_LENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 100,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "APDU_DATA": {
+                        "bit_length": 752,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "APDU_LENGTH": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "NFCCARD_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFCCARD_CHANNEL0": 0,
+                                "NFCCARD_CHANNEL1": 1,
+                                "NFCCARD_CHANNEL2": 2
+                            },
+                            "enum_name": "NFCCARD_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCREADER_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 98,
+                "output": {
+                    "APDU_COMMAND_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "APDU_COMMAND_STATUS_COMMAND_ACCEPTED_AT_HOST": 1,
+                                "APDU_COMMAND_STATUS_COMMAND_ACCEPTED_AT_SLAVE": 2,
+                                "APDU_COMMAND_STATUS_COMMAND_BUSY_AT_HOST": 5,
+                                "APDU_COMMAND_STATUS_COMMAND_BUSY_AT_SLAVE": 6,
+                                "APDU_COMMAND_STATUS_COMMAND_REJECTED_AT_HOST": 3,
+                                "APDU_COMMAND_STATUS_COMMAND_REJECTED_AT_SLAVE": 4,
+                                "APDU_COMMAND_STATUS_NO_CARD": 0,
+                                "APDU_COMMAND_STATUS_RESPONSE_READY": 7
+                            },
+                            "enum_name": "APDU_COMMAND_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {
+                    "NFCCARD_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFCCARD_CHANNEL0": 0,
+                                "NFCCARD_CHANNEL1": 1,
+                                "NFCCARD_CHANNEL2": 2
+                            },
+                            "enum_name": "NFCCARD_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "NFCREADER_INDEX": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NFC_READER_CENTER_CONSOLE": 1,
+                                "NFC_READER_LEFT_B_PILLAR": 0,
+                                "NFC_READER_RIGHT_B_PILLAR": 2
+                            },
+                            "enum_name": "NFC_READER_CHANNEL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SEND_PROTOBUF": {
+            "hex_id": "0x710",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "DATA": {
+                        "bit_length": 2800,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 350,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "SET_ROOT_TRUST_KEY": {
+            "hex_id": "0x725",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "ROOT_TRUST_KEY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "MOTHERSHIP": 0,
+                                "NORTH_AMERICA": 1
+                            },
+                            "enum_name": "ROOT_TRUST_KEYS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "TESLA_TPMS_FACTORY_LEARN": {
+            "hex_id": "0xf19",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "FACTORY_LEARN_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ARMED": 1,
+                                "COMPLETED": 3,
+                                "DISABLED": 0,
+                                "FAILED": 4,
+                                "RUNNING": 2
+                            },
+                            "enum_name": "TESLA_TPMS_FACTORY_LEARN_STATE"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "ADV_RSSI_OFFSET": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "dBm"
+                        },
+                        "physical_type": "float"
+                    },
+                    "ADV_SPEED": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KPH"
+                        },
+                        "physical_type": "float"
+                    },
+                    "CONNECT_SPEED": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KPH"
+                        },
+                        "physical_type": "float"
+                    },
+                    "CONNECT_TIME": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "S"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "WRITE_VIN": {
+            "hex_id": "0x889",
+            "node_name": "VCSEC",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "VIN": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "VIN_LENGTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 20,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 21,
+                "output": {
+                    "SUCCESS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VIN": {
+                        "bit_length": 160,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "VIN_LENGTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 22,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        }
+    }
+}

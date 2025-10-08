@@ -1,0 +1,139 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "SUN",
+    "routines": {
+        "CALIBRATE_STEERING_COLUMN": {
+            "hex_id": "0x413",
+            "node_name": "SUN",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 4,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "COMPLETE": 6,
+                                "MOVING_DOWN": 2,
+                                "MOVING_IN": 5,
+                                "MOVING_OUT": 4,
+                                "MOVING_UP": 3,
+                                "NOT_CALIBRATED": 0,
+                                "PAUSED": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 2,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_ALREADY_STARTED": 2,
+                                "ROUTINE_IN_PROGRESS": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 4,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "IN_OUT_ENCODER_ERROR": 7,
+                                "OK_AND_DONE": 0,
+                                "ROUTINE_IN_PROGRESS": 1,
+                                "ROUTINE_NEVER_STARTED": 2,
+                                "ROUTINE_NOT_COMPLETED": 5,
+                                "ROUTINE_NOT_STOPPABLE": 3,
+                                "ROUTINE_TIMEOUT": 4,
+                                "UP_DOWN_ENCODER_ERROR": 6
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            }
+        },
+        "PEKTRON_VIN_LEARN": {
+            "hex_id": "0x405",
+            "node_name": "SUN",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ABORTED": 1,
+                                "RUNNING": 2,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "ABORTED": 1,
+                                "RUNNING": 2,
+                                "SUCCESS": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 1
+            }
+        }
+    }
+}
