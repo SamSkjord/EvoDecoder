@@ -14,3 +14,6 @@
 	path = references/openpilot_0.6.6
 	url = https://github.com/BogGyver/openpilot
 	branch = tesla_0.6.6
+[submodule "references/tesla"]
+	path = references/tesla
+	url = https://github.com/Lunars/tesla/
