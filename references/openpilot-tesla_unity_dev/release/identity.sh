@@ -1,5 +1,0 @@
-export GIT_COMMITTER_NAME="BogGyver"
-export GIT_COMMITTER_EMAIL="bogdan.butoi@gmail.com"
-export GIT_AUTHOR_NAME="BogGyver"
-export GIT_AUTHOR_EMAIL="bogdan.butoi@gmail.com"
-export GIT_SSH_COMMAND="ssh -i /data/gitkey"
