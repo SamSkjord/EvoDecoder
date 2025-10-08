@@ -17,3 +17,21 @@
 [submodule "references/tesla"]
 	path = references/tesla
 	url = https://github.com/Lunars/tesla/
+[submodule "references/tesla_can_signals"]
+	path = references/tesla_can_signals
+	url = https://github.com/talas9/tesla_can_signals/
+[submodule "references/tesla_odj"]
+	path = references/tesla_odj
+	url = https://github.com/talas9/tesla_odj/
+[submodule "references/CAN-RE-Tool"]
+	path = references/CAN-RE-Tool
+	url = https://github.com/openvehicles/CAN-RE-Tool/
+[submodule "references/Tesla-Model-3-ABS-Emulator"]
+	path = references/Tesla-Model-3-ABS-Emulator
+	url = https://github.com/sydneyg007/Tesla-Model-3-ABS-Emulator
+[submodule "references/Tesla-Model-3-EPAS-emulator"]
+	path = references/Tesla-Model-3-EPAS-emulator
+	url = https://github.com/sydneyg007/Tesla-Model-3-EPAS-emulator
+[submodule "references/model3dbc"]
+	path = references/model3dbc
+	url = https://github.com/joshwardell/model3dbc/
