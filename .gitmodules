@@ -35,3 +35,6 @@
 [submodule "references/model3dbc"]
 	path = references/model3dbc
 	url = https://github.com/joshwardell/model3dbc/
+[submodule "references/Tesla-Model-3-Logs"]
+	path = references/Tesla-Model-3-Logs
+	url = https://github.com/sydneyg007/Tesla-Model-3-Logs/
