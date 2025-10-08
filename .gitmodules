@@ -4,3 +4,6 @@
 [submodule "references/TMS_2016_LOGS"]
 	path = references/TMS_2016_LOGS
 	url = https://github.com/amzoo/TMS_2016_LOGS
+[submodule "references/car-tools"]
+	path = references/car-tools
+	url = https://github.com/dnoermann/car-tools
