@@ -1,3 +1,6 @@
 [submodule "references/references/TMS_2016_LOGS"]
 	path = references/references/TMS_2016_LOGS
 	url = https://github.com/amzoo/TMS_2016_LOGS
+[submodule "references/TMS_2016_LOGS"]
+	path = references/TMS_2016_LOGS
+	url = https://github.com/amzoo/TMS_2016_LOGS
