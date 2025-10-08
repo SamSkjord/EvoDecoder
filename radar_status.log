@@ -1,0 +1,17 @@
+/Users/sam/git/EvoDecoder/code/read_radar_vin.py:40: DeprecationWarning: The 'bustype' argument is deprecated since python-can v4.2.0, and scheduled for removal in python-can v5.0.0. Use 'interface' instead.
+  bus = can.interface.Bus(
+Sending tester present...
+Switching to extended diagnostic session...
+VIN                         : 5YJSB7E43GF113105 [35594a5342374534334746313133313035]
+Plant Mode                  :  [01]
+Board Part Number           :       10 38 224-00-B [2020202020203130203338203232342d30302d42]
+Board Serial Number         : 15120202360154 [3135313230323032333630313534]
+ECU Software Number         : ERROR (UDS negative response: 0x31 (request out of range))
+ECU Software Version        : ERROR (UDS negative response: 0x31 (request out of range))
+Manufacturing Date          : ERROR (UDS negative response: 0x31 (request out of range))
+ECU Serial Number           : ERROR (UDS negative response: 0x31 (request out of range))
+Supplier SW Version         : 800 [383030]
+Active Alignment State      :  [00]
+Service Drive Alignment Status:  [000000]
+Alignment Horizontal Angle  :  [0000]
+Alignment Vertical Angle    :  [0000]

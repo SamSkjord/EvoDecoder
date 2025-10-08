@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="client-js" lang="en" dir="ltr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Tesla Bosch Radar EON - Tinkla: Tinkering with Tesla</title>
+<script async="" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/google-analytics_analytics.js"></script><script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tesla_Bosch_Radar_EON","wgTitle":"Tesla Bosch Radar EON","wgCurRevisionId":1330,"wgRevisionId":1330,"wgArticleId":209,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with syntax highlighting errors"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tesla_Bosch_Radar_EON","wgRelevantArticleId":209,"wgRequestId":"eb648773f796536888ece787","wgCSPNonce":false,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.content.externallinks":"ready","skins.timeless":"ready","skins.timeless.misc":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.user","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","mmv.head","mmv.bootstrap.autostart","skins.timeless.js","skins.timeless.mobile"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/load.css">
+<script async="" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/load.js"></script>
+<style>
+.mw-ui-button{font-family:inherit;font-size:1em;display:inline-block;min-width:4em;max-width:28.75em;padding:0.546875em 1em;line-height:1.286;margin:0;border-radius:2px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;*display:inline; zoom:1;vertical-align:middle;background-color:#f8f9fa;color:#222222;border:1px solid #a2a9b1;text-align:center;font-weight:bold;cursor:pointer}.mw-ui-button:visited{color:#222222}.mw-ui-button:hover{background-color:#ffffff;color:#444444;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#222222;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button:active,.mw-ui-button.is-on,.mw-ui-button.mw-ui-checked{background-color:#d9d9d9;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#fff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:focus{outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:not(:disabled){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;-moz-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button:disabled{text-shadow:none;cursor:default}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}.mw-ui-button.mw-ui-progressive{background-color:#3366cc;color:#fff;border:1px solid #3366cc}.mw-ui-button.mw-ui-progressive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-progressive.is-on,.mw-ui-button.mw-ui-progressive.mw-ui-checked{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-progressive:disabled.mw-ui-checked{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet{color:#222222}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active,.mw-ui-button.mw-ui-progressive.mw-ui-quiet.mw-ui-checked{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-destructive{background-color:#dd3333;color:#fff;border:1px solid #dd3333}.mw-ui-button.mw-ui-destructive:hover{background-color:#ff4242;border-color:#ff4242}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #dd3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on,.mw-ui-button.mw-ui-destructive.mw-ui-checked{background-color:#b32424;border-color:#b32424;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active,.mw-ui-button.mw-ui-destructive:disabled.mw-ui-checked{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#222222}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#ff4242}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-destructive.mw-ui-quiet.mw-ui-checked{color:#b32424}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#dd3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-quiet{background:transparent;border:0;text-shadow:none;color:#222222}.mw-ui-button.mw-ui-quiet:hover{background-color:transparent;color:#444444}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-checked{color:#000000}.mw-ui-button.mw-ui-quiet:focus{background-color:transparent;color:#222222}.mw-ui-button.mw-ui-quiet:disabled{color:#c8ccd1}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet:disabled{background:transparent}input.mw-ui-button::-moz-focus-inner,button.mw-ui-button::-moz-focus-inner{margin-top:-1px;margin-bottom:-1px}a.mw-ui-button{text-decoration:none}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not(:first-child){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.mw-ui-icon{position:relative;line-height:1.5em;min-height:1.5em;min-width:1.5em}span.mw-ui-icon{display:inline-block}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large{width:4.625em;min-width:4.625em;max-width:4.625em;line-height:4.625em;min-height:4.625em}.mw-ui-icon.mw-ui-icon-element.mw-ui-icon-large:before{min-height:4.625em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;background-repeat:no-repeat;background-size:100% auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}.mw-ui-icon.mw-ui-icon-small:before{background-size:66.67% auto}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:0;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:#fff;cursor:pointer;border:1px solid #a2a9b1;padding:0;margin:0}.suggestions-result{color:#000;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#2a4b8d;color:#fff}.suggestions-special .special-label{color:#72777d;text-align:left}.suggestions-special .special-query{color:#000;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:#c8ccd1}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:#fff}.highlight{font-weight:bold}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	.toc.tochidden,.toctoggle{display:none}}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:#000;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:#fff}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mw-mmv-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;background-color:#000}body.mw-mmv-lightbox-open{overflow-y:auto;  }body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block;line-height:inherit}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M851.2 71.6L690.7 232.1l-40.1-40.3-9.6 164.8 164.8-9.3-40.3-40.4L926 146.4l58.5 58.5L997.6 0 792.7 13.1%22/%3E %3Cpath d=%22M769.6 89.3H611.9l70.9 70.8 7.9 7.5m-47.1 234.6l-51.2 3 3-51.2 9.4-164.4 5.8-100.3H26.4V768h883.1V387l-100.9 5.8-165 9.4zM813.9 678H113.6l207.2-270.2 31.5-12.9L548 599.8l105.9-63.2 159.8 140.8.2.6zm95.6-291.9V228l-79.1 78.9 7.8 7.9%22/%3E %3C/svg%3E")}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1024 768%22%3E %3Cpath d=%22M897 454.6V313.4L810.4 299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4 50.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427 85.6c-23.3 6.4-45.7 16-65.8 27.3l-71.4-50.5-100.3 99.5 50.5 71.4c-11.2 20.9-20.9 42.5-27.3 66.6L127 313.4v141.2l85.8 14.4c6.4 23.3 16 45.7 27.3 66.6L189.6 607l99.5 99.5 71.4-50.5c20.9 11.2 42.5 20.9 66.6 27.3l14.4 85.8h141.2l14.4-86.6c23.3-6.4 45.7-16 65.8-27.3l71.4 50.5 99.5-99.5-50.5-71.4c11.2-20.9 20.9-42.5 27.3-66.6l86.4-13.6zm-385 77c-81.8 0-147.6-66.6-147.6-147.6 0-81.8 66.6-147.6 147.6-147.6S659.6 302.2 659.6 384 593.8 531.6 512 531.6z%22/%3E %3C/svg%3E");opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}.mw-mmv-button{background-color:transparent;min-width:0;border:0;padding:0;overflow-x:hidden;text-indent:-9999em}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/load_002.css">
+<meta name="generator" content="MediaWiki 1.32.1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<link rel="shortcut icon" href="https://tinkla.us/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://tinkla.us/opensearch_desc.php" title="Tinkla: Tinkering with Tesla (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://tinkla.us/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Tinkla: Tinkering with Tesla Atom feed" href="https://tinkla.us/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=Timeless&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tesla_Bosch_Radar_EON rootpage-Tesla_Bosch_Radar_EON skin-timeless action-view"><div id="mw-wrapper"><div id="mw-header-container" class="ts-container"><div id="mw-header" class="ts-inner"><div id="user-tools"><div id="personal"><h2><span>Anonymous</span><div class="pokey"></div></h2><div id="personal-inner" class="dropdown"><div role="navigation" class="mw-portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Not logged in</h3><div class="mw-portlet-body"><ul><li id="pt-createaccount"><a href="https://tinkla.us/index.php?title=Special:CreateAccount&amp;returnto=Tesla+Bosch+Radar+EON" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login"><a href="https://tinkla.us/index.php?title=Special:UserLogin&amp;returnto=Tesla+Bosch+Radar+EON" title="You are encouraged to log in; however, it is not mandatory [⌃⌥o]" accesskey="o"><span>Log in</span></a></li></ul></div></div></div></div></div><div id="p-logo-text" class="mw-portlet" role="banner"><a id="p-banner" class="mw-wiki-title long" href="https://tinkla.us/index.php/Main_Page">Tinkla: Tinkering with Tesla</a></div><div class="mw-portlet" id="p-search"><h3 lang="en" dir="ltr"><label for="searchInput">Search</label></h3><form action="/index.php" id="searchform"><div id="simpleSearch"><div id="searchInput-container"><input type="search" name="search" placeholder="Search Tinkla: Tinkering with Tesla" title="Search Tinkla: Tinkering with Tesla [⌃⌥f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"></div><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"></div></form></div></div><div class="visualClear"></div></div><div id="mw-header-hack" class="color-bar"><div class="color-middle-container"><div class="color-middle"></div></div><div class="color-left"></div><div class="color-right"></div></div><div id="mw-header-nav-hack"><div class="color-bar"><div class="color-middle-container"><div class="color-middle"></div></div><div class="color-left"></div><div class="color-right"></div></div></div><div id="menus-cover"></div><div id="mw-content-container" class="ts-container"><div id="mw-content-block" class="ts-inner"><div id="mw-content-wrapper"><div id="mw-content"><div id="content" class="mw-body" role="main"><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading">Tesla Bosch Radar EON</h1><div id="siteSub">From Tinkla: Tinkering with Tesla</div><div id="mw-page-header-links"><div role="navigation" class="mw-portlet" id="p-namespaces" aria-labelledby="p-namespaces-label"><h3 id="p-namespaces-label" lang="en" dir="ltr">Namespaces</h3><div class="mw-portlet-body"><ul><li id="ca-nstab-main" class="selected"><a href="https://tinkla.us/index.php/Tesla_Bosch_Radar_EON" title="View the content page [⌃⌥c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new"><a href="https://tinkla.us/index.php?title=Talk:Tesla_Bosch_Radar_EON&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [⌃⌥t]" accesskey="t"><span>Discussion</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-more" aria-labelledby="p-more-label"><h3 id="p-more-label" lang="en" dir="ltr">More</h3><div class="mw-portlet-body"><ul><li id="ca-more" class="dropdown-toggle"><span>More</span></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-views" aria-labelledby="p-views-label"><h3 id="p-views-label" lang="en" dir="ltr">Page actions</h3><div class="mw-portlet-body"><ul><li id="ca-view" class="selected"><a href="https://tinkla.us/index.php/Tesla_Bosch_Radar_EON" redundant="1"><span>View</span></a></li><li id="ca-viewsource"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;action=edit" title="This page is protected.
+You can view its source [⌃⌥e]" accesskey="e"><span>View source</span></a></li><li id="ca-history"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;action=history" title="Past revisions of this page [⌃⌥h]" accesskey="h"><span>History</span></a></li><li id="ca-myact"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;action=myact"><span>My action</span></a></li></ul></div></div></div><div class="visualClear"></div><div class="mw-body-content" id="bodyContent"><div id="contentSub"></div><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://tinkla.us/index.php/File:Tesla_Bosch_Radar_Wiring_Harness.png" class="image"><img alt="Tesla Bosch Radar Wiring Harness.png" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/300px-Tesla_Bosch_Radar_Wiring_Harness.png" width="300" height="195" class="thumbimage" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/450px-Tesla_Bosch_Radar_Wiring_Harness.png 1.5x, Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/600px-Tesla_Bosch_Radar_Wiring_Harness.png 2x" data-file-width="1205" data-file-height="785"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://tinkla.us/index.php/File:Tesla_Bosch_Radar_Wiring_Harness.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://tinkla.us/index.php/File:Giraffe_rev_B_Radar_Diagram.png" class="image"><img alt="Giraffe rev B Radar Diagram.png" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/300px-Giraffe_rev_B_Radar_Diagram.png" width="300" height="170" class="thumbimage" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/450px-Giraffe_rev_B_Radar_Diagram.png 1.5x, Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/600px-Giraffe_rev_B_Radar_Diagram.png 2x" data-file-width="1372" data-file-height="776"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://tinkla.us/index.php/File:Giraffe_rev_B_Radar_Diagram.png" class="internal" title="Enlarge"></a></div></div></div></div> <div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://tinkla.us/index.php/File:Giraffe_rev_A.png" class="image"><img alt="Giraffe rev A.png" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/300px-Giraffe_rev_A.png" width="300" height="196" class="thumbimage" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/450px-Giraffe_rev_A.png 1.5x, Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/600px-Giraffe_rev_A.png 2x" data-file-width="1131" data-file-height="739"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://tinkla.us/index.php/File:Giraffe_rev_A.png" class="internal" title="Enlarge"></a></div></div></div></div> 
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://tinkla.us/index.php/File:The_Giraffe_rev_A_board._Use_CAN1_for_radar..png" class="image"><img alt="The Giraffe rev A board. Use CAN1 for radar..png" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/300px-The_Giraffe_rev_A_board._Use_CAN1_for_radar..png" width="300" height="311" class="thumbimage" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/450px-The_Giraffe_rev_A_board._Use_CAN1_for_radar..png 1.5x, Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/600px-The_Giraffe_rev_A_board._Use_CAN1_for_radar..png 2x" data-file-width="1885" data-file-height="1957"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://tinkla.us/index.php/File:The_Giraffe_rev_A_board._Use_CAN1_for_radar..png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p>The Bosch radar made for Tesla (Bosch MRRevo14, and with few 
+different part numbers like 1038224-00-A/B or 1057551-00-B) have been 
+used on Tesla Model S cars from October 2014 (AP1) until they have been 
+replaced by the Continental radar with AP2.5). The main difference 
+between 1038224-00-B and 1038224-00-A is that the A version does not 
+have the heater element for winter weather (to melt snow and ice). 
+</p><p>The radar has a range of about 160m and for the short beam a cone of 45°.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Bosch_radars"><span class="tocnumber">1</span> <span class="toctext">Bosch radars</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Deconding_the_radar"><span class="tocnumber">2</span> <span class="toctext">Deconding the radar</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#What_you_need"><span class="tocnumber">3</span> <span class="toctext">What you need</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Panda_code_changes_.28non-Tesla_cars.29"><span class="tocnumber">4</span> <span class="toctext">Panda code changes (non-Tesla cars)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#OP_Code_Changes_.28non-Tesla_cars.29"><span class="tocnumber">5</span> <span class="toctext">OP Code Changes (non-Tesla cars)</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Obtain_the_VIN_programmed_in_your_radar"><span class="tocnumber">6</span> <span class="toctext">Obtain the VIN programmed in your radar</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Modifying_the_configuration_file_for_radar"><span class="tocnumber">7</span> <span class="toctext">Modifying the configuration file for radar</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Calibrating_your_radar"><span class="tocnumber">8</span> <span class="toctext">Calibrating your radar</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Troubleshooting_the_Tesla_Bosch_Radar"><span class="tocnumber">9</span> <span class="toctext">Troubleshooting the Tesla Bosch Radar</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Bosch_radars">Bosch radars</span></h3>
+<p>Many other car manufacturers use the same radar hardware, including 
+Honda, Nissan, VW, Audi, etc. But Tesla (AFAIK) is the only one that 
+reads and processes raw data from the radar instead of letting the radar
+ make the decision about longitudinal control action needed 
+(acceleration or deceleration). 
+</p>
+<pre>This radar can ben used on any OP supported car. To insall the radar for a non-Tesla car please find a branch that has the code already done or modify your branch and add the code needed to make the radar talk to the Panda code for your car.
+</pre>
+<h3><span class="mw-headline" id="Deconding_the_radar">Deconding the radar</span></h3>
+<p>With a little help from a group of enthusiasts, we were able to 
+reverse engineer all the messages that AP sends to the radar in order to
+ make it "talk". Then we identified the structure of the CAN messages 
+that describe each of the 32 objects this radar can detect. Signals like
+ longitudinal distance, lateral distance (vs radar), longitudinal 
+relative speed, lateral relative speed, longitudinal acceleration, 
+certainty of detection, etc are all now processed and sent to the radar 
+daemon of OpenPilot, improving longitudinal control for the car.
+</p>
+<h3><span class="mw-headline" id="What_you_need">What you need</span></h3>
+<p>In order to get the radar working on your car, you need to buy a 
+radar, a mounting bracket (few options here), a connector and then to 
+create a harness and run the cable back to the <a href="https://tinkla.us/index.php/Tesla_Giraffe" title="Tesla Giraffe">Giraffe</a>.
+ As a first temporary setup for my research, I used an Audi bracket 
+which I installed on my car's nose cone. Then I created the harness and 
+connected it for both CAN and power to my Giraffe rev B using a car 
+relay. Please also make sure you add the 120Ω resistor between CAN+ and 
+CAN-.
+</p><p>For a permanent install I recommend following the diagram in the 
+Tesla Bosch Radar Wiring Harness image at the top of the page. This 
+setup uses the EPAS power (which is ignition power) to trigger a relay 
+and feed power to both the radar electronics and the heater unit of the 
+radar. Make sure the line from the battery is fused. Please also make 
+sure you add the 120Ω resistor between CAN+ and CAN-. Also please use 
+the <a href="https://tinkla.us/index.php/AWG_chart" title="AWG chart">AWG chart</a> to select the right wire needed for your setup.
+</p>
+<pre>If you have a <a href="https://tinkla.us/index.php/Tesla_Giraffe" title="Tesla Giraffe">Giraffe</a> rev A, you will have to solder the CAN wires from the radar directly to the Giraffe. We are using the middle CAN of the Panda (CAN2 when you think of them as CAN1-CH, CAN3-EPAS) and the pins where you should solder your connector are marked in this diagrams. 
+Also, you will have to add the same 120Ω resistor between CAN+ and CAN-.
+</pre>
+<pre>For other cars that want to use the Tesla Bosch Radar, please find an unused CAN in your Panda safety implementation and use that CAN to communicate with the radar. The radar has to be on its own specific CAN because any message outside of the ones that it is supposed to receive will make it stop working.
+</pre>
+<p>Warning for Giraffe Rev B: Some jst2 cables have red/black set up so 
+they won't match can+/can- on giraffe. So make sure can+ goes to the 
+side of the connector on the giraffe labelled +.
+</p>
+<h3><span id="Panda_code_changes_(non-Tesla_cars)"></span><span class="mw-headline" id="Panda_code_changes_.28non-Tesla_cars.29">Panda code changes (non-Tesla cars)</span></h3>
+<pre>If you are on one of my Tesla OP branches (0.5.10 and above), the <a href="https://tinkla.us/index.php/The_Panda" class="mw-redirect" title="The Panda">Panda</a> code already has all you need to get the Tesla Bosch Radar working. 
+</pre>
+<p>If you want to implement the code for another car, you will have to modify the code as follow:
+</p>
+<ul><li>find an existing CAN message on your car that is generated at 
+100Hz. We will use this message as a clock to trigger all the other 
+messages needed by radar.</li>
+<li>take a look at my <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/tree/test_teslaradar">test_teslaradar</a> branch which uses the fake message code in <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/panda/board/safety/safety_teslaradar.h">safety_teslaradar.h</a></li>
+<li>edit <b>safety_yourcar.h</b> (specific for your car) and add the following:</li></ul>
+<dl><dd>- add the include for safety_teslaradar.h at the top</dd></dl>
+<pre>#include "safety_teslaradar.h"
+</pre>
+<dl><dd>- in the rx_hook function, call the radar rx hook</dd></dl>
+<pre>teslaradar_rx_hook(to_push);
+</pre>
+<dl><dd>- in the rx_hook function, find the CAN message that provides 
+the speed and parse it (this is a Honda example) saving the value in the
+ <i>actual_speed_kph</i> variable</dd></dl>
+<pre> //speed for radar
+ if ((to_push-&gt;RIR&gt;&gt;21) == 0x309) {
+   // first 2 bytes
+   actual_speed_kph = (int)((((to_push-&gt;RDLR &amp; 0xFF) &lt;&lt; 8) + ((to_push-&gt;RDLR &gt;&gt;8) &amp; 0xFF))*0.01);
+ }
+</pre>
+<dl><dd>- in the fwd_hook function, make sure you do not forward any of 
+the radar messages to any other CAN bus (in this example, the radar is 
+on CAN bus 2)</dd></dl>
+<pre> if(bus_num == 2) {
+   return -1;
+ }
+</pre>
+<dl><dd>- in the tx_hook function add interceptor for the message used 
+to send info to the radar; in this example we use 0x560 as the CAN 
+message ID; it this does not work for your car (already in use) you will
+ have to change it to another ID that is not in use</dd></dl>
+<pre> //check if this is a teslaradar vin message
+ //capture message for radarVIN and settings
+ if ((to_send-&gt;RIR &gt;&gt; 21) == 0x560) {
+   int id = (to_send-&gt;RDLR &amp; 0xFF);
+   int radarVin_b1 = ((to_send-&gt;RDLR &gt;&gt; 8) &amp; 0xFF);
+   int radarVin_b2 = ((to_send-&gt;RDLR &gt;&gt; 16) &amp; 0xFF);
+   int radarVin_b3 = ((to_send-&gt;RDLR &gt;&gt; 24) &amp; 0xFF);
+   int radarVin_b4 = (to_send-&gt;RDHR &amp; 0xFF);
+   int radarVin_b5 = ((to_send-&gt;RDHR &gt;&gt; 8) &amp; 0xFF);
+   int radarVin_b6 = ((to_send-&gt;RDHR &gt;&gt; 16) &amp; 0xFF);
+   int radarVin_b7 = ((to_send-&gt;RDHR &gt;&gt; 24) &amp; 0xFF);
+   if (id == 0) {
+     tesla_radar_should_send = (radarVin_b2 &amp; 0x01);
+     radarPosition =  ((radarVin_b2 &gt;&gt; 1) &amp; 0x03);
+     radarEpasType = ((radarVin_b2 &gt;&gt; 3) &amp; 0x07);
+     tesla_radar_trigger_message_id = (radarVin_b3 &lt;&lt; 8) + radarVin_b4;
+     tesla_radar_can = radarVin_b1;
+     radar_VIN[0] = radarVin_b5;
+     radar_VIN[1] = radarVin_b6;
+     radar_VIN[2] = radarVin_b7;
+     tesla_radar_vin_complete = tesla_radar_vin_complete | 1;
+   }
+   if (id == 1) {
+     radar_VIN[3] = radarVin_b1;
+     radar_VIN[4] = radarVin_b2;
+     radar_VIN[5] = radarVin_b3;
+     radar_VIN[6] = radarVin_b4;
+     radar_VIN[7] = radarVin_b5;
+     radar_VIN[8] = radarVin_b6;
+     radar_VIN[9] = radarVin_b7;
+     tesla_radar_vin_complete = tesla_radar_vin_complete | 2;
+   }
+   if (id == 2) {
+     radar_VIN[10] = radarVin_b1;
+     radar_VIN[11] = radarVin_b2;
+     radar_VIN[12] = radarVin_b3;
+     radar_VIN[13] = radarVin_b4;
+     radar_VIN[14] = radarVin_b5;
+     radar_VIN[15] = radarVin_b6;
+     radar_VIN[16] = radarVin_b7;
+     tesla_radar_vin_complete = tesla_radar_vin_complete | 4;
+   }
+   else {
+     return 0;
+   }
+ }
+</pre>
+<h3><span id="OP_Code_Changes_(non-Tesla_cars)"></span><span class="mw-headline" id="OP_Code_Changes_.28non-Tesla_cars.29">OP Code Changes (non-Tesla cars)</span></h3>
+<pre>If you are on one of my Tesla OP branches (0.5.10 and above), the OP code already has all you need to get the Tesla Bosch Radar working. 
+</pre>
+<p>If you want to implement the code for another car, you will have to modify the code as follow:
+</p>
+<ul><li>go to /data/openpilot/selfdrive/car/yourcar (of course, yourcar matches one of the supported OP cars like honda/toyota/etc.)</li>
+<li>edit <b>yourcarcan.py</b> and add the code needed to send the VIN and other info to the Panda</li></ul>
+<pre>def create_radar_VIN_msg(id,radarVIN,radarCAN,radarTriggerMessage,useRadar,radarPosition,radarEpasType):
+  msg_id = 0x560
+  msg_len = 8
+  msg = create_string_buffer(msg_len)
+  if id == 0:
+    struct.pack_into('BBBBBBBB', msg, 0, id,radarCAN,useRadar + (radarPosition &lt;&lt; 1) + (radarEpasType &lt;&lt; 3), ((radarTriggerMessage &gt;&gt; 8) &amp; 0xFF),(radarTriggerMessage &amp; 0xFF),ord(radarVIN[0]),ord(radarVIN[1]),ord(radarVIN[2]))
+  if id == 1:
+    struct.pack_into('BBBBBBBB', msg, 0, id,ord(radarVIN[3]),ord(radarVIN[4]),ord(radarVIN[5]),ord(radarVIN[6]),ord(radarVIN[7]),ord(radarVIN[8]),ord(radarVIN[9]))
+  if id == 2:
+    struct.pack_into('BBBBBBBB', msg, 0, id,ord(radarVIN[10]),ord(radarVIN[11]),ord(radarVIN[12]),ord(radarVIN[13]),ord(radarVIN[14]),ord(radarVIN[15]),ord(radarVIN[16]))
+  return [msg_id, 0, msg.raw, 0]
+</pre>
+<ul><li>edit <b>carcontroller.py</b> and add the code needed to send the VIN and other specific radar info to Panda</li></ul>
+<dl><dd>- in the __init__ portion add</dd></dl>
+<pre>self.radarVin_idx = 0
+</pre>
+<dl><dd>- in the update portion add the below code, updating as needed 
+the CAN bus to be used for radar (in this example 2) and the 100Hz 
+message we will use to trigger messages (in this example 0x17c)</dd></dl>
+<pre>#if using radar, we need to send the VIN
+if CS.useTeslaRadar and (frame&nbsp;% 100 == 0):
+  can_sends.append(hondacan.create_radar_VIN_msg(self.radarVin_idx, CS.radarVIN, 2, 0x17c, CS.useTeslaRadar, CS.radarPosition, CS.radarEpasType))
+  self.radarVin_idx += 1
+  self.radarVin_idx = self.radarVin_idx  % 3
+</pre>
+<ul><li>copy from my repo the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/car/tesla/readconfig_min.sh">readconfig_min.py</a> and rename it <b>readconfig.py</b>; once you are done with all the code changes and reboot the EON, this will create a minimal <a href="https://tinkla.us/index.php/OpenPilot_Configuration_File" title="OpenPilot Configuration File">OpenPilot Configuration File</a> at /data/bb_openpilot.cfg with the values needed for radar</li>
+<li>edit <b>carstate.py</b></li></ul>
+<dl><dd>- add the import for the readconfig.py</dd></dl>
+<pre>from selfdrive.car.honda.readconfig import read_config_file
+</pre>
+<dl><dd>- add definition in __init__ for the variables needed by radar</dd></dl>
+<pre>   ### START OF MAIN CONFIG OPTIONS ###
+   ### Do NOT modify here, modify in /data/bb_openpilot.cfg and reboot
+   self.useTeslaRadar = False
+   self.radarVIN = "                 "
+   self.radarOffset = 0.
+   self.radarPosition = 0
+   self.radarEpasType = 0
+   #read config file
+   read_config_file(self)
+   ### END OF MAIN CONFIG OPTIONS ###
+</pre>
+<ul><li>copy from my repo the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/car/tesla/radar_interface.py">radar_interface.py</a> file and modify if needed</li>
+<li>copy from my repo the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/controls/radard.py">radard.py</a> to /data/openpilot/selfdrive/controls and modify as needed</li>
+<li>copy from my repo the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/controls/lib/radar_helpers.py">radar_helpers.py</a> to /data/openpilot/selfdrive/controls/lib and modify as needed</li></ul>
+<h3><span class="mw-headline" id="Obtain_the_VIN_programmed_in_your_radar">Obtain the VIN programmed in your radar</span></h3>
+<p>Chances are you bought your Tesla Bosch Radar on ebay and was 
+previously installed and programmed in a car (so it will only respond if
+ we send the right VIN, epay type and position). The first step in 
+getting the radar to send data is to obtain the VIN that was previously 
+programmed. To get the VIN you will have to use the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/car/tesla/radar_tools/readRadarVin.py">readRadarVin.py</a> script (if you are on one of my branches the file is located in <code class="mw-highlight" dir="ltr">/data/openpilot/selfdrive/car/tesla/radar_tools/</code>). 
+</p><p>Once you have the scrip do the following steps:
+</p>
+<ul><li>SSH into the EON</li>
+<li><code class="mw-highlight" dir="ltr">cd /data/openpilot/selfdrive/car/tesla/radar_tools/</code> (or go to the location where you saved the script)</li>
+<li>kill OpenPilot:
+<ul><li><code class="mw-highlight" dir="ltr">tmux kill-session -t comma</code></li></ul></li>
+<li>set the python environment variable
+<ul><li><code class="mw-highlight" dir="ltr">export PYTHONPATH="/data/openpilot/"</code></li></ul></li>
+<li>run the readRadarVin.py script
+<ul><li><code class="mw-highlight" dir="ltr">python readRadarVin.py</code></li></ul></li></ul>
+<p>The 17 character VIN number will be displayed in the output of the script. Write it down. It should look something like <code class="mw-highlight" dir="ltr">5YJSA1E41FF156789</code>
+</p>
+<h3><span class="mw-headline" id="Modifying_the_configuration_file_for_radar">Modifying the configuration file for radar</span></h3>
+<p>Now that we have the VIN, we need to configure the <a href="https://tinkla.us/index.php/OpenPilot_Configuration_File" title="OpenPilot Configuration File">OpenPilot Configuration File</a> with the needed parameters. 
+</p>
+<pre>[OP_CONFIG]
+use_tesla_radar = True
+enable_radar_emulation = True
+radar_vin = YOUR_RADAR_VIN_HERE
+radar_offset = 0.0
+radar_epas_type = 0
+radar_position = 0
+</pre>
+<p>So make sure that the <b>use_tesla_radar</b> variable is set to True.
+</p><p><b>radar_vin</b> need to match the VIN you obtain from the 
+readRadarVin.py script (do not put any quotes or any other characters on
+ that line, just the VIN). Example: <b>5YJSA1E41FF156789</b>
+</p><p><b>radar_offset</b> has to be changed only if your radar is not 
+centered on the car (some cars have it closer to the left side of the 
+car, in which case the offset should be positive and equal to the 
+distance between the center of the radar and center of the car, in 
+meters; for example 58cm will be 0.58 for offset).
+</p>
+<pre>The following settings need to match the values that were on <b>the donor car</b>, not your car. Use the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://teslatap.com/vin-decoder/">VIN Decoder</a> to understand the Tesla model, year and other information that can help you program these parameters.
+</pre>
+<p><b>radar_epas_type</b> is the type of EPAS that was on the donor car. The value can be between 0 and 4:
+</p>
+<ul><li>0 - Bosch L538</li>
+<li>1 - Bosch L405</li>
+<li>2 - Mando FGR64</li>
+<li>3 - Mando VGR66</li>
+<li>4 - Mando VGR66 Gen3</li></ul>
+<p>For pre-facelift AP1 cars you will find mostly 0 or 1. Post facelift 
+cars are mostly 3 or 4. But nothing can give you the exact value and you
+ might have to try various values until RADC_a062_strRackMismatch in 
+TeslaRadarAlertMatrix message is 0. See the <a href="https://tinkla.us/index.php/Tesla_Bosch_Radar#Troubleshooting_the_Tesla_Bosch_Radar" title="Tesla Bosch Radar">troubleshooting section</a> to learn how to look at the TeslaRadarAlertMatrix message in <a href="https://tinkla.us/index.php/Cabana" title="Cabana">Cabana</a>.
+</p><p><b>radar_position</b> is the position of the radar in the donor car. The value can be between 0 and 2:
+</p>
+<ul><li>0 - Model S (pre facelift)</li>
+<li>1 - Model S (post facelift)</li>
+<li>2 - Model X</li></ul>
+<p>You can use the manufacturing date and model from <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://teslatap.com/vin-decoder/">VIN Decoder</a>
+ to estimate your value. 2014 and 2015 Model S will always be 0. 2017 
+and above Model S will be 1. Model X will be always 2. But again nothing
+ will give you the exact value and you might have to try 0 or 1 if the 
+Model S was manufactured in 2016 because it could be 0 (pre April 2016) 
+or 1 (post April 2016). The value of RADC_a061_radPositionMismatch in 
+TeslaRadarAlertMatrix message should be 0 if programmed correctly. See 
+the <a href="https://tinkla.us/index.php/Tesla_Bosch_Radar#Troubleshooting_the_Tesla_Bosch_Radar" title="Tesla Bosch Radar">troubleshooting section</a> to learn how to look at the TeslaRadarAlertMatrix message in <a href="https://tinkla.us/index.php/Cabana" title="Cabana">Cabana</a>. 
+</p><p>You can find an explanation of each of the parameters <a href="https://tinkla.us/index.php/OpenPilot_Configuration_File" title="OpenPilot Configuration File">here</a>. 
+</p><p>Once done, reboot your EON.
+</p>
+<h3><span class="mw-headline" id="Calibrating_your_radar">Calibrating your radar</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://tinkla.us/index.php/File:Determine_the_center_of_car.png" class="image"><img alt="" src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/300px-Determine_the_center_of_car.png" width="300" height="549" class="thumbimage" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/Determine_the_center_of_car.png 1.5x" data-file-width="337" data-file-height="617"></a>  <div class="thumbcaption"><div class="magnify"><a href="https://tinkla.us/index.php/File:Determine_the_center_of_car.png" class="internal" title="Enlarge"></a></div>Determine the center of car</div></div></div>
+<p>Most likely the radar will have to be calibrated in order to ensure 
+the correct data being fed into OpenPilot. In order to calibrate your 
+radar you will need:
+</p>
+<ul><li>the <a target="_blank" rel="nofollow noreferrer noopener" class="external text" href="https://github.com/BogGyver/openpilot/blob/test_teslaradar/selfdrive/car/tesla/radar_tools/calibrateRadar.py">calibrateRadar.py</a> script which for those running on one of my Tesla branches is located in <b>/data/openpilot/selfdrive/car/tesla/radar_tools/</b></li>
+<li>a 4ft (120 cm) metal pole that can stay vertically by itself (I personally use a microphone stand)</li>
+<li>tape measure</li>
+<li>chalk</li>
+<li>computer or phone to SSH into EON and view data</li></ul>
+<p>First, we need to create a straight line that is perfectly centered 
+on the car (for this you will need another person to hold one end of the
+ tape). Follow these steps:
+</p>
+<ul><li>start from the left front wheel well, measure 8 ft (2.5m) out 
+towards the center of the car and draw an arch of the circle using the 
+chalk.</li>
+<li>repeat the process from the right front wheel</li>
+<li>the place where your two arches intersect will be point A. (see blue lines in diagram)</li>
+<li>repeat the process above but measure out 16.5 ft (5 m)</li>
+<li>the place where your two new arches intersect will be point B (see red lines in diagram)</li>
+<li>connect points A and B with a line; this line is now along the center of the car (see green line in diagram)</li></ul>
+<p>Now that we have the line that marks the zero dY line, let's start the calibration script:
+</p>
+<ul><li>start OP (OP might stop when you leave the car; what i did was 
+to put open the driver window, put a heavy backpack on the driver seat, 
+connect the driver seatbelt and turn the car on; this way it ensured 
+that OP remained running)</li>
+<li>SSH into EON and go to the folder where the calibrateRadar.py is
+<ul><li><code class="mw-highlight" dir="ltr">cd /data/openpilot/selfdrive/car/tesla/radar_tools/</code></li></ul></li>
+<li>set the python environment
+<ul><li><code class="mw-highlight" dir="ltr">export PYTHONPATH="/data/openpilot/"</code></li></ul></li>
+<li>run the calibration script
+<ul><li><code class="mw-highlight" dir="ltr">python calibrateRadar.py</code></li></ul></li></ul>
+<p>The script will start showing data for objects between 8 ft (2.5 m) and 15 ft (4.5 m) in front of the car.
+</p><p>Now the calibration process starts:
+</p>
+<ul><li>place the metal pole (again, i used a microphne stand) in the middle of the line that connects A and B</li>
+<li>look at the terminal window running the calibration script and check x and y values for distance:
+<ul><li>you should see data from the script showing <b>dRel</b> and <b>dY</b> as some of the points; keep in mind the values are always in meters</li>
+<li>measure the distance between the radar and the pole: it should match the <b>dRel</b> distance</li>
+<li><b>dY</b> should be 0.0</li></ul></li>
+<li>if you can not see the pole at all or <b>dRel</b> is greater than the real measured distance, you will need to adjust the radar vertically until they match.</li>
+<li>if <b>dY</b> is not zero, adjust the radar position Left or Right until <b>dY</b> is 0.0</li>
+<li>once <b>dY</b> is 0.0 move the pole along the line connecting A and B repeating the above process</li>
+<li>you are done when no matter where you place the pole between A and B, <b>dY</b> is always 0.0</li></ul>
+<h3><span class="mw-headline" id="Troubleshooting_the_Tesla_Bosch_Radar">Troubleshooting the Tesla Bosch Radar</span></h3>
+<p>The radar send data for the first 5 seconds no matter what we send to
+ it. But if we are sending the wrong info (VIN, position or epas) it 
+will stop sending changes to the data after 5 seconds. At this point we 
+have to see what exactly is happening with the radar by looking at the 
+allerts it generates.
+</p><p>You can use <a href="https://tinkla.us/index.php/Cabana" title="Cabana">cabana</a>
+ and paste the following code in the DBC in order to understand what 
+errors the radar is sending and what you need to change. Once you opened
+ your cabana drive, click Load DBC, then Upload, and copy and paste the 
+content from below to the DBC area. Then just look at the message called
+ TeslaRadarAlertMatrix and see if you have any errors. Calibration 
+warnings will not stop radar from operating.
+(Make sure you're looking at 1:501 for TeslaRadarAlertMatrix, not 0:501)
+</p>
+<pre>VERSION ""
+NS_&nbsp;: 
+ NS_DESC_
+ CM_
+ BA_DEF_
+ BA_
+ VAL_
+ CAT_DEF_
+ CAT_
+ FILTER
+ BA_DEF_DEF_
+ EV_DATA_
+ ENVVAR_DATA_
+ SGTYPE_
+ SGTYPE_VAL_
+ BA_DEF_SGTYPE_
+ BA_SGTYPE_
+ SIG_TYPE_REF_
+ VAL_TABLE_
+ SIG_GROUP_
+ SIG_VALTYPE_
+ SIGTYPE_VALTYPE_
+ BO_TX_BU_
+ BA_DEF_REL_
+ BA_REL_
+ BA_DEF_DEF_REL_
+ BU_SG_REL_
+ BU_EV_REL_
+ BU_BO_REL_
+ SG_MUL_VAL_
+BS_:
+BU_:  FrontCamera Radar
+BO_ 769 TeslaRadarSguInfo: 8 Radar
+ SG_ RADC_VerticalMisalignment&nbsp;: 0|8@1+ (1,0) [0|255] ""  FrontCamera
+ SG_ RADC_SCUTemperature&nbsp;: 8|8@1+ (1,-128) [-128|127] ""  FrontCamera
+ SG_ RADC_VMA_Plaus&nbsp;: 16|8@1+ (1,0) [0|255] ""  FrontCamera
+ SG_ RADC_SGU_ITC&nbsp;: 24|8@1+ (1,0) [0|255] ""  FrontCamera
+ SG_ RADC_HorizontMisalignment&nbsp;: 32|12@1+ (1,0) [0|4096] ""  FrontCamera
+ SG_ RADC_SensorDirty&nbsp;: 44|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_HWFail&nbsp;: 45|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_SGUFail&nbsp;: 46|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_SGUInfoConsistBit&nbsp;: 47|1@1+ (1,0) [0|1] ""  FrontCamera
+BO_ 770 TeslaRadarTguInfo: 8 Radar
+ SG_ RADC_ACCTargObj1_sguIndex&nbsp;: 0|6@1+ (1,0) [0|63] ""  FrontCamera
+ SG_ RADC_ACCTargObj2_sguIndex&nbsp;: 6|6@1+ (1,0) [0|63] ""  FrontCamera
+ SG_ RADC_ACCTargObj3_sguIndex&nbsp;: 12|6@1+ (1,0) [0|63] ""  FrontCamera
+ SG_ RADC_ACCTargObj4_sguIndex&nbsp;: 18|6@1+ (1,0) [0|63] ""  FrontCamera
+ SG_ RADC_ACCTargObj5_sguIndex&nbsp;: 24|6@1+ (1,0) [0|63] ""  FrontCamera
+ SG_ unused30&nbsp;: 30|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_TGUInfoConsistBit&nbsp;: 31|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_ACCTargObj1_dBPower&nbsp;: 32|16@1+ (1,0) [0|65535] ""  FrontCamera
+ SG_ RADC_ACCTargObj5_dBPower&nbsp;: 48|16@1+ (1,0) [0|65535] ""  FrontCamera 
+BO_ 1281 TeslaRadarAlertMatrix: 8 Radar
+ SG_ RADC_a001_ecuInternalPerf&nbsp;: 0|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a002_flashPerformance&nbsp;: 1|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a003_vBatHigh&nbsp;: 2|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a004_adjustmentNotDone&nbsp;: 3|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a005_adjustmentReq&nbsp;: 4|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a006_adjustmentNotOk&nbsp;: 5|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a007_sensorBlinded&nbsp;: 6|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a008_plantModeActive&nbsp;: 7|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a009_configMismatch&nbsp;: 8|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a010_canBusOff&nbsp;: 9|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a011_bdyMIA&nbsp;: 10|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a012_espMIA&nbsp;: 11|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a013_gtwMIA&nbsp;: 12|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a014_sccmMIA&nbsp;: 13|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a015_adasMIA&nbsp;: 14|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a016_bdyInvalidCount&nbsp;: 15|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a017_adasInvalidCount&nbsp;: 16|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a018_espInvalidCount&nbsp;: 17|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a019_sccmInvalidCount&nbsp;: 18|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a020_bdyInvalidChkSm&nbsp;: 19|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a021_espInvalidChkSm&nbsp;: 20|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a022_sccmInvalidChkSm&nbsp;: 21|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a023_sccmInvalidChkSm&nbsp;: 22|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a024_absValidity&nbsp;: 23|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a025_ambTValidity&nbsp;: 24|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a026_brakeValidity&nbsp;: 25|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a027_CntryCdValidity&nbsp;: 26|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a028_espValidity&nbsp;: 27|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a029_longAccOffValidity&nbsp;: 28|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a030_longAccValidity&nbsp;: 29|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a031_odoValidity&nbsp;: 30|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a032_gearValidity&nbsp;: 31|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a033_steerAngValidity&nbsp;: 32|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a034_steerAngSpdValidity&nbsp;: 33|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a035_indctrValidity&nbsp;: 34|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a036_vehStandStillValidity&nbsp;: 35|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a037_vinValidity&nbsp;: 36|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a038_whlRotValidity&nbsp;: 37|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a039_whlSpdValidity&nbsp;: 38|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a040_whlStandStillValidity&nbsp;: 39|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a041_wiperValidity&nbsp;: 40|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a042_xwdValidity&nbsp;: 41|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a043_yawOffValidity&nbsp;: 42|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a044_yawValidity&nbsp;: 43|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a045_bsdSanity&nbsp;: 44|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a046_rctaSanity&nbsp;: 45|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a047_lcwSanity&nbsp;: 46|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a048_steerAngOffSanity&nbsp;: 47|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a049_tireSizeSanity&nbsp;: 48|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a050_velocitySanity&nbsp;: 49|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a051_yawSanity&nbsp;: 50|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a052_radomeHtrInop&nbsp;: 51|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a053_espmodValidity&nbsp;: 52|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a054_gtwmodValidity&nbsp;: 53|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a055_stwmodValidity&nbsp;: 54|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a056_bcmodValidity&nbsp;: 55|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a057_dimodValidity&nbsp;: 56|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a058_opmodValidity&nbsp;: 57|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a059_drmiInvalidChkSm&nbsp;: 58|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a060_drmiInvalidCount&nbsp;: 59|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a061_radPositionMismatch&nbsp;: 60|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ RADC_a062_strRackMismatch&nbsp;: 61|1@1+ (1,0) [0|1] ""  FrontCamera
+ SG_ unused62&nbsp;: 62|2@1+ (1,0) [0|3] ""  FrontCamera
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20250807140058
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.026 seconds
+Real time usage: 0.044 seconds
+Preprocessor visited node count: 116/1000000
+Preprocessor generated node count: 220/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 707/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key my_wiki-tesla_:pcache:idhash:209-0!canonical and timestamp 20250807140058 and revision id 1330
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;oldid=1330">https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;oldid=1330</a>"</div>
+<div class="visualClear"></div></div></div></div><div id="content-bottom-stuff"><div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://tinkla.us/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://tinkla.us/index.php?title=Category:Pages_with_syntax_highlighting_errors&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages with syntax highlighting errors (page does not exist)">Pages with syntax highlighting errors</a></li></ul></div></div></div></div><div id="mw-site-navigation"><div id="p-logo" class="mw-portlet" role="banner"><a class="mw-wiki-logo" href="https://tinkla.us/index.php/Main_Page" title="Visit the main page"></a></div><div id="site-navigation" class="sidebar-chunk"><h2><span>Navigation</span><div class="pokey"></div></h2><div class="sidebar-inner"><div role="navigation" class="mw-portlet" id="p-Navigation" aria-labelledby="p-Navigation-label"><h3 id="p-Navigation-label" lang="en" dir="ltr">Navigation</h3><div class="mw-portlet-body"><ul><li id="n-Tinkla-Main-Page"><a href="https://tinkla.us/t/index.php" rel="nofollow" target="_blank"><span>Tinkla Main Page</span></a></li><li id="n-Tinkla-Wiki-Main-Page"><a href="https://tinkla.us/index.php/Main_Page"><span>Tinkla Wiki Main Page</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Tesla_Unity" aria-labelledby="p-Tesla_Unity-label"><h3 id="p-Tesla_Unity-label" lang="en" dir="ltr">Tesla Unity</h3><div class="mw-portlet-body"><ul><li id="n-Overview"><a href="https://tinkla.us/index.php/Comma_devkit"><span>Overview</span></a></li><li id="n-Installing"><a href="https://tinkla.us/index.php/Comma_devkit#Installing_OpenPilot_for_Tesla"><span>Installing</span></a></li><li id="n-Config"><a href="https://tinkla.us/index.php/Tesla_Unity_Configuration"><span>Config</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Tesla_OP_for_EON" aria-labelledby="p-Tesla_OP_for_EON-label"><h3 id="p-Tesla_OP_for_EON-label" lang="en" dir="ltr">Tesla OP for EON</h3><div class="mw-portlet-body"><ul><li id="n-Overview"><a href="https://tinkla.us/index.php/EON"><span>Overview</span></a></li><li id="n-Installing"><a href="https://tinkla.us/index.php/EON#Installing_OpenPilot_for_Tesla"><span>Installing</span></a></li><li id="n-Config"><a href="https://tinkla.us/index.php/OpenPilot_Configuration_File"><span>Config</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Tesla_Cars" aria-labelledby="p-Tesla_Cars-label"><h3 id="p-Tesla_Cars-label" lang="en" dir="ltr">Tesla Cars</h3><div class="mw-portlet-body"><ul><li id="n-preAP"><a href="https://tinkla.us/index.php/OpenPilot_for_preAP_Tesla_ModelS"><span>preAP</span></a></li><li id="n-AP1"><a href="https://tinkla.us/index.php/OpenPilot_for_Tesla_Model_S/X_with_AP1"><span>AP1</span></a></li><li id="n-AP2"><a href="https://tinkla.us/index.php/OpenPilot_for_Tesla_Model_S/X_with_AP2"><span>AP2</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Integration" aria-labelledby="p-Integration-label"><h3 id="p-Integration-label" lang="en" dir="ltr">Integration</h3><div class="mw-portlet-body"><ul><li id="n-preAP-IC-Integration"><a href="https://tinkla.us/index.php/PreAP:_IC_Integration_with_OP"><span>preAP IC Integration</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Components" aria-labelledby="p-Components-label"><h3 id="p-Components-label" lang="en" dir="ltr">Components</h3><div class="mw-portlet-body"><ul><li id="n-Comma-devkit"><a href="https://tinkla.us/index.php/Comma_devkit"><span>Comma devkit</span></a></li><li id="n-EON-.28deprecated.29"><a href="https://tinkla.us/index.php/EON"><span>EON (deprecated)</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-preAP_Components" aria-labelledby="p-preAP_Components-label"><h3 id="p-preAP_Components-label" lang="en" dir="ltr">preAP Components</h3><div class="mw-portlet-body"><ul><li id="n-Tinkla-OBD-C"><a href="https://tinkla.us/index.php/Tinkla_OBD-C_Adapter"><span>Tinkla OBD-C</span></a></li><li id="n-Tesla-Radar"><a href="https://tinkla.us/index.php/Tesla_Bosch_Radar"><span>Tesla Radar</span></a></li><li id="n-Pedal-Interceptor"><a href="https://tinkla.us/index.php/Pedal_Interceptor"><span>Pedal Interceptor</span></a></li><li id="n-Tinkla-Buddy"><a href="https://tinkla.us/index.php/Tinkla_Buddy"><span>Tinkla Buddy</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-AP_Components" aria-labelledby="p-AP_Components-label"><h3 id="p-AP_Components-label" lang="en" dir="ltr">AP Components</h3><div class="mw-portlet-body"><ul><li id="n-AP1-Harness"><a href="https://tinkla.us/index.php/AP1_Harness"><span>AP1 Harness</span></a></li><li id="n-AP2-Harness"><a href="https://tinkla.us/index.php/AP2_Harness"><span>AP2 Harness</span></a></li><li id="n-Tinkla-Relay"><a href="https://tinkla.us/index.php/Tinkla_Relay"><span>Tinkla Relay</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Older_Components" aria-labelledby="p-Older_Components-label"><h3 id="p-Older_Components-label" lang="en" dir="ltr">Older Components</h3><div class="mw-portlet-body"><ul><li id="n-Panda"><a href="https://tinkla.us/index.php/Panda"><span>Panda</span></a></li><li id="n-Tesla-Giraffe"><a href="https://tinkla.us/index.php/Tesla_Giraffe"><span>Tesla Giraffe</span></a></li><li id="n-EPAS-Harness"><a href="https://tinkla.us/index.php/EPAS_harness"><span>EPAS Harness</span></a></li><li id="n-OP-Configuration-File"><a href="https://tinkla.us/index.php/OpenPilot_Configuration_File"><span>OP Configuration File</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Reference" aria-labelledby="p-Reference-label"><h3 id="p-Reference-label" lang="en" dir="ltr">Reference</h3><div class="mw-portlet-body"><ul><li id="n-Disclaimer-and-Licensing"><a href="https://tinkla.us/index.php/Tinkla:General_disclaimer"><span>Disclaimer and Licensing</span></a></li><li id="n-AWG-Chart"><a href="https://tinkla.us/index.php/AWG_chart"><span>AWG Chart</span></a></li></ul></div></div><div role="navigation" class="mw-portlet" id="p-Other" aria-labelledby="p-Other-label"><h3 id="p-Other-label" lang="en" dir="ltr">Other</h3><div class="mw-portlet-body"><ul><li id="n-Comma.ai"><a href="https://comma.ai/" rel="nofollow" target="_blank"><span>Comma.ai</span></a></li><li id="n-GitHub-Repo"><a href="https://github.com/BogGyver/openpilot" rel="nofollow" target="_blank"><span>GitHub Repo</span></a></li></ul></div></div></div></div><div id="site-tools" class="sidebar-chunk"><h2><span>Wiki tools</span><div class="pokey"></div></h2><div class="sidebar-inner"><div role="navigation" class="mw-portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Wiki tools</h3><div class="mw-portlet-body"><ul><li id="t-specialpages"><a href="https://tinkla.us/index.php/Special:SpecialPages" title="A list of all special pages [⌃⌥q]" accesskey="q"><span>Special pages</span></a></li><li id="t-cite"><a href="https://tinkla.us/index.php?title=Special:CiteThisPage&amp;page=Tesla_Bosch_Radar_EON&amp;id=1330" title="Information on how to cite this page"><span>Cite this page</span></a></li></ul></div></div></div></div></div><div id="mw-related-navigation"><div id="page-tools" class="sidebar-chunk"><h2><span>Page tools</span><div class="pokey"></div></h2><div class="sidebar-inner"><div role="navigation" class="mw-portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page tools</h3><div class="mw-portlet-body"><ul><li id="ca-myact"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;action=myact"><span>My action</span></a></li></ul></div></div><div role="navigation" class="mw-portlet emptyPortlet" id="p-userpagetools" aria-labelledby="p-userpagetools-label"><h3 id="p-userpagetools-label" lang="en" dir="ltr">Userpage tools</h3><div class="mw-portlet-body"><ul></ul></div></div><div role="navigation" class="mw-portlet" id="p-pagemisc" aria-labelledby="p-pagemisc-label"><h3 id="p-pagemisc-label" lang="en" dir="ltr">More</h3><div class="mw-portlet-body"><ul><li id="t-whatlinkshere"><a href="https://tinkla.us/index.php/Special:WhatLinksHere/Tesla_Bosch_Radar_EON" title="A list of all wiki pages that link here [⌃⌥j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked"><a href="https://tinkla.us/index.php/Special:RecentChangesLinked/Tesla_Bosch_Radar_EON" rel="nofollow" title="Recent changes in pages linked from this page [⌃⌥k]" accesskey="k"><span>Related changes</span></a></li><li id="t-print"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;printable=yes" rel="alternate" title="Printable version of this page [⌃⌥p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;oldid=1330" title="Permanent link to this revision of the page"><span>Permanent link</span></a></li><li id="t-info"><a href="https://tinkla.us/index.php?title=Tesla_Bosch_Radar_EON&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-pagelog"><a href="https://tinkla.us/index.php/Special:Log/Tesla_Bosch_Radar_EON"><span>Page logs</span></a></li></ul></div></div></div></div><div id="catlinks-sidebar" class="sidebar-chunk"><h2><span>Categories</span><div class="pokey"></div></h2><div class="sidebar-inner"><div id="sidebar-normal-catlinks" class="mw-normal-catlinks"><div role="navigation" class="mw-portlet" id="p-normal-catlinks" aria-labelledby="p-normal-catlinks-label"><h3 id="p-normal-catlinks-label" lang="en" dir="ltr">Categories</h3><div class="mw-portlet-body"><ul><li><a href="https://tinkla.us/index.php?title=Category:Pages_with_syntax_highlighting_errors&amp;action=edit&amp;redlink=1" class="new" title="Category:Pages with syntax highlighting errors (page does not exist)">Pages with syntax highlighting errors</a></li></ul></div></div></div></div></div></div><div class="visualClear"></div></div></div><div id="mw-footer-container" class="ts-container"><div id="mw-footer" class="ts-inner"><div id="footer-bottom" role="contentinfo" lang="en" dir="ltr"><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/" target="_blank"><img src="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/poweredby_mediawiki_132x47.png 1.5x, Tesla%20Bosch%20Radar%20EON%20-%20Tinkla_%20Tinkering%20with%20Tesla_files/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a></div><ul id="f-list" class="footer-places"><li id="lastmod"> This page was last edited on 26 March 2022, at 16:46.</li><li id="privacy"><a href="https://tinkla.us/index.php/Tinkla:Privacy_policy" title="Tinkla:Privacy policy">Privacy policy</a></li><li id="about"><a href="https://tinkla.us/index.php/Tinkla:About" title="Tinkla:About">About Tinkla: Tinkering with Tesla</a></li><li id="disclaimer"><a href="https://tinkla.us/index.php/Tinkla:General_disclaimer" title="Tinkla:General disclaimer">Disclaimers</a></li></ul><div class="visualClear"></div></div></div></div></div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.026","walltime":"0.044","ppvisitednodes":{"value":116,"limit":1000000},"ppgeneratednodes":{"value":220,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":707,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250807140058","ttl":86400,"transientcontent":false}}});});</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-141390218-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":216});});</script><div style="display: none; font-size: 15.2px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

@@ -1,0 +1,95 @@
+{
+  "vin": "5YJSB7E43GF113105",
+  "duration": 5,
+  "can_interface": "can1",
+  "runs": [
+    {
+      "label": "perf0_wheel4",
+      "params": {
+        "GTW_fourWheelDrive": 1,
+        "GTW_airSuspensionInstalled": 1,
+        "GTW_performanceConfig": 0,
+        "GTW_chassisType": 0,
+        "GTW_epasType": 3,
+        "GTW_autopilot": 0,
+        "GTW_country": 826,
+        "GTW_rhd": 1,
+        "GTW_forwardRadarHw": 1,
+        "GTW_parkAssistInstalled": 2,
+        "GTW_wheelType": 4,
+        "GTW_brakeHwType": 2,
+        "GTW_foldingMirrorsInstalled": 0,
+        "GTW_parkSensorGeometryType": 1,
+        "GTW_euVehicle": 1,
+        "radarPosition": 0,
+        "radarEpasType": 0
+      }
+    },
+    {
+      "label": "perf0_wheel6",
+      "params": {
+        "GTW_fourWheelDrive": 1,
+        "GTW_airSuspensionInstalled": 1,
+        "GTW_performanceConfig": 0,
+        "GTW_chassisType": 0,
+        "GTW_epasType": 3,
+        "GTW_autopilot": 0,
+        "GTW_country": 826,
+        "GTW_rhd": 1,
+        "GTW_forwardRadarHw": 1,
+        "GTW_parkAssistInstalled": 2,
+        "GTW_wheelType": 6,
+        "GTW_brakeHwType": 2,
+        "GTW_foldingMirrorsInstalled": 0,
+        "GTW_parkSensorGeometryType": 1,
+        "GTW_euVehicle": 1,
+        "radarPosition": 0,
+        "radarEpasType": 0
+      }
+    },
+    {
+      "label": "perf2_wheel12",
+      "params": {
+        "GTW_fourWheelDrive": 1,
+        "GTW_airSuspensionInstalled": 1,
+        "GTW_performanceConfig": 2,
+        "GTW_chassisType": 0,
+        "GTW_epasType": 3,
+        "GTW_autopilot": 0,
+        "GTW_country": 826,
+        "GTW_rhd": 1,
+        "GTW_forwardRadarHw": 1,
+        "GTW_parkAssistInstalled": 2,
+        "GTW_wheelType": 12,
+        "GTW_brakeHwType": 2,
+        "GTW_foldingMirrorsInstalled": 0,
+        "GTW_parkSensorGeometryType": 1,
+        "GTW_euVehicle": 1,
+        "radarPosition": 0,
+        "radarEpasType": 0
+      }
+    },
+    {
+      "label": "perf3_wheel8",
+      "params": {
+        "GTW_fourWheelDrive": 1,
+        "GTW_airSuspensionInstalled": 1,
+        "GTW_performanceConfig": 3,
+        "GTW_chassisType": 0,
+        "GTW_epasType": 3,
+        "GTW_autopilot": 0,
+        "GTW_country": 826,
+        "GTW_rhd": 1,
+        "GTW_forwardRadarHw": 1,
+        "GTW_parkAssistInstalled": 2,
+        "GTW_wheelType": 8,
+        "GTW_brakeHwType": 2,
+        "GTW_foldingMirrorsInstalled": 0,
+        "GTW_parkSensorGeometryType": 1,
+        "GTW_euVehicle": 1,
+        "radarPosition": 0,
+        "radarEpasType": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/Users/sam/git/EvoDecoder/code/radar_flasher.py:146: DeprecationWarning: The 'bustype' argument is deprecated since python-can v4.2.0, and scheduled for removal in python-can v5.0.0. Use 'interface' instead.
+  bus = can.interface.Bus(
+[VIN LEARN] Starting diagnostic session
+Requesting seed (level 0x11)...
+  seed: 11852efbdb
+Sending key (0x12): df7b70a5
+Traceback (most recent call last):
+  File "/Users/sam/git/EvoDecoder/code/radar_flasher.py", line 304, in <module>
+    main()
+  File "/Users/sam/git/EvoDecoder/code/radar_flasher.py", line 158, in main
+    vin_learn(session)
+  File "/Users/sam/git/EvoDecoder/code/radar_flasher.py", line 68, in vin_learn
+    session.uds_request(ServiceType.SECURITY_ACCESS, subfunction=0x12, data=key)
+  File "/Users/sam/git/EvoDecoder/code/uds_can.py", line 187, in uds_request
+    raise IsoTpError(f"UDS negative response: 0x{error:02X} ({desc})")
+uds_can.IsoTpError: UDS negative response: 0x35 (invalid key)

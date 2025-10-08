@@ -1,0 +1,3323 @@
+Opening SLcan interface /dev/cu.usbmodem2057326E55481 at 500000bps
+🚀 TESLA RADAR ACTIVATOR - COMPLETE IMPLEMENTATION
+======================================================================
+Based on working Panda safety layer implementation
+Features:
+  ✅ Complete Tesla protocol with proper timing
+  ✅ 13 Tesla messages at correct frequencies
+  ✅ Proper VIN transmission (3-part protocol)
+  ✅ CRC/checksum validation
+  ✅ 0x631 initialization detection
+  ✅ Enhanced radar monitoring
+  ✅ OpenPilot-style object validation
+
+🎯 Configuration:
+   VIN: 5YJSB7E43GF113105
+   Position: 1
+   EPAS Type: 0
+   Speed: 30 km/h
+   Duration: 5s
+
+👁️  Starting enhanced radar monitoring...
+🔍 MONITORING FOR RADAR ACTIVATION...
+Looking for:
+  1. 0x631 radar initialization signal
+  2. 0x300 radar status confirmation
+  3. VIN transmission completion (7 cycles)
+  4. Plant mode → Active transition
+  5. Dynamic scan index changes
+  6. Valid object detection
+
+🚀 Tesla Radar Protocol Started
+   VIN: 5YJSB7E43GF113105
+   Position: 1, EPAS: 0
+   Speed: 30 km/h
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 000000980000000e
+🎯 RADAR STATUS (0x300): State=9, Scan=96, Power=192
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000000a
+TX: 0x17C = 0040020000000000
+TX: 0x2B9 = 100000000035594a
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x2A9 = 4a16434110000210
+TX: 0x2D9 = 8040830000000000
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 12
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+🎯 RADAR STATUS (0x300): State=13, Scan=96, Power=195
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 4
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 9
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 5
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 5
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 6
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff1057
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x169 = 034000a000001069
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=0, Scan=118, Power=12
+RX: 0x300 = 8fff
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 06a000ac000020e8
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+RX: 0x300 = f600c1131e030800
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 09e000b800003047
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 0b2001c0000040a2
+TX: 0x119 = ff1ff41184be
+CAN error: Could not read from serial device
+TX: 0x109 = 0080008000000007
+CAN error: Could not read from serial device
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 0e6001cc00005001
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 11c001d800006080
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+⚠️  ERROR CODE (0x3FF): 40
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 140002e0000070dc
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 174002ec0000803b
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+🎯 RADAR STATUS (0x300): State=0, Scan=96, Power=195
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 1aa002f8000090ba
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 1de002040100a01a
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000010c7
+TX: 0x17C = 0040020102000000
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 2020030c0100b076
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 48
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 228003180100c0f4
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 25c003200100d04f
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 2800042c0100e0af
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 2b6004380100f02e
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 2ea004440100008d
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 31e0044c010110e9
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 33200558810220c9
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+⚠️  ERROR CODE (0x3FF): 72
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 3680056481033049
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 39c00570810440a9
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000208d
+TX: 0x17C = 0040040204000000
+🎯 RADAR STATUS (0x300): State=14, Scan=96, Power=195
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 3c200678010650a7
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 3f60068401076007
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 42a00690810870e7
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 80
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 45e0069881098043
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 484007a4010b9045
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x2B9 = 1153423745343347
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 4b8007b0010ca0a5
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 4ee007bc010db025
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 512008c8810ec006
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 536008d0810fd061
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 56a008dc8110e0c1
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000003040
+TX: 0x17C = 0040040306000000
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 590009e80112f0c3
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 104
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 5c4009f00113001f
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 5f8009fc0114107f
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 62e0090882152080
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+🎯 RADAR STATUS (0x300): State=7, Scan=4, Power=2
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 65200a14821630e1
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 67600a1c021840bd
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 6ac00a280219503d
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 112
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 6d000b34021a609e
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 70400b3c021b70fa
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 11
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 72800b48821c80d9
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000004019
+TX: 0x17C = 0040040408000000
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 75e00b50821d9055
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 78200c5c821ea0b6
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+CAN error: Could not read from serial device
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+⚠️  ERROR CODE (0x3FF): 136
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 7b600c680220b097
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 7ec00c740221c017
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 81000d7c8222d0f4
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=14, Scan=160, Power=65
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 84400d888223e054
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 87a00d948224f0d4
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 89e00d9c022600b0
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+⚠️  ERROR CODE (0x3FF): 144
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 8c200ea802271011
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 8f600eb402282071
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000050d4
+TX: 0x17C = 004004050a000000
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 1/7
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 92c00ebc8229306d
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 95000fc8822a40ce
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 16: 't11'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 11
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 98400fd4022c50af
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: invalid literal for int() with base 10: 'E'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 9ba00fdc022d602b
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+CAN error: Could not read from serial device
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 9de00fe8022e708a
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 168
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = a14010f4822f808c
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = a48010000331906e
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=15, Scan=48, Power=129
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = a7e0100c0332a0ee
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = aa2011180333b04f
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = ac6011208334c02a
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000609e
+TX: 0x17C = 004004060c000000
+⚠️  ERROR CODE (0x3FF): 176
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = afc0112c8335d0aa
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = b20012380337e08c
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+🎯 RADAR STATUS (0x300): State=2, Scan=12, Power=65
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = b56012440338f00c
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = b8a0124c833900e8
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = bbe01258833a1048
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = be401364833b20c9
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+⚠️  ERROR CODE (0x3FF): 200
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = c1801370033d30aa
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = c4c01378033e4006
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = c7201484833f5007
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=3, Scan=216, Power=0
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = c960149083406066
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000007053
+TX: 0x17C = 004004070e000000
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = cca01498834170c2
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = cf0015a4034380c4
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 10: 'F'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+⚠️  ERROR CODE (0x3FF): 208
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = d24015b003449024
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = d58015b80345a080
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+🎯 RADAR STATUS (0x300): State=0, Scan=168, Power=0
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = d8c015c48346b060
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x2B9 = 100000000035594a
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = da0016cc8347c0bc
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = dd6016d88348d03c
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 232
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = e0a016e4034ae01d
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = e3e016ec034bf079
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = e64017f8034c00fa
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000802c
+TX: 0x17C = 0040040810000000
+🎯 RADAR STATUS (0x300): State=15, Scan=124, Power=0
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = e9801704844d10db
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = ebc0170c844e2036
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = ee201818844f30b7
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 240
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = f160182404514098
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = f4a01830045250f8
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=2, Scan=132, Power=128
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = f7001938845360f5
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = f940194484547054
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = fc801950845580b4
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+⚠️  ERROR CODE (0x3FF): 8
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = ffe01958045790b1
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 02211a640458a013
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000090e1
+TX: 0x17C = 0040040912000000
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 05611a708459b0f3
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+🎯 RADAR STATUS (0x300): State=3, Scan=168, Power=192
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 08c11a78845ac06f
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 0b011b84045cd051
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 0e411b90045de0b1
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+⚠️  ERROR CODE (0x3FF): 16
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 11a11b9c045ef031
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 13e11ba4845f000c
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 16211cb08460106d
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=10, Scan=172, Power=192
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 19611cb8846120c9
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 1bc11cc484623048
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+Status: Not Present, VIN: 1/7, Time: 1.1s
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 1e011dd00464402a
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000a0ab
+TX: 0x17C = 0040040a14000000
+TX: 0x2B9 = 1153423745343347
+TX: 0x2A9 = 4a16434110000210
+TX: 0x2D9 = 8040830000000000
+⚠️  ERROR CODE (0x3FF): 40
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 21411dd804655086
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 24a11de484666086
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: invalid literal for int() with base 10: 'F'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff70c3
+CAN error: Could not read from serial device
+TX: 0x169 = 27e11df0846770e6
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 2a211ef884688043
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 2d811e04056a9045
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 48
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 30c11e10056ba0a5
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 32011f18856cb081
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+🎯 RADAR STATUS (0x300): State=11, Scan=176, Power=128
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 35611f24856dc001
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 38a11f30856ed061
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 3be11f380570e03e
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000b066
+TX: 0x17C = 0040040b16000000
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 3e4120440571f0bf
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 72
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 408120500572001e
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 43c12058857310fa
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 460121648574205b
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 496121700576305c
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 4ba12178057740b7
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 4ee1218005785013
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 80
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 5121228c05796074
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 54812298857a7074
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+🎯 RADAR STATUS (0x300): State=10, Scan=192, Power=192
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 57e122a4857b80f4
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000c03f
+TX: 0x17C = 0040040c18000000
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 5a2123ac057d90d2
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 5c6123b8057ea031
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 5fa123c4857fb011
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 104
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 620124d08580c092
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 654124d88581d0ee
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 2/7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 688124e40583e0cf
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 6ac124ec0584f02a
+TX: 0x119 = ff1ff4118fc9
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 6d2125f8058500ab
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 7061250006861008
+TX: 0x119 = ff1ff41181bb
+⚠️  ERROR CODE (0x3FF): 112
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 72a1250c868720e7
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000d0f2
+TX: 0x17C = 0040040d1a000000
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 75e1251486883043
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+🎯 RADAR STATUS (0x300): State=12, Scan=208, Power=128
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 78212620868940a4
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 7a812628868a501f
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 7dc12634068c6000
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+⚠️  ERROR CODE (0x3FF): 136
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 80012740068d7061
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 83612748868e805d
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 86a12754868f90bd
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 88e1275c8690a018
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 8b2128680692b0fa
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 8e8128740693c07a
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000e0b8
+TX: 0x17C = 0040040e1c000000
+⚠️  ERROR CODE (0x3FF): 144
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 91e128808694d07a
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=2, Scan=248, Power=192
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 942129888695e0d7
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 976129940697f0b8
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 9ac129a006980038
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 9d012aa806991095
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 168
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 9f412ab4869a2074
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = a2812abc869b30d0
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = a4c12ac8869c402f
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = a7212bd0869d50ac
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = aa612bdc069f608d
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000f075
+TX: 0x17C = 0040040f1e000000
+TX: 0x2B9 = 100000000035594a
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = aca12be406a070e8
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = afe12bf006a18048
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+⚠️  ERROR CODE (0x3FF): 176
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = b2412cf886a29045
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=3, Scan=16, Power=193
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = b5812c0487a3a0a6
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = b7c12c1087a4b005
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = ba012d1807a6c0e3
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+⚠️  ERROR CODE (0x3FF): 200
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = bd612d2407a7d063
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = bfa12d2c07a8e0be
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = c2e12d3887a9f09e
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = c5412e4087aa001b
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000000a
+TX: 0x17C = 0040041020000000
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = c8812e4c07ac10fc
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = cbe12e5807ad207c
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+⚠️  ERROR CODE (0x3FF): 208
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = ce212f6487ae305d
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = d0612f6c87af40b8
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+🎯 RADAR STATUS (0x300): State=1, Scan=44, Power=1
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = d3c12f7887b05038
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = d601308087b16095
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = d941308c07b37076
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = db81309807b480d5
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+⚠️  ERROR CODE (0x3FF): 232
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = dee130a087b590d1
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = e12131ac87b6a032
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000010c7
+TX: 0x17C = 0040041122000000
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: invalid literal for int() with base 16: 't148F201'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = e46131b487b7b08e
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = e6c131c007b9c08e
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = e90132c807bad0eb
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 240
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = ec4132d407bbe04b
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = efa132e087bcf04b
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x2B9 = 1153423745343347
+🎯 RADAR STATUS (0x300): State=2, Scan=72, Power=65
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = f2e132ec07be002c
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = f54133f407bf10a9
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = f781330008c02009
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = fac1330888c130e5
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 8
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = fd01341488c24046
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000208d
+TX: 0x17C = 0040041224000000
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = ff41341c88c350a1
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 02a2342888c46022
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+CAN decode error: invalid literal for int() with base 10: 'F'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 05e2343008c670ff
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 0842353c08c78080
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 0a82354488c8905b
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 16
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 0dc2355088c9a0bb
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 1002365c88cab01c
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+🎯 RADAR STATUS (0x300): State=8, Scan=92, Power=65
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 1362366808ccc01d
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 16c2367088cdd019
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 1802377c88cee079
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000003040
+TX: 0x17C = 0040041326000000
+⚠️  ERROR CODE (0x3FF): 40
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 1b42378888cff0d9
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 1ea2379408d100da
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+🎯 RADAR STATUS (0x300): State=8, Scan=100, Power=65
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 21e2379c08d21036
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 11
+CAN decode error: invalid literal for int() with base 10: 'C'
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 242238a888d32017
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 268238b088d43092
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 29c238bc08d64073
+TX: 0x119 = ff1ff41184be
+⚠️  ERROR CODE (0x3FF): 48
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 2c2239c808d750f4
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=2, Scan=108, Power=65
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 2f6239d008d86050
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 31a239dc88d9702f
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+Status: Not Present, VIN: 2/7, Time: 2.2s
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 34e239e488da808b
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000004019
+TX: 0x17C = 0040041428000000
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 3/7
+TX: 0x2A9 = 4a16434110000210
+TX: 0x2D9 = 8040830000000000
+⚠️  ERROR CODE (0x3FF): 72
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 37423af088db900c
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 3a823af808dda0e9
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 3de23a0489deb0ea
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 10: 'F'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 3f223b1089dfc04a
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 42623b1889e0d0a6
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 45a23b2489e1e006
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 47023c2c09e3f003
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 80
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 4a423c3809e40063
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 4d823c4089e5103f
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=1, Scan=132, Power=65
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 50e23c4c89e620bf
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000050d4
+TX: 0x17C = 004004152a000000
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 52223d5809e830a0
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 55823d6009e9401c
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+⚠️  ERROR CODE (0x3FF): 104
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 58c23d6c89ea50fc
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 5b223e7889eb607d
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 5e623e8409ed705e
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 61a23e8c09ee80ba
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 64023f9889ef90bb
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 67623fa409f1a0bc
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+⚠️  ERROR CODE (0x3FF): 112
+TX: 0x199 = 2f7d200004ffb0f6
+🎯 RADAR STATUS (0x300): State=2, Scan=152, Power=1
+TX: 0x169 = 6ce23fb809f3b067
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 6f2240c009f4c0c4
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000609e
+TX: 0x17C = 004004162c000000
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 718240cc89f5d0c3
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 136
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 760241dc89f7e06b
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 794241e889f8f0cb
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 7da241f489fa004d
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+CAN decode error: invalid literal for int() with base 10: 'D'
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 7f0242008afb10ce
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x2B9 = 100000000035594a
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 824242088afc202a
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 848242140afe300a
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 144
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 87c2421c0aff4066
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 8a2243280a0051e8
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=8, Scan=172, Power=193
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 8d6243348a0161c8
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000007053
+TX: 0x17C = 004004172f000000
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 8fc2433c8a027143
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 920244480a048125
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+⚠️  ERROR CODE (0x3FF): 168
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 956244540a0591a5
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 98a2445c8a06a181
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+🎯 RADAR STATUS (0x300): State=7, Scan=184, Power=129
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 9b0245688a07b102
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 9d4245708a08c15d
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = a082457c0a0ad13e
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = a2c245840a0be199
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+⚠️  ERROR CODE (0x3FF): 176
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = a502468c0a0cf1f6
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = a86246988a0d01f6
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000802c
+TX: 0x17C = 0040041831000000
+🎯 RADAR STATUS (0x300): State=12, Scan=192, Power=129
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = aaa246a48a0e1155
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = ade246ac8a0f21b1
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = b04247b80a1131b3
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 200
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = b28247c00a12410e
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = b5e247cc8a13510e
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = b82248d88a14616f
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+CAN decode error: invalid literal for int() with base 10: 'F'
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = bb8248e00a16716c
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = bdc248ec0a1781cb
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = c00249f40a189128
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = c36249008b19a129
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+⚠️  ERROR CODE (0x3FF): 208
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000090e1
+TX: 0x17C = 0040041933000000
+TX: 0x2B9 = 1153423745343347
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = c6a2490c0b1bb10a
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = c8024a140b1cc186
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = cb424a208b1dd166
+🎯 RADAR STATUS (0x300): State=1, Scan=220, Power=129
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = cea24a2c8b1ee1e6
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = d1e24a340b20f1c3
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = d4424b400b210144
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+⚠️  ERROR CODE (0x3FF): 232
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = d7824b4c8b221124
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = d9e24b548b23219f
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+RX: 0x300 = 2e48115340030f00
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = dc224c600b253181
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = df624c6c0b2641e1
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000a0ab
+TX: 0x17C = 0040041a35000000
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = e2c24c748b2751dd
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 240
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = e4024d7c8b286139
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = e7424d888b297199
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+🎯 RADAR STATUS (0x300): State=1, Scan=240, Power=65
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = eaa24d940b2b819a
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = ece24d9c0b2c91f5
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = ef424ea88b2da1f6
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+⚠️  ERROR CODE (0x3FF): 8
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = f2824eb08b2eb152
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = f4c24ebc8b2fc1b1
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = f7224fc40b31d1af
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+RX: 0x300 = ef84
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = fa624fd00b32e10f
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000b066
+TX: 0x17C = 0040041b37000000
+CAN decode error: invalid literal for int() with base 16: '31t83423'
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = fcc24fdc8b33f10e
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = ff0250e48b34016b
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 024350ec0b361149
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 16
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 04a350f80b3721c8
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 07e350048c3831a9
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 4/7
+🎯 RADAR STATUS (0x300): State=1, Scan=4, Power=130
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 0a23510c8c394106
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 0c8351188c3a5185
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 0fc351200c3c6162
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+⚠️  ERROR CODE (0x3FF): 40
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 1223522c0c3d71e3
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 146352340c3e813e
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000c03f
+TX: 0x17C = 0040041c39000000
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 17a352408c3f911e
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 19e352488c40a179
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+CAN decode error: invalid literal for int() with base 16: 't3168000'
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 11
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 1c2353508c41b1d6
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 1e83535c0c43c1d6
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 21c353640c44d132
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 48
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 2303546c0c45e18e
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 266354788c46f18e
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+🎯 RADAR STATUS (0x300): State=12, Scan=24, Power=66
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 29a354848c4701ee
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 2be3548c0c4911ca
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 2e4355980c4a214b
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000d0f2
+TX: 0x17C = 0040041d3b000000
+⚠️  ERROR CODE (0x3FF): 72
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 308355a00c4b31a6
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 33c355ac8c4c4186
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 352356b48c4d5102
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 386356bc8c4e615e
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 3aa356c88c4f71bd
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 3d0357d00c5181bb
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 404357dc0c52911b
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 80
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 428357e48c53a1f6
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 45e357f08c54b176
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+Status: Not Present, VIN: 4/7, Time: 3.3s
+🎯 RADAR STATUS (0x300): State=11, Scan=48, Power=66
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 482358f80c56c154
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000e0b8
+TX: 0x17C = 0040041e3d000000
+TX: 0x2B9 = 100000000035594a
+TX: 0x2A9 = 4a16434110000210
+TX: 0x2D9 = 8040830000000000
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 4a8358040d57d1d4
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 4dc3580c0d58e130
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+⚠️  ERROR CODE (0x3FF): 104
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 500359188d59f111
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 526359240d5b0111
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+CAN error: Could not read from serial device
+CAN decode error: invalid literal for int() with base 16: 't3183410'
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 55a3592c0d5c116d
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 58035a388d5d216e
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 5a435a408d5e31c9
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 5da35a4c8d5f4149
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+⚠️  ERROR CODE (0x3FF): 112
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 60e35a580d61512a
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 63435b608d626127
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000f075
+TX: 0x17C = 0040041f3f000000
+🎯 RADAR STATUS (0x300): State=11, Scan=68, Power=2
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 65835b6c8d637186
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 68c35b748d6481e2
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 6a235c7c0d6691df
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 136
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 6d635c880d67a13f
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 70c35c948d68b13f
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 73035d9c8d69c19c
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 75635da80d6bd19c
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 78a35db00d6ce1f8
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 7ae35db80d6df153
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 144
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 7d435ec48d6e0154
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000000a
+TX: 0x17C = 0040042041000000
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 80a35ed00d701155
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 82e35ed80d7121b0
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+🎯 RADAR STATUS (0x300): State=0, Scan=92, Power=66
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 85435fe48d7231b1
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 88835ff08d734111
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 8ac35ff88d74516c
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x2B9 = 1153423745343347
+⚠️  ERROR CODE (0x3FF): 168
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 8d2360040e76616f
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 9063600c8e77714b
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 93c360188e7881cb
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 950361200e7a91a8
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 9863612c0e7ba128
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000010c7
+TX: 0x17C = 0040042143000000
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 9aa361340e7cb183
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 176
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 9de3613c8e7dc15f
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 9f4362488e7ed1df
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=1, Scan=112, Power=2
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = a28362540e80e1c0
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = a5e362608e81f1c0
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = a72363688e82011c
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+⚠️  ERROR CODE (0x3FF): 200
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = aa8363740e84111d
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = adc3637c0e852179
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = af0364840e8631d5
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = b163648c0e874150
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000208d
+TX: 0x17C = 0040042245000000
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = b4a364988e885130
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = b6e364a08e89618b
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = b92365ac8e8a71ec
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 208
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = bc8365b40e8c81e9
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = bee365c00e8d9168
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+🎯 RADAR STATUS (0x300): State=9, Scan=136, Power=2
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = c12366c88e8ea145
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = c48366d40e90b146
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = c6c366e00e91c1a5
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+⚠️  ERROR CODE (0x3FF): 232
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = c92367e88e92d1a2
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = cc8367f48e93e122
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000003040
+TX: 0x17C = 0040042347000000
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 5/7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 16: 't3118002'
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = cfc367000f95f104
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = d10368080f960160
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = d46368108f97115c
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 240
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = d6a3681c8f9821bb
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = d90369280f9a31bd
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+🎯 RADAR STATUS (0x300): State=11, Scan=156, Power=194
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = dc4369300f9b4119
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = dea369388f9c5114
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = e1e369448f9d6174
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = e3236a4c8f9e71d0
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 8
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = e6836a580fa081d1
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000004019
+TX: 0x17C = 0040042449000000
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = e8c36a600fa1912c
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = eb036b688fa2a109
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 16: 't3418000'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = ed636b748fa3b188
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = efa36b7c8fa4c1e3
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = f2e36b848fa5d13f
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 16
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = f4436c900fa7e140
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = f7836c9c8fa8f120
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+🎯 RADAR STATUS (0x300): State=10, Scan=176, Power=2
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = fae36ca48fa9019c
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = fc236dac8faa11f8
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = ff836db80fac21f9
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000050d4
+TX: 0x17C = 004004254b000000
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 01c46dc00fad3155
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 40
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 04246ecc8fae4156
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 07646ed48faf51b2
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 09c46ee00fb161b2
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 0b046fe80fb2710e
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x2B9 = 100000000035594a
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 0e446ff48fb381ee
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+⚠️  ERROR CODE (0x3FF): 48
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 10a46ffc8fb49169
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 13e46f0490b5a1c6
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+🎯 RADAR STATUS (0x300): State=11, Scan=196, Power=2
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 1644701010b7b1c8
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 1884701810b8c123
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000609e
+TX: 0x17C = 004004264d000000
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 1bc4702490b9d103
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 72
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 1d24712c90bae17f
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 2084713810bcf180
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 23c4714490bd0160
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 17
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 2624724c90be11dd
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 2864725810c021bd
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 2ac4726010c13138
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 80
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 2d04736890c24115
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 3064737490c35195
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 32a4738010c56175
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 0000000000007053
+TX: 0x17C = 004004274f000000
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 3504748810c671f2
+🎯 RADAR STATUS (0x300): State=2, Scan=220, Power=130
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 3744749490c781d1
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 3aa4749c90c8914d
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 3ce474a410caa129
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+⚠️  ERROR CODE (0x3FF): 104
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 3f4475b010cbb1aa
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 418475b810ccc105
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+CAN decode error: invalid literal for int() with base 16: 't3680001'
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 7
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 43c475c010cdd160
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 460476cc90cee141
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 486476d490cff1bc
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+Status: Not Present, VIN: 5/7, Time: 4.4s
+⚠️  ERROR CODE (0x3FF): 112
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 4ba476dc10d10199
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000802c
+TX: 0x17C = 0040042851000000
+TX: 0x2B9 = 1153423745343347
+TX: 0x2A9 = 4a16434110000210
+TX: 0x2D9 = 8040830000000000
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 4de476e810d211f8
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 4f4477f010d32174
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+🎯 RADAR STATUS (0x300): State=1, Scan=240, Power=130
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 528477f810d431d0
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 54e4770491d541d0
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 5624780c91d6512c
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 136
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 5984781411d86129
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 5cc4782011d97189
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 5e24792c91da8189
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+CAN decode error: invalid literal for int() with base 16: 't3180000'
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 6164793411dc9166
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 63a4793c11dda1c1
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 00000000000090e1
+TX: 0x17C = 0040042953000000
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 66047a4891deb1c2
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+⚠️  ERROR CODE (0x3FF): 144
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 68647a5091dfc13d
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 6ba47a5c91e0d19d
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=0, Scan=4, Power=131
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 6de47a6411e2e179
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 70447b6c11e3f1f6
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 72847b7891e401d5
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 74c47b8091e51130
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 168
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 77247c8891e621ad
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = 79647c9411e8318d
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = 7cc47c9c11e94109
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f7bff270000
+TX: 0x149 = 0026026aaa042fb5
+TX: 0x129 = 000000202056
+TX: 0x1A9 = 00000c2064
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000a0ab
+TX: 0x17C = 0040042a55000000
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: invalid literal for int() with base 16: 't3118002'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = 7e047da891ea51e9
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = 81647db091eb6165
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f8bff370000
+TX: 0x149 = 0026026aaa043fc5
+TX: 0x129 = 000000203066
+TX: 0x1A9 = 00000c3074
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = 83a47db891ec71c0
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+⚠️  ERROR CODE (0x3FF): 176
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = 86047ec411ee81c2
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f9bff470000
+TX: 0x149 = 0026026aaa044fd5
+TX: 0x129 = 000000204076
+TX: 0x1A9 = 00000c4084
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = 88447ecc91ef919d
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+TX: 0x2B9 = 1246313133313035
+VIN transmission cycle: 6/7
+🎯 RADAR STATUS (0x300): State=12, Scan=24, Power=195
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = 8ba47ed891f0a11d
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4fabff570000
+TX: 0x149 = 0026026aaa045fe5
+TX: 0x129 = 000000205086
+TX: 0x1A9 = 00000c5094
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = 8de47ee011f2b1f9
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = 90447fec11f3c17a
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4fbbff670000
+TX: 0x149 = 0026026aaa046ff5
+TX: 0x129 = 000000206096
+TX: 0x1A9 = 00000c60a4
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = 92847ff411f4d1d5
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+⚠️  ERROR CODE (0x3FF): 200
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = 94c47ffc91f5e1b0
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4fcbff770000
+TX: 0x149 = 0026026aaa047f05
+TX: 0x129 = 0000002070a6
+TX: 0x1A9 = 00000c70b4
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000b066
+TX: 0x17C = 0040042b56000000
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = 9724800892f6f132
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = 9964801012f8010e
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4fdbff870000
+TX: 0x149 = 0026026aaa048f15
+TX: 0x129 = 0000002080b6
+TX: 0x1A9 = 00000c80c4
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 11
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = 9cc4801812f9118a
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = 9e04812012fa21e6
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4febff970000
+TX: 0x149 = 0026026aaa049f25
+TX: 0x129 = 0000002090c6
+TX: 0x1A9 = 00000c90d4
+TX: 0x199 = 2f7d200004ff30d0
+TX: 0x169 = a044812c92fb31c5
+TX: 0x119 = ff1ff41183bd
+TX: 0x109 = 00600080000000e7
+TX: 0x199 = 2f7d200004ff4089
+TX: 0x169 = a2a4813492fc4140
+TX: 0x119 = ff1ff41184be
+TX: 0x109 = 0080008000000007
+⚠️  ERROR CODE (0x3FF): 208
+TX: 0x159 = fbff4ffbffa70000
+TX: 0x149 = 0026026aaa04af35
+TX: 0x129 = 00000020a0d6
+TX: 0x1A9 = 00000ca0e4
+TX: 0x199 = 2f7d200004ff5044
+TX: 0x169 = a5e4813c12fe511d
+TX: 0x119 = ff1ff41185bf
+TX: 0x109 = 00a0008000000027
+🎯 RADAR STATUS (0x300): State=11, Scan=48, Power=195
+TX: 0x199 = 2f7d200004ff600e
+TX: 0x169 = a844824812ff619e
+TX: 0x119 = ff1ff41186c0
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f0bffb70000
+TX: 0x149 = 0026026aaa04bf45
+TX: 0x129 = 00000020b0e6
+TX: 0x1A9 = 00000cb0f4
+TX: 0x199 = 2f7d200004ff70c3
+TX: 0x169 = aa848250120072fa
+TX: 0x119 = ff1ff41187c1
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff80bc
+TX: 0x169 = ace4825c920182f9
+TX: 0x119 = ff1ff41188c2
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f1bffc70000
+TX: 0x149 = 0026026aaa04cf55
+TX: 0x129 = 00000020c0f6
+TX: 0x1A9 = 00000cc004
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000c03f
+TX: 0x17C = 0040042c58000000
+TX: 0x199 = 2f7d200004ff9071
+TX: 0x169 = af24836492029256
+TX: 0x119 = ff1ff41189c3
+TX: 0x109 = 00200080000000a7
+⚠️  ERROR CODE (0x3FF): 232
+TX: 0x199 = 2f7d200004ffa03b
+TX: 0x169 = b184836c1204a252
+TX: 0x119 = ff1ff4118ac4
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f2bffd70000
+TX: 0x149 = 0026026aaa04df65
+TX: 0x129 = 00000020d006
+TX: 0x1A9 = 00000cd014
+TX: 0x199 = 2f7d200004ffb0f6
+TX: 0x169 = b4c483781205b2b2
+TX: 0x119 = ff1ff4118bc5
+TX: 0x109 = 00600080000000e7
+CAN decode error: invalid literal for int() with base 10: 'F'
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN decode error: non-hexadecimal number found in fromhex() arg at position 15
+CAN error: Could not read from serial device
+TX: 0x199 = 2f7d200004ffc0af
+TX: 0x169 = b60484809206c28e
+TX: 0x119 = ff1ff4118cc6
+TX: 0x109 = 0080008000000007
+TX: 0x159 = fbff4f3bffe70000
+TX: 0x149 = 0026026aaa04ef75
+TX: 0x129 = 00000020e016
+TX: 0x1A9 = 00000ce024
+TX: 0x199 = 2f7d200004ffd062
+TX: 0x169 = b964848c9207d20e
+TX: 0x119 = ff1ff4118dc7
+TX: 0x109 = 00a0008000000027
+TX: 0x199 = 2f7d200004ffe028
+TX: 0x169 = bbc484941209e20a
+TX: 0x119 = ff1ff4118ec8
+TX: 0x109 = 00c0008000000047
+TX: 0x159 = fbff4f4bfff70000
+TX: 0x149 = 0026026aaa04ff85
+TX: 0x129 = 00000020f026
+TX: 0x1A9 = 00000cf034
+⚠️  ERROR CODE (0x3FF): 240
+TX: 0x199 = 2f7d200004fff0e5
+TX: 0x169 = be0485a0920af2eb
+TX: 0x119 = ff1ff4118fc9
+TX: 0x109 = 00e0008000000067
+TX: 0x199 = 2f7d200004ff009a
+TX: 0x169 = c16485a8920b0267
+TX: 0x119 = ff1ff41180ba
+TX: 0x109 = 0000008000000087
+TX: 0x159 = fbff4f5bff070000
+TX: 0x149 = 0026026aaa040f95
+TX: 0x129 = 000000200036
+TX: 0x1A9 = 00000c0044
+🎯 RADAR STATUS (0x300): State=11, Scan=68, Power=67
+TX: 0x199 = 2f7d200004ff1057
+TX: 0x169 = c3c485b4120d1267
+TX: 0x119 = ff1ff41181bb
+TX: 0x109 = 00200080000000a7
+TX: 0x199 = 2f7d200004ff201d
+TX: 0x169 = c50486bc120e22c3
+TX: 0x119 = ff1ff41182bc
+TX: 0x109 = 00400080000000c7
+TX: 0x159 = fbff4f6bff170000
+TX: 0x149 = 0026026aaa041fa5
+TX: 0x129 = 000000201046
+TX: 0x1A9 = 00000c1054
+TX: 0x209 = 00ff945213038000
+TX: 0x219 = 000000000000d0f2
+TX: 0x17C = 0040042d5a000000
+TX: 0x2B9 = 100000000035594a
+🎉 DYNAMIC SCANNING DETECTED! Radar is actively scanning!
+
+📊 STATUS UPDATE (5.0s):
+   Radar State: Not Present
+   VIN Complete: 6/7
+   Init Messages: 0
+   Power Level: 104.8
+   Scan Indices: 14 unique (last 20)
+   Valid Objects: 0
+   Error Codes: 16
+   Plant Mode Exit: ❌
+   Dynamic Scanning: ✅
+   Fully Active: ❌
+
+⚠️  ACTIVATION INCOMPLETE
+
+======================================================================
+📊 DIAGNOSTIC SUMMARY
+======================================================================
+⏱️  Total Time: 5.0s
+🔄 Init Messages (0x631): 0
+📊 Status Messages (0x300): 52
+📡 VIN Completion: 6/7
+🎯 Valid Objects: 0
+📈 Unique Scan Indices: 31
+⚡ Max Power Level: 195
+⚠️  Error Codes: 16
+
+🔍 SPECIFIC ISSUES:
+   ❌ No 0x631 initialization detected
+      → Check radar power and CAN connections
+   ❌ VIN transmission incomplete
+      → Check 0x2B9 message transmission
+   ❌ Plant mode not exited
+      → Check radar position/EPAS configuration
+   ❌ No valid objects detected
+      → Check object detection logic
+
+💡 RECOMMENDATIONS:
+   1. Try different radarPosition values (0, 1, 2)
+   2. Try different radarEpasType values (0, 1)
+   3. Check physical radar mounting and connections
+   4. Verify CAN bus termination
+   5. Try longer activation duration
+🛑 Tesla Radar Protocol Stopped
+CAN error: Could not read from serial device
+
+CAN interface closed
