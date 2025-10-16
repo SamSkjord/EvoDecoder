@@ -25,3 +25,5 @@
   <https://www.teslaownersonline.com/threads/diagnostic-port-and-data-access.7502/>
 - Dennis Noermann car-tools (Bosch MRRevo14 patching & VW ACC CAN utilities)
   <https://github.com/dnoermann/car-tools>
+- Comma.ai OpenDBC Tesla radar generator (0x2A9/0x159/0x169 signal names)
+  <https://github.com/commaai/opendbc/blob/master/opendbc/dbc/generator/tesla/tesla_radar_bosch.py>
