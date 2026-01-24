@@ -1,9 +1,14 @@
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from gateway_probe_utils import (
+# Add project root to path for imports
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.utils.gateway_probe_utils import (
     DEFAULT_AGGREGATE_PATH,
     DEFAULT_DURATION,
     DEFAULT_HISTORY_PATH,
@@ -13,12 +18,12 @@ from gateway_probe_utils import (
     DEFAULT_SCPI_PORT,
     DEFAULT_SCPI_WAIT,
     DEFAULT_VIN,
-    SCPIPowerController,
     append_history_entry,
     build_history_entry,
     run_gateway_probe,
     update_aggregate_from_history,
 )
+from src.activation.tesla_radar_activator import SCPIPowerController
 
 BASELINE_PARAMS = {
     "GTW_fourWheelDrive": 1,

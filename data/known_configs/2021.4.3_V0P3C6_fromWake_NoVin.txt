@@ -1,0 +1,41 @@
+Firmware 2021.4.3 (last updated January 2021)
+
+Vehicle Bus: 	0	
+Party Bus: 	3	
+Chassis Bus:	6	
+
+00  press handle to wake - get in car
+
+05  close door
+
+10 foot on brake
+
+(@25 RCM error: RCM_a011) (error stored on RCM module eeprom from previous crash)
+
+40 select reverse
+
+45 off brake
+
+50 accelerate in reverse
+
+55 brake
+
+60 select drive
+
+65 off brake
+
+70 accelerate in drive
+
+75 brake
+
+80 select park
+
+85 open door
+
+95 latch door
+
+105 stop capture
+
+
+
+
