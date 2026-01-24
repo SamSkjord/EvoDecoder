@@ -4,15 +4,15 @@ This bundle captures the code and supporting notes that successfully drove the B
 
 ## Contents
 
-- `code/tesla_radar_protocol.py` – full Tesla CAN protocol emulator with:
+- `src/protocol/tesla_radar_protocol.py` - full Tesla CAN protocol emulator with:
   - Dynamic wheel speed / drivetrain synthesis
   - SydneyG-style gateway/ESP/EPAS frames (0x108/118/145/20A/00E/045/398)
-  - VIN management and plant-mode fault decoding from talas9’s ODJ metadata
-- `code/tesla_radar_activator.py` – activation runner with SCPI-friendly hooks, status reporting, and decoded 0x3FF output
-- `code/read_radar_vin.py` – python-can port of the original OpenPilot radar VIN utility; queries the radar over ISO-TP/UDS to print VIN, plant-mode status and board IDs
-- `code/radar_flasher.py` – python-can VIN/parameter tool derived from Tinkla’s radarFlasher (VIN learn routine and parameter dump)
-- `docs/PLANT_MODE_FAILURE_CODES.md` – quick reference for the decoded 0x3FF / plant-mode enums
-- `references/REFERENCES.md` – upstream datasets and repos used for signal definitions
+  - VIN management and plant-mode fault decoding from talas9's ODJ metadata
+- `src/activation/tesla_radar_activator.py` - activation runner with SCPI-friendly hooks, status reporting, and decoded 0x3FF output
+- `src/diagnostics/read_radar_vin.py` - python-can port of the original OpenPilot radar VIN utility; queries the radar over ISO-TP/UDS to print VIN, plant-mode status and board IDs
+- `src/diagnostics/radar_flasher.py` - python-can VIN/parameter tool derived from Tinkla's radarFlasher (VIN learn routine and parameter dump)
+- `docs/PLANT_MODE_FAILURE_CODES.md` - quick reference for the decoded 0x3FF / plant-mode enums
+- `references/REFERENCES.md` - upstream datasets and repos used for signal definitions
 
 ## Donor Vehicle Context
 
@@ -103,12 +103,12 @@ This bundle captures the code and supporting notes that successfully drove the B
 
 ## VIN / Firmware Utilities
 
-Added two python-can utilities under `activation_release/code/`:
+Added two python-can utilities under `src/diagnostics/`:
 
 - `read_radar_vin.py` – ISO-TP/UDS VIN reader. Queries the radar for VIN, plant mode, board IDs, alignment metadata.
 - `radar_flasher.py` – VIN learn + parameter dump (working) and initial firmware extraction/flash scaffolding. Security access uses the Tesla algorithm; firmware reads reach the seed/key handshake but the radar still rejects the computed key (`service 0x35`). Full extraction awaits the correct Bosch key derivation.
 
-⚠️ Firmware extraction has not yet been revalidated with the updated security-access flow. Confirm the seed/key exchange succeeds for the target routine before performing READ_MEMORY_BY_ADDRESS or flashing.
+WARNING: Firmware extraction has not yet been revalidated with the updated security-access flow. Confirm the seed/key exchange succeeds for the target routine before performing READ_MEMORY_BY_ADDRESS or flashing.
 
 ### Next steps
 
