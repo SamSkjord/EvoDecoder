@@ -83,19 +83,6 @@ radar_diagnostic.py get's us 'activated' but not working, the power draw of the 
 
 You can connect to the pi via SSH in the terminal
 ```shell
-expect -c "
-spawn scp example.py pi@192.168.199.200:~/
-expect \"password:\"
-send \"REDACTED\r\"
-expect eof
-"
-```
-
-```shell
-expect -c "
-spawn ssh pi@192.168.199.200 \"cd ~/evo && python3 tesla_complete_emulator.py\"
-expect \"password:\"
-send \"REDACTED\r\"
-interact
-"
+scp example.py pi@192.168.199.200:~/
+ssh pi@192.168.199.200 "cd ~/evo && python3 tesla_complete_emulator.py"
 ```
