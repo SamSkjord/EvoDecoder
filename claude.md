@@ -261,3 +261,36 @@ DBC signals (tesla_radar.dbc):
 
 Valid object: Prob > 0 AND (ValidSts=1 OR MeasStatus=2 OR MeasStatus=3)
 Confidence levels: ghost (<12.5%), weak (12.5-50%), CONFIRMED (>50%)
+
+============================================================
+MODEL 3 COMPATIBILITY
+============================================================
+
+The Model 3 uses the SAME Bosch MRR14 radar hardware as Model S/X.
+Config dumps confirm: VAPI_forwardRadar = BoschMRR14 across all models.
+No Continental radar was found in any reference data.
+
+stream_objects.py auto-reads the VIN from whatever radar is connected
+via UDS (DID 0xF190) at startup, so it works plug-and-play with any
+Tesla Bosch MRR14 unit regardless of which car it came from.
+
+The differences between Model 3 and Model S/X are at the VEHICLE
+integration layer, not the radar itself:
+
+  Model S/X                         Model 3
+  ─────────────────────────────     ─────────────────────────────
+  Gateway config: 0x398 + 0x2A9    Gateway config: 0x7FF (muxed)
+  Raw object frames: 0x310-0x36E   Processed via DAS on 0x309
+  Radar status: 0x300 direct       0x389 DAS_status2 (telemetry)
+  No heater control                0x389 request / 0x2E1 state
+
+These differences describe how the CAR's computers talk to the radar,
+not how the radar itself behaves on CAN. Our code talks directly to
+the radar at the low level — the same keepalive messages, the same
+object output frames (0x310-0x36E), the same UDS addresses (0x641/0x651),
+and the same plant mode routine (0x0A03) apply to all units.
+
+Reference files:
+  references/model3dbc/Model3CAN.dbc — Full Model 3 CAN database
+  references/tesla_odj/Model 3/RADC.odj.json — Radar control routines
+  references/tesla/dumps/2019.M3_LR.AP3/export.csv — Model 3 LR config
