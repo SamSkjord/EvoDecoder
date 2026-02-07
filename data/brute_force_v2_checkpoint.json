@@ -1,0 +1,23 @@
+{
+  "phase": "phase1",
+  "phase_index": 11,
+  "total_runs": 11,
+  "best_score": 55.0,
+  "best_params": {
+    "GTW_fourWheelDrive": 0,
+    "GTW_airSuspensionInstalled": 0,
+    "GTW_epasType": 0,
+    "GTW_chassisType": 0,
+    "radarEpasType": 0,
+    "radarPosition": 0,
+    "GTW_performanceConfig": 2,
+    "GTW_autopilot": 1,
+    "GTW_country": 826,
+    "GTW_rhd": 1
+  },
+  "best_error_mask": 248,
+  "best_error_count": 8,
+  "zero_error_runs": [],
+  "pruned_count": 0,
+  "saved_at": "2026-02-07T13:45:00.090730Z"
+}

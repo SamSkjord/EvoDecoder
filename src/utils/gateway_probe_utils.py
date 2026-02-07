@@ -12,11 +12,11 @@ from src.activation.tesla_radar_activator import SCPIPowerController, TeslaRadar
 from src.protocol.tesla_radar_protocol import setup_can, get_plant_failure_map
 
 DEFAULT_VIN = "5YJSB7E43GF113105"
-DEFAULT_INTERFACE = "can1"
+DEFAULT_INTERFACE = "can0"
 DEFAULT_DURATION = 4.0
 DEFAULT_HISTORY_PATH = ROOT / "gateway_probe_history.jsonl"
 DEFAULT_RUN_LOG_PATH = ROOT / "radar_run_history.jsonl"
-DEFAULT_SCPI_PORT = "/dev/cu.usbserial-2230"
+DEFAULT_SCPI_PORT = "/dev/cu.usbserial-2210"
 DEFAULT_SCPI_OFF_TIME = 1.5
 DEFAULT_SCPI_WAIT = 3.0
 DEFAULT_AGGREGATE_PATH = ROOT / "gateway_probe_results.json"
@@ -102,13 +102,17 @@ def apply_gateway_params(proto, params: Dict[str, Any]) -> None:
     set_attr("gateway_folding_mirrors", ["GTW_foldingMirrorsInstalled", "folding_mirrors"])
     set_attr("gateway_park_sensor_geometry", ["GTW_parkSensorGeometryType", "park_sensor_geometry_type"])
     set_attr("gateway_eu_vehicle", ["GTW_euVehicle", "eu_vehicle"])
+    set_attr("gateway_das_hw", ["GTW_dasHw", "das_hw"])
+    set_attr("gateway_body_controls_type", ["GTW_bodyControlsType", "body_controls_type"])
+    set_attr("gateway_front_corner_radar_hw", ["GTW_frontCornerRadarHw"])
+    set_attr("gateway_rear_corner_radar_hw", ["GTW_rearCornerRadarHw"])
     country_value = _first_value(params, ["GTW_country", "country"])
     if country_value is not None:
         proto.gateway_country = _parse_country(country_value)
 
     awd_value = _first_value(params, ["GTW_fourWheelDrive", "four_wheel_drive"])
     if awd_value is not None:
-        proto.force_awd = bool(awd_value)
+        proto.force_awd = bool(int(awd_value))
 
     radar_position = _first_value(params, ["radarPosition"])
     if radar_position is not None:

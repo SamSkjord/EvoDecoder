@@ -56,6 +56,18 @@ class SCPIPowerController:
 
         time.sleep(self.wait_before_activation)
 
+    def measure_current(self) -> Optional[float]:
+        """Read DC current from PSU (OWON SPE3051 uses MEAS:CURR?)."""
+        try:
+            import serial
+            with serial.Serial(self.port, self.baud, timeout=1) as ser:
+                ser.write(b"MEAS:CURR?\r\n")
+                ser.flush()
+                time.sleep(0.3)
+                resp = ser.readline().decode(errors="replace").strip()
+                return float(resp)
+        except Exception:
+            return None
 
 
 class TeslaRadarActivator:
@@ -281,6 +293,12 @@ class TeslaRadarActivator:
 
         if self.scan_indices:
             record["scan_index_samples"] = self.scan_indices[-20:]
+            record["scan_index_stats"] = {
+                "unique_count": len(set(self.scan_indices)),
+                "total_samples": len(self.scan_indices),
+                "range": max(self.scan_indices) - min(self.scan_indices) if self.scan_indices else 0,
+                "is_dynamic": len(set(self.scan_indices[-50:])) > 5 if len(self.scan_indices) >= 50 else False,
+            }
         if self.power_levels:
             record["power_level_samples"] = self.power_levels[-20:]
 
@@ -367,26 +385,39 @@ class TeslaRadarActivator:
             self._record_vin_progress()
 
     def analyze_object_message(self, msg_id, data):
-        """Analyze object tracking messages for valid data"""
+        """Analyze object tracking messages for valid data using DBC decode."""
         if len(data) < 8:
             return
 
-        # Check for paired messages (A and B)
-        if msg_id % 3 == 0:  # A message
-            # Look for corresponding B message
-            b_msg_id = msg_id + 1
-            if b_msg_id in self.message_stats:
-                self.paired_messages += 1
+        # A-frames are at offsets 0x310, 0x313, 0x316, ... i.e. (id - 0x310) % 3 == 0
+        if (msg_id - 0x310) % 3 == 0:
+            self.paired_messages += 1
 
-                # Extract basic object data
+            # Try DBC decode first (accurate), fall back to raw bytes
+            dbc = getattr(self.protocol, "dbc", None)
+            distance = 0.0
+            prob = 0.0
+            valid = 0
+            if dbc is not None:
+                try:
+                    decoded = dbc.decode_message(0x310, data)
+                    distance = decoded.get("LongDist", 0.0)
+                    prob = decoded.get("ProbExist", 0.0)
+                    valid = decoded.get("Valid", 0)
+                except Exception:
+                    # Fallback: raw byte extraction
+                    raw_distance = (data[1] << 8) | data[0]
+                    distance = raw_distance * 0.1
+                    valid = 1 if distance > 0 else 0
+            else:
                 raw_distance = (data[1] << 8) | data[0]
                 distance = raw_distance * 0.1
+                valid = 1 if distance > 0 else 0
 
-                # Check for valid object (non-zero distance, reasonable range)
-                if 0.5 < distance < 250:
-                    self.valid_objects += 1
-                    if self.debug and self.valid_objects % 10 == 0:
-                        print(f"📊 Valid objects detected: {self.valid_objects}")
+            if valid and 0.1 < distance < 250:
+                self.valid_objects += 1
+                if self.debug and self.valid_objects % 10 == 0:
+                    print(f"📊 Valid objects detected: {self.valid_objects} (last: {distance:.1f}m prob={prob})")
 
     def update_status(self):
         """Update and analyze radar status"""
@@ -410,10 +441,17 @@ class TeslaRadarActivator:
                     self.dynamic_scanning = True
                     print("🎉 DYNAMIC SCANNING DETECTED! Radar is actively scanning!")
 
-        # Check for plant mode exit
-        if self.protocol.tesla_radar_status == 2 and not self.plant_mode_exited:
-            self.plant_mode_exited = True
-            print("🚀 PLANT MODE EXITED! Radar transitioned to active state!")
+        # Check for plant mode exit — use activator's own counters since the
+        # protocol monitor thread races with ours on bus.recv() and may miss
+        # messages, leaving tesla_radar_status stuck at 0.
+        if not self.plant_mode_exited:
+            if self.protocol.tesla_radar_status == 2:
+                self.plant_mode_exited = True
+                print("🚀 PLANT MODE EXITED! (protocol status = Active)")
+            elif self.init_631_count > 0 and self.status_300_count > 5:
+                # We've seen init + multiple status messages — radar is active
+                self.plant_mode_exited = True
+                print("🚀 PLANT MODE EXITED! (init + status messages confirmed)")
 
         # Check for full activation
         if (
@@ -743,7 +781,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Tesla Radar Activator - Complete Implementation"
     )
-    parser.add_argument("--can-interface", default="can1", help="CAN interface")
+    parser.add_argument("--can-interface", default="can0", help="CAN interface/channel (default: can0 = Radar CAN1)")
     parser.add_argument("--vin", default="5YJSB7E43GF113105", help="Vehicle VIN")
     parser.add_argument("--position", type=int, default=0, help="Radar position (0-2)")
     parser.add_argument("--epas", type=int, default=0, help="EPAS type (0-1)")
@@ -804,8 +842,8 @@ def main():
     )
     parser.add_argument(
         "--scpi-port",
-        default="/dev/cu.usbserial-2230",
-        help="SCPI serial port (default: /dev/cu.usbserial-2230) for enforced power cycles",
+        default="/dev/cu.usbserial-2210",
+        help="SCPI serial port (default: /dev/cu.usbserial-2210) for enforced power cycles",
     )
     parser.add_argument(
         "--scpi-off-time",

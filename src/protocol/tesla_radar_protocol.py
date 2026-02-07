@@ -126,25 +126,32 @@ def _load_tesla_can_dbc():
 
 
 def setup_can(interface="can1", bitrate=500000):
-    """Setup CAN interface with platform-specific handling."""
+    """Setup CAN interface with platform-specific handling.
+
+    On macOS the default adapter is the CANalyst-II dual-channel USB device.
+    ``interface`` is interpreted as a channel number (0 or 1) or a name like
+    "can0"/"can1" which maps to channel 0/1.
+
+    Channel mapping:
+        CANalyst-II channel 0 = Radar CAN1
+        CANalyst-II channel 1 = Radar CAN2
+    """
     if sys.platform.startswith("darwin"):
-        channel = os.environ.get("TESLA_RADAR_SERIAL", interface)
+        # Resolve channel number from interface name (e.g. "can1" -> 1, "0" -> 0)
+        if isinstance(interface, int):
+            channel = interface
+        elif interface.isdigit():
+            channel = int(interface)
+        else:
+            # Strip non-digit prefix: "can1" -> 1, "can0" -> 0
+            digits = "".join(c for c in interface if c.isdigit())
+            channel = int(digits) if digits else 1
 
-        if not channel.startswith("/dev/"):
-            candidates = sorted(glob.glob("/dev/cu.usbmodem*"))
-            candidates.extend(sorted(glob.glob("/dev/cu.usbserial*")))
-            if not candidates:
-                raise RuntimeError(
-                    "No SLcan-compatible serial devices found. Set TESLA_RADAR_SERIAL to the device path."  # noqa: E501
-                )
-            channel = candidates[0]
-
-        print(f"Opening SLcan interface {channel} at {bitrate}bps")
+        print(f"Opening CANalyst-II channel {channel} at {bitrate}bps")
         return can.Bus(
-            interface="slcan",
+            interface="canalystii",
             channel=channel,
             bitrate=bitrate,
-            receive_own_messages=False,
         )
 
     os.system(f"sudo ip link set {interface} down")
@@ -197,11 +204,12 @@ class TeslaRadarProtocol:
             0  # 0=Model S pre-facelift, 1=Model S post-facelift, 2=Model X
         )
         self.radarEpasType = 0  # 0=Bosch L538, 1=Bosch L405
-        self.actual_speed_kph = 0.0  # Simulated vehicle speed
-        self.base_speed_kph = 0.0
-        # Default AWD to VIN heuristic unless explicitly overridden
+        self.actual_speed_kph = 30.0  # Simulated vehicle speed (never zero)
+        self.base_speed_kph = 30.0
+        # Default AWD to VIN heuristic unless explicitly overridden.
+        # Match Panda logic: only set AWD if VIN position 8 (index 7) == '2'
         if four_wheel_drive is None:
-            self.force_awd = True
+            self.force_awd = False
         else:
             self.force_awd = bool(four_wheel_drive)
         self.dynamic_phase = 0.0
@@ -268,7 +276,8 @@ class TeslaRadarProtocol:
         # VIN (17 characters, padded with spaces)
         self.radar_VIN = (vin + " " * 17)[:17]
         if four_wheel_drive is None:
-            if len(self.radar_VIN) >= 8 and self.radar_VIN[7] in {"2", "3", "4", "P", "D"}:
+            # Match Panda: only VIN[7]=='2' triggers AWD
+            if len(self.radar_VIN) >= 8 and self.radar_VIN[7] == "2":
                 self.force_awd = True
 
         # Gateway configuration (overridable via CLI)
@@ -685,26 +694,32 @@ class TeslaRadarProtocol:
         cycle = 60.0
         phase = (elapsed % cycle) / cycle
 
-        if phase < 0.2:  # accelerate to 100 km/h
-            target_speed = 100.0 * (phase / 0.2)
+        # Speed cycles between 30-120 kph, NEVER below 20 kph.
+        # Dropping to zero causes the radar to see standstill/park signals
+        # and power down its RF section.
+        if phase < 0.25:  # accelerate to 100 km/h
+            target_speed = 30.0 + 70.0 * (phase / 0.25)
             self.accel_active = True
             self.brake_active = False
-        elif phase < 0.4:  # cruise
+        elif phase < 0.5:  # cruise at 100
             target_speed = 100.0
             self.accel_active = False
             self.brake_active = False
-        elif phase < 0.6:  # gentle brake to 30 km/h
-            target_speed = 100.0 - 70.0 * ((phase - 0.4) / 0.2)
+        elif phase < 0.75:  # gentle brake to 30 km/h
+            target_speed = 100.0 - 70.0 * ((phase - 0.5) / 0.25)
             self.accel_active = False
             self.brake_active = True
-        elif phase < 0.8:  # accelerate again to 120
-            target_speed = 30.0 + 90.0 * ((phase - 0.6) / 0.2)
-            self.accel_active = True
-            self.brake_active = False
-        else:  # coast down to stop and shift to park
-            target_speed = max(0.0, 120.0 * (1.0 - (phase - 0.8) / 0.2))
-            self.accel_active = False
-            self.brake_active = True
+        else:  # accelerate to 120 then back to 30
+            sub = (phase - 0.75) / 0.25
+            if sub < 0.5:
+                target_speed = 30.0 + 90.0 * (sub / 0.5)
+            else:
+                target_speed = 120.0 - 90.0 * ((sub - 0.5) / 0.5)
+            self.accel_active = sub < 0.5
+            self.brake_active = sub >= 0.5
+
+        # Enforce minimum speed — radar powers down RF at standstill
+        target_speed = max(20.0, target_speed)
 
         dt = max(0.01, now - self.last_state_update_ts)
         self.vehicle_accel = (target_speed - self.last_speed_kph) / dt
@@ -712,21 +727,9 @@ class TeslaRadarProtocol:
         self.last_speed_kph = target_speed
         self.last_state_update_ts = now
 
-        # simple gear state logic: drive when moving, park when stopped
-        if self.actual_speed_kph < 1.0 and phase >= 0.85:
-            self.gear_state = 0x01  # park
-        elif self.actual_speed_kph < 1.0 and phase < 0.25:
-            self.gear_state = 0x02  # reverse early in cycle
-        else:
-            self.gear_state = 0x04  # drive
-
-        # attitude indicators for turn signals
-        if 0.45 < phase < 0.5:
-            self.turn_indicator = 1  # left
-        elif 0.7 < phase < 0.75:
-            self.turn_indicator = 2  # right
-        else:
-            self.turn_indicator = 0
+        # Always in DRIVE — park/reverse triggers radar RF shutdown
+        self.gear_state = 0x04
+        self.turn_indicator = 0
 
     def _send_reference_message(self, msg_id):
         seqs = self.reference_sequences.get(msg_id)
@@ -1584,7 +1587,7 @@ class TeslaRadarProtocol:
 
 if __name__ == "__main__":
     # Test the protocol
-    can_bus = setup_can(interface="can1")
+    can_bus = setup_can(interface="can0")
 
     try:
         protocol = TeslaRadarProtocol(can_bus, debug=True)

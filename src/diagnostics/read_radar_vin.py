@@ -31,8 +31,8 @@ DIDS_TO_QUERY = {
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Read VIN/metadata from the Bosch radar via UDS")
-    parser.add_argument("--interface", default="slcan", help="python-can interface (default: slcan)")
-    parser.add_argument("--channel", default="/dev/cu.usbmodem2057326E55481", help="CAN channel/port")
+    parser.add_argument("--interface", default="canalystii", help="python-can interface (default: canalystii)")
+    parser.add_argument("--channel", default="0", help="CAN channel (default: 0 = Radar CAN1)")
     parser.add_argument("--bitrate", type=int, default=500000, help="CAN bitrate")
     parser.add_argument("--timeout", type=float, default=1.0, help="ISO-TP receive timeout (seconds)")
     args = parser.parse_args()

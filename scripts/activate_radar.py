@@ -37,14 +37,14 @@ Examples:
     python scripts/activate_radar.py --vin 5YJSB7E43GF113105 --dry-run
 
     # With SCPI power cycling
-    python scripts/activate_radar.py --vin 5YJSB7E43GF113105 --scpi-port /dev/cu.usbserial-2230
+    python scripts/activate_radar.py --vin 5YJSB7E43GF113105 --scpi-port /dev/cu.usbserial-2210
 """,
     )
 
     # Basic options
     parser.add_argument("--vin", default="5YJSB7E43GF113105", help="Vehicle VIN")
     parser.add_argument("--duration", type=float, default=10.0, help="Activation duration in seconds")
-    parser.add_argument("--can-interface", default="can1", help="CAN interface name")
+    parser.add_argument("--can-interface", default="can0", help="CAN interface/channel (default: can0 = Radar CAN1)")
     parser.add_argument("--debug", action="store_true", help="Enable debug output")
     parser.add_argument("--dry-run", action="store_true", help="Run protocol without activator sequence")
 

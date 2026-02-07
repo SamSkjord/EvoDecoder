@@ -215,8 +215,8 @@ def read_values(session: UdsSession) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Radar flasher/diagnostic tools (python-can port)")
-    parser.add_argument("--interface", default="slcan", help="python-can interface (default: slcan)")
-    parser.add_argument("--channel", default="/dev/cu.usbmodem2057326E55481", help="CAN channel/port")
+    parser.add_argument("--interface", default="canalystii", help="python-can interface (default: canalystii)")
+    parser.add_argument("--channel", default="0", help="CAN channel (default: 0 = Radar CAN1)")
     parser.add_argument("--bitrate", type=int, default=500000, help="CAN bitrate")
     parser.add_argument("--timeout", type=float, default=3.0, help="ISO-TP timeout (seconds)")
     parser.add_argument("--vin", default="5YJSB7E43GF113105", help="VIN for optional gateway emulation")
