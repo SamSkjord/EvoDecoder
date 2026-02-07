@@ -24,6 +24,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.protocol.tesla_radar_protocol import TeslaRadarProtocol, setup_can, _load_radar_dbc
+from src.diagnostics.uds_can import IsoTpSession, IsoTpError
 
 NUM_OBJECTS = 32
 OBJ_BASE = 0x310
@@ -31,6 +32,29 @@ OBJ_A_IDS = {OBJ_BASE + i * 3 for i in range(NUM_OBJECTS)}
 OBJ_B_IDS = {OBJ_BASE + i * 3 + 1 for i in range(NUM_OBJECTS)}
 
 POWER_SERIAL = "/dev/cu.usbserial-2210"
+
+# Radar UDS addressing
+UDS_TX = 0x641
+UDS_RX = 0x651
+
+
+def read_vin_from_radar(bus, timeout=1.0):
+    """Read VIN from radar via UDS DID 0xF190 before protocol starts.
+
+    Must be called on a quiet bus (no protocol running) so the ISO-TP
+    session can receive UDS responses without contention.
+    """
+    tp = IsoTpSession(bus, UDS_TX, UDS_RX, timeout=timeout)
+    # ReadDataByIdentifier (0x22) for DID 0xF190 (VIN)
+    tp.send(bytes([0x22, 0xF1, 0x90]))
+    resp = tp.recv()
+    if resp and resp[0] == 0x62 and len(resp) >= 19:
+        # Positive response: 0x62 + DID(2 bytes) + VIN(17 bytes)
+        vin = resp[3:20].decode("ascii", errors="replace").strip("\x00 ")
+        return vin
+    if resp and resp[0] == 0x7F:
+        raise IsoTpError(f"UDS negative response reading VIN: {resp.hex()}")
+    raise IsoTpError(f"Unexpected UDS response: {resp.hex() if resp else 'None'}")
 
 
 def power_cycle():
@@ -211,6 +235,7 @@ def parse_args():
     p.add_argument("--no-power-cycle", action="store_true")
     p.add_argument("--show-all", action="store_true", help="Show all objects including ghosts")
     p.add_argument("--can-interface", default="can0")
+    p.add_argument("--vin", default=None, help="VIN to send (default: auto-read from radar via UDS)")
     p.add_argument("--rate", type=float, default=2.0, help="Print rate in Hz")
     p.add_argument("--debug", action="store_true")
     return p.parse_args()
@@ -229,8 +254,21 @@ def main():
     if not args.no_power_cycle:
         power_cycle()
 
-    # Create protocol with default config
-    protocol = TeslaRadarProtocol(bus, debug=args.debug)
+    # Determine VIN: auto-read from radar or use provided value
+    vin = args.vin
+    if vin is None:
+        print("Reading VIN from radar via UDS...")
+        try:
+            vin = read_vin_from_radar(bus)
+            print(f"  VIN: {vin}")
+        except (IsoTpError, Exception) as e:
+            print(f"  VIN read failed ({e}), using default")
+            vin = "5YJSB7E43GF113105"
+    else:
+        print(f"Using provided VIN: {vin}")
+
+    # Create protocol with auto-detected or provided VIN
+    protocol = TeslaRadarProtocol(bus, vin=vin, debug=args.debug)
 
     # Create shared object tracker
     tracker = ObjectTracker()
@@ -267,7 +305,7 @@ def main():
                 print(f"Init: 0x631={snap['init_count']} | Status: 0x300={snap['status_count']} | Scans:{len(snap['scan_indices'])} | Errors:{err_str}")
                 status_names = {0: "Not Present", 1: "Initializing", 2: "Active"}
                 print(f"Radar status: {status_names.get(protocol.tesla_radar_status, '?')}")
-                print(f"Speed simulation: 0-120 kph cycling (60s period)")
+                print(f"Speed simulation: 30-120 kph cycling (60s period)")
                 print()
                 hdr = (
                     f"{'Time':>12} {'Obj':>3} {'Dist':>7} {'Speed':>7} {'Lat':>7} "
