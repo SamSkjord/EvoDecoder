@@ -81,8 +81,10 @@ The radar has TWO independent shutdown mechanisms:
      ...it interprets this as "vehicle is parked" and powers down the RF
      section to save energy. This is NORMAL radar behavior — a parked car
      doesn't need forward collision radar.
-   - The shutdown happens ~10-15 seconds after the radar first sees these
-     signals, giving a brief window of scanning before RF dies.
+   - When the vehicle state transitions gradually (as in the original cycling
+     simulation), the shutdown happens ~10-15 seconds after the radar first
+     sees these signals. However, an abrupt switch to full park state
+     (speed=0 + PARK gear simultaneously) triggers RF shutdown within ~1s.
 
 ============================================================
 THE THREE FIXES THAT SOLVED IT
@@ -109,6 +111,41 @@ All changes in: src/protocol/tesla_radar_protocol.py
    - Our VIN has VIN[7]='4' (check digit), so AWD is correctly NOT set
    - The 0x2A9 (GTW_carConfig) message AWD bit must match what the radar
      was configured to expect
+
+============================================================
+SLEEP/WAKE CYCLING (NO POWER CYCLE REQUIRED)
+============================================================
+
+The radar's RF section can be toggled on and off purely via CAN vehicle
+state manipulation — no SCPI power cycle needed. Tested with
+scripts/test_sleep_wake.py (2 full cycles, 2025-02-07).
+
+To SLEEP (RF off):
+  - Set actual_speed_kph = 0
+  - Set gear_state = 0x01 (PARK)
+  - These propagate to: ESP_wheelSpeeds=0 (0x169), DI_gear=PARK (0x118),
+    DI_epbParkRequest=1 (0x118), ESP_vehicleStandstillSts=1 (0x145)
+  - RF shuts down in ~1s (abrupt transition) to ~15s (gradual speed ramp)
+  - Scan index freezes at 0, power drops from ~0.4A to ~0.2-0.3A
+  - 0x300 status messages continue flowing (CAN stays alive)
+
+To WAKE (RF on):
+  - Set actual_speed_kph = 30+ (any value > ~5 kph works)
+  - Set gear_state = 0x04 (DRIVE)
+  - Reset simulation_start_ts so speed ramps cleanly
+  - RF resumes in ~2s with rotating scan indices and object detection
+  - Power draw returns to 0.4A+
+
+Test results (scripts/test_sleep_wake.py, 2 cycles):
+  Sleep latency:  1.0s (both cycles, abrupt park transition)
+  Wake latency:   2.0s (both cycles)
+  Scan indices:   64 unique across full test (normal rotation)
+  Objects:        2217 detected across full test
+  Reliability:    2/2 cycles PASSED
+
+Implementation note: The protocol's _update_vehicle_state() enforces
+min speed=20kph and gear=DRIVE every cycle at 100Hz. To enter sleep,
+monkey-patch _update_vehicle_state to override these values.
 
 ============================================================
 WHAT THE 0x3FF "ERROR" CODES ACTUALLY ARE
@@ -194,6 +231,12 @@ src/activation/tesla_radar_activator.py — Activation wrapper
 src/utils/gateway_probe_utils.py — Parameter testing utilities
   - apply_gateway_params(): sets protocol attributes from param dict
   - run_gateway_probe(): power cycle + run + capture results
+
+scripts/test_sleep_wake.py — Sleep/wake cycle test
+  - Cycles radar between active scanning and RF sleep without power cycling
+  - Manipulates protocol vehicle state (speed, gear) to trigger RF on/off
+  - Monitors PSU current, scan indices, and object detection through transitions
+  - Runs 2 full cycles and reports latency/reliability metrics
 
 scripts/psu_monitor.py — Standalone PSU current monitor
   - Polls MEAS:CURR? every 0.5s, classifies IDLE/WAKING/ACTIVE
